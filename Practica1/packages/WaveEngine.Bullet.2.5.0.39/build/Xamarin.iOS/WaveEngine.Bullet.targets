@@ -1,0 +1,18 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- Add Bullet library to the project -->
+  <ItemGroup>
+	<None Include="$(MSBuildThisFileDirectory)\Bullet\libbulletc.a">
+		<Link>libbulletc.a</Link>
+		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+  </ItemGroup>  
+  
+  <!-- Link Box2D library -->
+  <PropertyGroup Condition=" '$(OS)' == 'Windows_NT' ">
+    <MtouchExtraArgs>$(MtouchExtraArgs) -cxx -gcc_flags "-L${ProjectDir} -lbulletc -force_load ${ProjectDir}/libbulletc.a"</MtouchExtraArgs>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition=" '$(OS)' == 'Unix' ">
+    <MtouchExtraArgs>$(MtouchExtraArgs) -cxx -gcc_flags "-L${TargetDir} -lbulletc -force_load ${TargetDir}/libbulletc.a"</MtouchExtraArgs>
+  </PropertyGroup>
+</Project>

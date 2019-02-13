@@ -1,0 +1,9 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- Add Box2D library to the project -->
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)\Bullet\libbulletc.so">
+      <Link>libbulletc.so</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,36 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"> 
+  <Import Project="WaveEngine.Common.targets"/>
+  <!-- This is because evaluation is different in Linux systems -->
+  <UsingTask Condition="'$(WaveOS)' != 'Linux'" TaskName="WaveEngine.Targets.Tasks.AddWPKToBundle" AssemblyFile="@(WaveToolsDir)WaveEngine.Targets.Tasks.dll"/>
+  <UsingTask Condition="'$(WaveOS)' == 'Linux'" TaskName="WaveEngine.Targets.Tasks.AddWPKToBundle" AssemblyFile="$(WaveToolsLinuxDir)WaveEngine.Targets.Tasks.dll"/>
+
+  <PropertyGroup>
+    <WavePlatform>iOS</WavePlatform>
+    <WaveContentExportDependsOn Condition="'$(WaveOS)' == 'Windows'">$(AfterTarget);$(WaveContentExportDependsOn)</WaveContentExportDependsOn>
+  </PropertyGroup>
+  
+  <Target Name="IncludeContentInPackage" DependsOnTargets="WaveContentExport;WaveProtoExport" AfterTargets="CopyFilesToOutputDirectory">	
+    <Message Text="********** Asset Compilation Begin **********"/>
+    <ItemGroup>
+        <WPKFiles Include="$(TargetDir)Content\**\*.*"/>
+    </ItemGroup>
+
+    <AddWPKToBundle
+        InputItems="@(WPKFiles)"
+        ProjectDir="$(MSBuildProjectDirectory)"
+        ContentPrefix="Content">
+        <Output TaskParameter="ItemsWithLogicalNames" ItemName="Content" />
+    </AddWPKToBundle>
+    <Message Text="********** Asset Compilation End **********"/>
+    <CollectBundleResources
+        SessionId="$(BuildSessionId)"
+        Condition="'$(MtouchTargetsEnabled)'"
+        OptimizePropertyLists="$(OptimizePropertyLists)"
+        OptimizePNGs="$(OptimizePNGs)"
+        BundleResources="@(Content);@(BundleResource)"
+        ProjectDir="$(MSBuildProjectDirectory)"
+        ResourcePrefix="$(IPhoneResourcePrefix)">
+        <Output TaskParameter="BundleResourcesWithLogicalNames" ItemName="_BundleResourceWithLogicalName"/>
+    </CollectBundleResources>
+  </Target>
+</Project>

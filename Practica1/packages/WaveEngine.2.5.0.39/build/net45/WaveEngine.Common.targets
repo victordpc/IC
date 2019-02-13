@@ -1,0 +1,64 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">$(MSBuildProjectDirectory)\..\..\</SolutionDir>
+    <WaveSourceDir Condition="$(WaveSourceDir) == '' Or $(WaveSourceDir) == '*Undefined*'">$(SolutionDir)</WaveSourceDir>
+    <WaveProjectName Condition="$(WaveProjectName) == '' Or $(WaveProjectName) == '*Undefined*'">$(MSBuildProjectName)</WaveProjectName>
+    <ProfileName>$([System.IO.Path]::GetFileName($(MSBuildProjectDirectory)))</ProfileName>
+    <IsUnix>False</IsUnix>
+    <IsUnix Condition="'$(OS)' == 'Unix'">True</IsUnix>
+
+    <WaveOS Condition="!$(IsUnix)">Windows</WaveOS>
+    <WaveOS Condition="$(IsUnix)">Linux</WaveOS>
+    <WaveOS Condition="$(IsUnix) And Exists('/Library/Frameworks')">OSX</WaveOS>
+
+    <WaveCliPrefix Condition="'$(WaveOS)' == 'Linux'">mono </WaveCliPrefix>
+    <WaveCliPrefix Condition="'$(WaveOS)' == 'OSX'">mono --arch=32 </WaveCliPrefix>
+    <WaveProtobufEnabled Condition="($(WaveProtobufEnabled) == '' Or $(WaveProtobufEnabled) == '*Undefined*')">true</WaveProtobufEnabled>
+    <WaveAssetCopyOutput Condition="($(WaveAssetCopyOutput) == '' Or $(WaveAssetCopyOutput) == '*Undefined*')">$(TargetDir)Content</WaveAssetCopyOutput>
+    <WaveToolsWinDir Condition="($(WaveToolsWinDir) == '' Or $(WaveToolsWinDir) == '*Undefined*')">$(WaveEngine)v2.0\Tools\VisualEditor\</WaveToolsWinDir>
+    <WaveToolsLinuxDir Condition="$(WaveToolsLinuxDir) == '' Or $(WaveToolsLinuxDir) == '*Undefined*'">/opt/WaveEngine/v2.0/Tools/VisualEditor/</WaveToolsLinuxDir>
+    <WaveToolsOSXDir Condition="$(WaveToolsOSXDir) == '' Or $(WaveToolsOSXDir) == '*Undefined*'">/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/</WaveToolsOSXDir>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <WaveToolsDir Condition="'$(WaveOS)' == 'Windows'" Include="$(WaveToolsWinDir)"/>
+    <WaveToolsDir Condition="'$(WaveOS)' == 'Linux'" Include="$(WaveToolsLinuxDir)"/>
+    <WaveToolsDir Condition="'$(WaveOS)' == 'OSX'" Include="$(WaveToolsOSXDir)"/>
+  </ItemGroup>
+
+  <!-- This is because evaluation is different in Linux systems -->
+  <UsingTask Condition="'$(WaveOS)' != 'Linux'" TaskName="WaveEngine.Targets.Tasks.AssetExporter" AssemblyFile="@(WaveToolsDir)WaveEngine.Targets.Tasks.dll"/>
+  <UsingTask Condition="'$(WaveOS)' != 'Linux'" TaskName="WaveEngine.Targets.Tasks.ProtoExporter" AssemblyFile="@(WaveToolsDir)WaveEngine.Targets.Tasks.dll"/>
+  <UsingTask Condition="'$(WaveOS)' == 'Linux'" TaskName="WaveEngine.Targets.Tasks.AssetExporter" AssemblyFile="$(WaveToolsLinuxDir)WaveEngine.Targets.Tasks.dll"/>
+  <UsingTask Condition="'$(WaveOS)' == 'Linux'" TaskName="WaveEngine.Targets.Tasks.ProtoExporter" AssemblyFile="$(WaveToolsLinuxDir)WaveEngine.Targets.Tasks.dll"/>
+
+  <Target Name="CleanWaveAssetOutput" Condition="Exists('$(WaveAssetCopyOutput)')">
+    <RemoveDir Directories="$(WaveAssetCopyOutput)" />
+  </Target>
+
+  <Target Name="AfterClean" DependsOnTargets="CleanWaveAssetOutput"/>
+
+  <Target Name="BeforeBuild" DependsOnTargets="CleanWaveAssetOutput">
+    <Message Text="********** Constants process Begin **********"/>
+    <Exec Command='$(WaveCliPrefix)WaveConstantsCMD.exe -i "$(WaveSourceDir)$(WaveProjectName).weproj" -o "$(WaveSourceDir)SharedSource/Main"' WorkingDirectory="@(WaveToolsDir)"/>
+    <Message Text="********** Constants process End **********"/>
+  </Target>
+
+  <Target Name="WaveContentExport" DependsOnTargets="$(WaveContentExportDependsOn)">
+    <Message Text="********** Asset Export process Begin **********"/>
+    <AssetExporter Platform="$(WavePlatform)" Profile="$(ProfileName)" InputAsset="$(WaveSourceDir)$(WaveProjectName).weproj" OutputAsset="$(WaveSourceDir)Intermediate/Content/$(ProfileName)" WorkingDirectory="@(WaveToolsDir)"/>
+    <Message Text="********** Asset Export process End **********"/>
+
+    <Message Text="********** Asset Copy Begin **********"/>
+    <MakeDir Directories="$(WaveAssetCopyOutput)" />
+    <CreateItem Include="$(WaveSourceDir)Intermediate\Content\$(ProfileName)\**\*">
+      <Output TaskParameter="Include" ItemName="WaveContentFiles"/>
+    </CreateItem>
+    <Copy SourceFiles="@(WaveContentFiles)" DestinationFolder="$(WaveAssetCopyOutput)\%(RecursiveDir)" />
+    <Message Text="********** Asset Copy  End **********"/>
+  </Target>
+
+  <Target Name="WaveProtoExport" DependsOnTargets="$(WaveProtoExportDependsOn)" Condition="$(WaveProtobufEnabled)">
+    <ProtoExporter OutputDir="$(TargetDir)" ContentDir="$(WaveAssetCopyOutput)"/>
+  </Target>
+</Project>

@@ -1,0 +1,31 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="WaveEngine.Common.targets"/>
+  <!-- This is because evaluation is different in Linux systems -->
+  <UsingTask Condition="'$(WaveOS)' != 'Linux'" TaskName="WaveEngine.Targets.Tasks.ConvertAbsoluteToRelative" AssemblyFile="@(WaveToolsDir)WaveEngine.Targets.Tasks.dll"/>
+  <UsingTask Condition="'$(WaveOS)' == 'Linux'" TaskName="WaveEngine.Targets.Tasks.ConvertAbsoluteToRelative" AssemblyFile="$(WaveToolsLinuxDir)WaveEngine.Targets.Tasks.dll"/>
+
+  <PropertyGroup>
+    <WavePlatform>Android</WavePlatform>
+    <WaveContentExportDependsOn Condition="'$(WaveOS)' == 'Windows'">CopyFilesToOutputDirectory;$(WaveContentExportDependsOn)</WaveContentExportDependsOn>
+  </PropertyGroup>
+
+  <Target Name="IncludeContentInPackage" DependsOnTargets="WaveContentExport;WaveProtoExport" AfterTargets="CopyFilesToOutputDirectory">
+    <Message Text="********** Asset Compilation Begin **********"/>
+    <ItemGroup>
+        <WPKFiles Include="$(TargetDir)Content\**\*.*"/>
+    </ItemGroup>
+
+    <Copy SourceFiles="@(WPKFiles)" DestinationFiles="@(WPKFiles->'$(MonoAndroidAssetsDirIntermediate)Content\%(RecursiveDir)%(Filename)%(Extension)')"/>         
+    
+    <ConvertAbsoluteToRelative Inputs="@(WPKFiles)" RelativeFolder="Content" Condition="@(WPKFiles) != ''">
+        <Output TaskParameter="Outputs" PropertyName="WPKObjFilesRelatives"/>
+    </ConvertAbsoluteToRelative>
+
+    <Message Text="Relatives obj files: $(WPKObjFilesRelatives)"/>
+    
+    <AndroidComputeResPaths ResourceFiles="@(WPKObjFilesRelatives)" IntermediateDir="$(MonoAndroidAssetsDirIntermediate)" ProjectDir="$(ProjectDir)">
+        <Output ItemName="_AndroidAssetsDest" TaskParameter="IntermediateFiles" />
+    </AndroidComputeResPaths>
+    <Message Text="********** Asset Compilation End **********"/>
+  </Target>
+</Project>

@@ -1,0 +1,1354 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WaveEngine.Materials</name>
+    </assembly>
+    <members>
+        <member name="T:WaveEngine.Materials.ForwardMaterial">
+            <summary>
+            Forward lighting Material
+            <example>
+            #### Recipes and samples
+            <list type="bullet">
+               <item>
+                   <description>[Materials samples](https://github.com/WaveEngine/Samples/tree/master/Materials)</description>
+               </item>
+            </list>
+            </example>
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.diffuseColor">
+            <summary>
+            The diffuse color
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.ambientColor">
+            <summary>
+            The ambient color
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.diffuse">
+            <summary>
+            The diffuse texture
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.diffusePath">
+            <summary>
+            The diffuse path
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.ambient">
+            <summary>
+            The ambient texture
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.ambientPath">
+            <summary>
+            The ambient path
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.Light">
+            <summary>
+            The light properties.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.nearbyLight">
+            <summary>
+            Closer light to the current object.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.techniques">
+            <summary>
+            The techniques
+            </summary>
+        </member>
+        <member name="T:WaveEngine.Materials.ForwardMaterial.MaterialParameters">
+            <summary>
+            Shader parameters.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.MaterialParameters.CameraPosition">
+            <summary>
+            The camera position
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.MaterialParameters.ReferenceAlpha">
+            <summary>
+            The reference alpha
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.MaterialParameters.DiffuseColor">
+            <summary>
+            The diffuse color
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.MaterialParameters.Alpha">
+            <summary>
+            The alpha
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.MaterialParameters.AmbientColor">
+            <summary>
+            The ambient color
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.MaterialParameters.SpecularPower">
+            <summary>
+            The specular power
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.MaterialParameters.TextureOffset">
+            <summary>
+            Texture offset.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.MaterialParameters.SpecularIntensity">
+            <summary>
+            Specular Intensity
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.MaterialParameters.Light">
+            <summary>
+            Light struct.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.shaderParameters">
+            <summary>
+            Handle the shader parameters struct.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.ForwardMaterial.Alpha">
+            <summary>
+            Gets or sets the alpha.
+            </summary>
+            <value>
+            The alpha.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.ForwardMaterial.ReferenceAlpha">
+            <summary>
+            Gets or sets the reference alpha value.
+            </summary>
+            <value>
+            The reference alpha.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.ForwardMaterial.SpecularIntensity">
+            <summary>
+            Gets or sets the specular intensity.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.ForwardMaterial.SpecularPower">
+            <summary>
+            Gets or sets the specular power value.
+            </summary>
+            <value>
+            The specular power.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.ForwardMaterial.TexcoordOffset">
+            <summary>
+            Gets or sets the primary texcoord offset.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.ForwardMaterial.DiffuseColor">
+            <summary>
+            Gets or sets the color of the diffuse.
+            </summary>
+            <value>
+            The diffuse color.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.ForwardMaterial.AmbientColor">
+            <summary>
+            Gets or sets the color of the ambient.
+            </summary>
+            <value>
+            The ambient color.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.ForwardMaterial.DiffusePath">
+            <summary>
+            Gets or sets the diffuse texture path
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.ForwardMaterial.AmbientPath">
+            <summary>
+            Gets or sets the ambient texture path
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.ForwardMaterial.LightingEnabled">
+            <summary>
+            Gets or sets a value indicating whether [lighting enable].
+            </summary>
+            <value>
+              <c>true</c> if [lighting enable]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.ForwardMaterial.VertexColorEnable">
+            <summary>
+            Gets or sets a value indicating whether [vertex color enable].
+            </summary>
+            <value>
+              <c>true</c> if [vertex color enable]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.ForwardMaterial.Diffuse">
+            <summary>
+            Gets or sets the diffuse.
+            </summary>
+            <value>
+            The diffuse texture.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.ForwardMaterial.Ambient">
+            <summary>
+            Gets or sets the ambient.
+            </summary>
+            <value>
+            The ambient texture.
+            </value>
+        </member>
+        <member name="F:WaveEngine.Materials.ForwardMaterial.s">
+            <summary>
+            The techniques array
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.ForwardMaterial.CurrentTechnique">
+            <summary>
+            Gets the current technique.
+            </summary>
+            <value>
+            The current technique.
+            </value>
+        </member>
+        <member name="M:WaveEngine.Materials.ForwardMaterial.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.ForwardMaterial"/> class.
+            </summary>
+        </member>
+        <member name="M:WaveEngine.Materials.ForwardMaterial.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.ForwardMaterial"/> class.
+            </summary>
+            <param name="layerId">The associated layer</param>
+        </member>
+        <member name="M:WaveEngine.Materials.ForwardMaterial.#ctor(WaveEngine.Common.Graphics.Color,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.ForwardMaterial"/> class.
+            </summary>
+            <param name="diffuseColor">The diffuse color.</param>
+            <param name="layerId">The associated layer</param>
+        </member>
+        <member name="M:WaveEngine.Materials.ForwardMaterial.#ctor(System.Int32,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.ForwardMaterial"/> class.
+            </summary>
+            <param name="layerId">The associated layer</param>
+            <param name="diffusePath">The diffuse path.</param>
+            <param name="ambientPath">The ambient path.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.ForwardMaterial.#ctor(System.Int32,WaveEngine.Common.Graphics.Texture,WaveEngine.Framework.Graphics.TextureCube)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.ForwardMaterial"/> class.
+            </summary>
+            <param name="layerId">The associated layer</param>
+            <param name="diffuse">The diffuse texture.</param>
+            <param name="ambient">The ambient texture.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.ForwardMaterial.DefaultValues">
+            <summary>
+            Default values
+            </summary>
+        </member>
+        <member name="M:WaveEngine.Materials.ForwardMaterial.Initialize(WaveEngine.Framework.Services.AssetsContainer)">
+            <summary>
+            Initializes the specified assets.
+            </summary>
+            <param name="assets">The assets.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.ForwardMaterial.SetParameters(System.Boolean)">
+            <summary>
+            Sets the parameters.
+            </summary>
+            <param name="cached">if set to <c>true</c> [cached].</param>
+        </member>
+        <member name="M:WaveEngine.Materials.ForwardMaterial.SearchForNearbyLight">
+            <summary>
+            Search which is the nearby light for the current object.
+            </summary>
+            <returns>The nearby light.</returns>
+        </member>
+        <member name="M:WaveEngine.Materials.ForwardMaterial.RefreshTexture(System.String,WaveEngine.Common.Graphics.Texture@)">
+            <summary>
+            Refreshes the texture.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="texture">The texture.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.ForwardMaterial.UnloadTexture(WaveEngine.Common.Graphics.Texture@)">
+            <summary>
+            Unload the texture.
+            </summary>
+            <param name="texture">The texture.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.ForwardMaterial.LoadTexture(System.String,WaveEngine.Common.Graphics.Texture@)">
+            <summary>
+            Load the texture.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="texture">The texture.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.ForwardMaterial.RefreshTexture(System.String,WaveEngine.Framework.Graphics.TextureCube@)">
+            <summary>
+            Refreshes the texture.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="texture">The texture.</param>
+        </member>
+        <member name="T:WaveEngine.Materials.StandardMaterial">
+            <summary>
+            Light PrePass Material
+            <example>
+            #### Recipes and samples
+            <list type="bullet">
+               <item>
+                   <description>[Materials samples](https://github.com/WaveEngine/Samples/tree/master/Materials)</description>
+               </item>
+            </list>
+            </example>
+            </summary>
+            <summary>
+            Light PrePass Material
+            <example>
+            #### Recipes and samples
+            <list type="bullet">
+               <item>
+                   <description>[Materials samples](https://github.com/WaveEngine/Samples/tree/master/Materials)</description>
+               </item>
+            </list>
+            </example>
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.techniques">
+            <summary>
+            The techniques
+            </summary>
+        </member>
+        <member name="T:WaveEngine.Materials.StandardMaterial.GBufferMaterialParameters">
+            <summary>
+            GBuffer Shader parameters.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.GBufferMaterialParameters.SpecularPower">
+            <summary>
+            The Specular power
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.GBufferMaterialParameters.TextureOffset">
+            <summary>
+            Texture offset.
+            </summary>
+        </member>
+        <member name="T:WaveEngine.Materials.StandardMaterial.MaterialParameters">
+            <summary>
+            Shader parameters.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.MaterialParameters.CameraPosition">
+            <summary>
+            The camera position
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.MaterialParameters.ReferenceAlpha">
+            <summary>
+            The reference alpha
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.MaterialParameters.DiffuseColor">
+            <summary>
+            The diffuse color
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.MaterialParameters.Alpha">
+            <summary>
+            The alpha
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.MaterialParameters.AmbientColor">
+            <summary>
+            The ambient color
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.MaterialParameters.EmissiveColor">
+            <summary>
+            The emissive color
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.MaterialParameters.TexCoordFix">
+            <summary>
+            Fix texture coordinates in OpenGL
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.MaterialParameters.TextureOffset1">
+            <summary>
+            Texture offset 1.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.MaterialParameters.TextureOffset2">
+            <summary>
+            Texture offset 2.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.MaterialParameters.FresnelFactor">
+            <summary>
+            Fresnel Factor.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.MaterialParameters.IBLFactor">
+            <summary>
+            IBL Factor.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.MaterialParameters.EnvironmentAmount">
+            <summary>
+            EnvironmentAmount Factor.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.s">
+            <summary>
+            The techniques array
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.CurrentTechnique">
+            <summary>
+            Gets the current technique.
+            </summary>
+            <value>
+            The current technique.
+            </value>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.diffuseColor">
+            <summary>
+            The diffuse color
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.emissiveColor">
+            <summary>
+            The emissive color
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.ambientColor">
+            <summary>
+            The ambient color
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.diffuse1">
+            <summary>
+            The diffuse1 texture
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.diffuse1Path">
+            <summary>
+            The diffuse1 path
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.diffuse2">
+            <summary>
+            The diffuse2 texture
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.diffuse2Path">
+            <summary>
+            The diffuse2 path
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.ibl">
+            <summary>
+            The ambient texture
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.iblPath">
+            <summary>
+            The ambient path
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.environmentTexture">
+            <summary>
+            The reflection texture
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.environmentPath">
+            <summary>
+            The reflection path
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.emissive">
+            <summary>
+            The emissive texture
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.emissivePath">
+            <summary>
+            The emissive path
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.specular">
+            <summary>
+            The specular
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.specularPath">
+            <summary>
+            The specular path
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.normal">
+            <summary>
+            The normal texture
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.normalPath">
+            <summary>
+            The normal path
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.gbufferShaderParameters">
+            <summary>
+            Handle the GBuffer shader parameters struct.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.StandardMaterial.shaderParameters">
+            <summary>
+            Handle the shader parameters struct.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.EffectMode">
+            <summary>
+            Gets or sets the shader mode.
+            </summary>
+            <value>
+            Drawing mode for dual texture effect.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.ReferenceAlpha">
+            <summary>
+            Gets or sets the reference alpha value.
+            </summary>
+            <value>
+            The reference alpha value.</value>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.DiffuseColor">
+            <summary>
+            Gets or sets the diffuse color.
+            </summary>
+            <value>
+            The diffuse color.</value>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.Alpha">
+            <summary>
+            Gets or sets the alpha.
+            </summary>
+            <value>
+            The alpha value.</value>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.AmbientColor">
+            <summary>
+            Gets or sets the ambient color.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.EmissiveColor">
+            <summary>
+            Gets or sets the emissive color.
+            </summary>
+            <value>
+            The emissive color</value>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.SpecularPower">
+            <summary>
+            Gets or sets the specular power value.
+            </summary>
+            <value>
+            The specular power</value>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.TexcoordOffset1">
+            <summary>
+            Gets or sets the primary texcoord offset.
+            </summary>
+            <value>
+            The primary texcoord offset.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.TexcoordOffset2">
+            <summary>
+            Gets or sets the secoundary texcoord offset.
+            </summary>
+            <value>
+            The secondary texcoord offset.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.FresnelFactor">
+            <summary>
+            Gets or sets the fresnel factor.
+            </summary>
+            <value>
+            The Fresnel factor.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.IBLFactor">
+            <summary>
+            Gets or sets the IBL factor.
+            </summary>
+            <value>
+            The IBL factor value.</value>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.EnvironmentAmount">
+            <summary>
+            Gets or sets the Environment Amount.
+            <value>
+            1 for reflective materials (mirrors, polished metals, etc).
+            0 for roughness materials.
+            </value>
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.Diffuse1Path">
+            <summary>
+            Gets or sets the diffuse1 texture path
+            </summary>
+            <value>
+            The path to the texture.</value>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.NormalPath">
+            <summary>
+            Gets or sets the normal texture path
+            </summary>
+            <value>
+            The path to the texture.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.Diffuse2Path">
+            <summary>
+            Gets or sets the diffuse2 texture path
+            </summary>
+            <value>
+            The path to the texture.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.EmissivePath">
+            <summary>
+            Gets or sets the emissive texture path
+            </summary>
+            <value>
+            The path to the texture.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.SpecularPath">
+            <summary>
+            Gets or sets the specular texture path
+            </summary>
+            <value>
+            The path to the texture.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.IBLPath">
+            <summary>
+            Gets or sets the IBL texture path
+            </summary>
+            <value>
+            The path to the texture.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.EnvironmentPath">
+            <summary>
+            Gets or sets the Environment texture path
+            </summary>
+            <value>The path to the texture.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.LightingEnabled">
+            <summary>
+            Gets or sets a value indicating whether lighting is enabled.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.VertexColorEnable">
+            <summary>
+            Gets or sets a value indicating whether vertex color is enabled.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.FresnelTermEnabled">
+            <summary>
+            Gets or sets a value indicating whether Fresnel Term is enabled.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.Diffuse1">
+            <summary>
+            Gets or sets the diffuse1 texture.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.Diffuse2">
+            <summary>
+            Gets or sets the diffuse2 texture.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.Emissive">
+            <summary>
+            Gets or sets the emissive texture.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.Specular">
+            <summary>
+            Gets or sets the specular texture.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.IBLTexture">
+            <summary>
+            Gets or sets the IBL texture
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.ENVTexture">
+            <summary>
+            Gets or sets the environment texture cube.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.LightingTexture">
+            <summary>
+            Gets the lighting texture.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.GBufferTexture">
+            <summary>
+            Gets the GBuffer texture
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.Normal">
+            <summary>
+            Gets or sets the normal texture.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.StandardMaterial.VideoTexture">
+            <summary>
+            Gets the video texture.
+            </summary>
+        </member>
+        <member name="M:WaveEngine.Materials.StandardMaterial.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.StandardMaterial"/> class.
+            </summary>
+        </member>
+        <member name="M:WaveEngine.Materials.StandardMaterial.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.StandardMaterial"/> class.
+            </summary>
+            <param name="layerId">The associated layer.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.StandardMaterial.#ctor(WaveEngine.Common.Graphics.Color,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.StandardMaterial"/> class.
+            </summary>
+            <param name="diffuseColor">The diffuse color.</param>
+            <param name="layerId">The associated layer.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.StandardMaterial.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.StandardMaterial"/> class.
+            </summary>
+            <param name="layerId">The associated layer.</param>
+            <param name="diffuse1Path">The diffuse1 path.</param>
+            <param name="diffuse2Path">The diffuse2 path.</param>
+            <param name="normalPath">The normal path.</param>
+            <param name="specularPath">The specular path.</param>
+            <param name="iblPath">The ibl path.</param>
+            <param name="emissivePath">The emissive path.</param>
+            <param name="environmentPath">The environment path.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.StandardMaterial.#ctor(System.Int32,WaveEngine.Common.Graphics.Texture,WaveEngine.Common.Graphics.Texture,WaveEngine.Common.Graphics.Texture,WaveEngine.Framework.Graphics.TextureCube,WaveEngine.Common.Graphics.Texture)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.StandardMaterial"/> class.
+            </summary>
+            <param name="layerId">The associated layer.</param>
+            <param name="diffuse">The diffuse.</param>
+            <param name="normal">The normal.</param>
+            <param name="specular">The specular.</param>
+            <param name="ibl">The ibl.</param>
+            <param name="emissive">The emissive.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.StandardMaterial.DefaultValues">
+            <summary>
+            Sets the defaults values.
+            </summary>
+        </member>
+        <member name="M:WaveEngine.Materials.StandardMaterial.Initialize(WaveEngine.Framework.Services.AssetsContainer)">
+            <summary>
+            Initializes the specified assets.
+            </summary>
+            <param name="assets">The assets.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.StandardMaterial.RequireDeferredPass(WaveEngine.Framework.Graphics.DeferredLightingPass)">
+            <summary>
+            Check if this material require the specified pass
+            </summary>
+            <param name="pass">The deferred pass.</param>
+            <returns>True if this material require this pass.</returns>
+        </member>
+        <member name="M:WaveEngine.Materials.StandardMaterial.SetParameters(System.Boolean)">
+            <summary>
+            Sets the parameters.
+            </summary>
+            <param name="cached">if set to <c>true</c> [cached].</param>
+        </member>
+        <member name="M:WaveEngine.Materials.StandardMaterial.RefreshTexture(System.String,WaveEngine.Common.Graphics.Texture@)">
+            <summary>
+            Refreshes the texture.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="texture">The texture.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.StandardMaterial.UnloadTexture(WaveEngine.Common.Graphics.Texture@)">
+            <summary>
+            Unload the texture.
+            </summary>
+            <param name="texture">The texture.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.StandardMaterial.LoadTexture(System.String,WaveEngine.Common.Graphics.Texture@)">
+            <summary>
+            Load the texture.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="texture">The texture.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.StandardMaterial.RefreshTexture(System.String,WaveEngine.Framework.Graphics.TextureCube@)">
+            <summary>
+            Refreshes the texture.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="texture">The texture.</param>
+        </member>
+        <member name="T:WaveEngine.Materials.DualTextureMode">
+            <summary>
+            Drawing mode for dual texture effect.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.DualTextureMode.Lightmap">
+            <summary>
+            Lightmap blending (Difusse1 * (2 * Difusse2)).
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.DualTextureMode.Multiplicative">
+            <summary>
+            Multiplicative blending (Difusse1 * Difusse2)..
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.DualTextureMode.Additive">
+            <summary>
+            Additive blending. (Difusse1 + Difusse2).
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.DualTextureMode.Mask">
+            <summary>
+            Second texture behaves as a decal.
+            </summary>
+        </member>
+        <member name="T:WaveEngine.Materials.EnvironmentMaterial">
+            <summary>
+            Light PrePass Material
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.diffuseColor">
+            <summary>
+            The diffuse color
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.ambientColor">
+            <summary>
+            The ambient color
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.diffuse">
+            <summary>
+            The diffuse texture
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.diffusePath">
+            <summary>
+            The diffuse path
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.environment">
+            <summary>
+            The environment texture
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.environmentPath">
+            <summary>
+            The environment path
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.normal">
+            <summary>
+            The normal texture
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.normalPath">
+            <summary>
+            The normal path
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.techniques">
+            <summary>
+            The techniques
+            </summary>
+        </member>
+        <member name="T:WaveEngine.Materials.EnvironmentMaterial.GBufferMaterialParameters">
+            <summary>
+            GBuffer Shader parameters.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.GBufferMaterialParameters.SpecularPower">
+            <summary>
+            The Specular power
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.GBufferMaterialParameters.TextureOffset">
+            <summary>
+            Texture offset.
+            </summary>
+        </member>
+        <member name="T:WaveEngine.Materials.EnvironmentMaterial.MaterialParameters">
+            <summary>
+            Shader parameters.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.MaterialParameters.CameraPosition">
+            <summary>
+            The camera position
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.MaterialParameters.FresnelFactor">
+            <summary>
+            The fresnel Factor
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.MaterialParameters.DiffuseColor">
+            <summary>
+            The diffuse color
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.MaterialParameters.EnvironmentAmount">
+            <summary>
+            The Environment Amount
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.MaterialParameters.AmbientColor">
+            <summary>
+            The ambient color
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.MaterialParameters.TexCoordFix">
+            <summary>
+            Fix texture coordinates in OpenGL
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.gbufferShaderParameters">
+            <summary>
+            Handle the GBuffer shader parameters struct.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.shaderParameters">
+            <summary>
+            Handle the shader parameters struct.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.EnvironmentMaterial.FresnelFactor">
+            <summary>
+            Gets or sets the fresnel factor value.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.EnvironmentMaterial.EnvironmentAmount">
+            <summary>
+            Gets or sets the environment amount value.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.EnvironmentMaterial.SpecularPower">
+            <summary>
+            Gets or sets the specular power value.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.EnvironmentMaterial.DiffuseColor">
+            <summary>
+            Gets or sets the color of the diffuse.
+            </summary>
+            <value>
+            The color of the diffuse.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.EnvironmentMaterial.AmbientColor">
+            <summary>
+            Gets or sets the color of the ambient.
+            </summary>
+            <value>
+            The color of the ambient.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.EnvironmentMaterial.DiffusePath">
+            <summary>
+            Gets or sets the diffuse texture path
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.EnvironmentMaterial.NormalPath">
+            <summary>
+            Gets or sets the normal texture path
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.EnvironmentMaterial.EnvironmentPath">
+            <summary>
+            Gets or sets the environment texture path
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.EnvironmentMaterial.LightingEnabled">
+            <summary>
+            Gets or sets a value indicating whether [lighting enable].
+            </summary>
+            <value>
+              <c>true</c> if [lighting enable]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.EnvironmentMaterial.FresnelEnabled">
+            <summary>
+            Gets or sets a value indicating whether [fresnel enable].
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.EnvironmentMaterial.Diffuse">
+            <summary>
+            Gets or sets the diffuse.
+            </summary>
+            <value>
+            The diffuse.
+            </value>
+            <exception cref="T:System.NullReferenceException">Diffuse texture cannot be null.</exception>
+        </member>
+        <member name="P:WaveEngine.Materials.EnvironmentMaterial.Environment">
+            <summary>
+            Gets or sets the environment.
+            </summary>
+            <value>
+            The environment.
+            </value>
+            <exception cref="T:System.NullReferenceException">Environment texture cannot be null</exception>
+        </member>
+        <member name="P:WaveEngine.Materials.EnvironmentMaterial.LightingTexture">
+            <summary>
+            Gets the lighting texture
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.EnvironmentMaterial.GBufferTexture">
+            <summary>
+            Gets the GBuffer texture
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.EnvironmentMaterial.Normal">
+            <summary>
+            Gets or sets the normal.
+            </summary>
+            <value>
+            The normal.
+            </value>
+            <exception cref="T:System.NullReferenceException">Normal texture cannot be null.</exception>
+        </member>
+        <member name="F:WaveEngine.Materials.EnvironmentMaterial.s">
+            <summary>
+            The techniques array
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.EnvironmentMaterial.CurrentTechnique">
+            <summary>
+            Gets gets or sets the current technique.
+            </summary>
+            <value>
+            The current technique.
+            </value>
+        </member>
+        <member name="M:WaveEngine.Materials.EnvironmentMaterial.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.EnvironmentMaterial"/> class.
+            </summary>
+        </member>
+        <member name="M:WaveEngine.Materials.EnvironmentMaterial.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.EnvironmentMaterial"/> class.
+            </summary>
+            <param name="layerId">The associated layer</param>
+        </member>
+        <member name="M:WaveEngine.Materials.EnvironmentMaterial.#ctor(WaveEngine.Common.Graphics.Color,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.EnvironmentMaterial"/> class.
+            </summary>
+            <param name="diffuseColor">The diffuse color.</param>
+            <param name="layerId">The associated layer</param>
+        </member>
+        <member name="M:WaveEngine.Materials.EnvironmentMaterial.#ctor(System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.EnvironmentMaterial"/> class.
+            </summary>
+            <param name="layerId">The associated layer</param>
+            <param name="diffusePath">The diffuse path.</param>
+            <param name="environmentPath">The environment path.</param>
+            <param name="normalPath">The normal path.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.EnvironmentMaterial.#ctor(System.Int32,WaveEngine.Common.Graphics.Texture,WaveEngine.Framework.Graphics.TextureCube,WaveEngine.Common.Graphics.Texture)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.EnvironmentMaterial"/> class.
+            </summary>
+            <param name="layerId">The associated layer</param>
+            <param name="diffuse">The diffuse.</param>
+            <param name="environment">The environment.</param>
+            <param name="normal">The normal.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.EnvironmentMaterial.DefaultValues">
+            <summary>
+            Defaults the values.
+            </summary>
+        </member>
+        <member name="M:WaveEngine.Materials.EnvironmentMaterial.Initialize(WaveEngine.Framework.Services.AssetsContainer)">
+            <summary>
+            Initializes the specified assets.
+            </summary>
+            <param name="assets">The assets.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.EnvironmentMaterial.RequireDeferredPass(WaveEngine.Framework.Graphics.DeferredLightingPass)">
+            <summary>
+            Check if this material require the specified pass
+            </summary>
+            <param name="pass">The deferred pass</param>
+            <returns>True if this material require this pass</returns>
+        </member>
+        <member name="M:WaveEngine.Materials.EnvironmentMaterial.SetParameters(System.Boolean)">
+            <summary>
+            Sets the parameters.
+            </summary>
+            <param name="cached">if set to <c>true</c> [cached].</param>
+        </member>
+        <member name="M:WaveEngine.Materials.EnvironmentMaterial.RefreshTexture(System.String,WaveEngine.Common.Graphics.Texture@)">
+            <summary>
+            Refreshes the texture.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="texture">The texture.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.EnvironmentMaterial.UnloadTexture(WaveEngine.Common.Graphics.Texture@)">
+            <summary>
+            Unload the texture.
+            </summary>
+            <param name="texture">The texture.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.EnvironmentMaterial.LoadTexture(System.String,WaveEngine.Common.Graphics.Texture@)">
+            <summary>
+            Load the texture.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="texture">The texture.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.EnvironmentMaterial.RefreshTexture(System.String,WaveEngine.Framework.Graphics.TextureCube@)">
+            <summary>
+            Refreshes the texture.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="texture">The texture.</param>
+        </member>
+        <member name="T:WaveEngine.Materials.SkyboxMaterial">
+            <summary>
+            Skybox effect material.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.SkyboxMaterial.techniques">
+            <summary>
+            The techniques
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.SkyboxMaterial.environmentMapPath">
+            <summary>
+            The environment map
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.SkyboxMaterial.CurrentTechnique">
+            <summary>
+            Gets gets or sets the current technique.
+            </summary>
+            <value>
+            The current technique.
+            </value>
+        </member>
+        <member name="P:WaveEngine.Materials.SkyboxMaterial.EnvironmentMap">
+            <summary>
+            Gets the environment texture.
+            </summary>
+            <value>
+            The environment texture.
+            </value>
+        </member>
+        <member name="M:WaveEngine.Materials.SkyboxMaterial.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.SkyboxMaterial" /> class.
+            </summary>
+            <param name="environmentMap">The environment map.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.SkyboxMaterial.#ctor(WaveEngine.Framework.Graphics.TextureCube)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.SkyboxMaterial" /> class.
+            </summary>
+            <param name="environmentMap">The environment map.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.SkyboxMaterial.#ctor(System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.SkyboxMaterial" /> class.
+            </summary>
+            <param name="environmentMap">The environment map.</param>
+            <param name="layer">The skybox associated layer</param>
+        </member>
+        <member name="M:WaveEngine.Materials.SkyboxMaterial.#ctor(WaveEngine.Framework.Graphics.TextureCube,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.SkyboxMaterial" /> class.
+            </summary>
+            <param name="environmentMap">The environment map.</param>
+            <param name="layer">The skybox associated layer</param>
+        </member>
+        <member name="M:WaveEngine.Materials.SkyboxMaterial.DefaultValues">
+            <summary>
+            Generate default values
+            </summary>
+        </member>
+        <member name="M:WaveEngine.Materials.SkyboxMaterial.Initialize(WaveEngine.Framework.Services.AssetsContainer)">
+            <summary>
+            Initializes the specified assets.
+            </summary>
+            <param name="assets">The assets.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.SkyboxMaterial.Unload(WaveEngine.Framework.Services.AssetsContainer)">
+            <summary>
+            Unload this material.
+            </summary>
+            <param name="assets">The assets.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.SkyboxMaterial.SetParameters(System.Boolean)">
+            <summary>
+            Applies the pass.
+            </summary>
+            <param name="cached">The efect is cached.</param>
+        </member>
+        <member name="T:WaveEngine.Materials.VertexFormats.VertexNormalMapping">
+            <summary>
+            A vertex format structure containing position and two texture coordinates.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.VertexFormats.VertexNormalMapping.Position">
+            <summary>
+            Vertex position.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.VertexFormats.VertexNormalMapping.Normal">
+            <summary>
+            Vertex normal.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.VertexFormats.VertexNormalMapping.Binormal">
+            <summary>
+            Vertex binormal.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.VertexFormats.VertexNormalMapping.Tangent">
+            <summary>
+            Vertex tangent.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.VertexFormats.VertexNormalMapping.TexCoord">
+            <summary>
+            First vertex texture coordinate.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.VertexFormats.VertexNormalMapping.VertexFormat">
+            <summary>
+            Vertex format of this vertex.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.VertexFormats.VertexNormalMapping.WaveEngine#Common#Graphics#IBasicVertex#VertexFormat">
+            <summary>
+            Gets the vertex format.
+            </summary>
+        </member>
+        <member name="M:WaveEngine.Materials.VertexFormats.VertexNormalMapping.#ctor(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector2)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.VertexFormats.VertexNormalMapping" /> struct.
+            </summary>
+            <param name="position">The position.</param>
+            <param name="normal">The normal.</param>
+            <param name="binormal">The binormal.</param>
+            <param name="tangent">The tangent.</param>
+            <param name="texCoord">The first texture coordinate.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.VertexFormats.VertexNormalMapping.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:WaveEngine.Materials.VertexFormats.VertexNormalMapping" /> struct.
+            </summary>
+        </member>
+        <member name="T:WaveEngine.Materials.VertexFormats.VertexNormalMappingLightMap">
+            <summary>
+            A vertex format structure containing position and two texture coordinates.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.VertexFormats.VertexNormalMappingLightMap.Position">
+            <summary>
+            Vertex position.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.VertexFormats.VertexNormalMappingLightMap.Normal">
+            <summary>
+            Vertex normal.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.VertexFormats.VertexNormalMappingLightMap.Binormal">
+            <summary>
+            Vertex binormal.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.VertexFormats.VertexNormalMappingLightMap.Tangent">
+            <summary>
+            Vertex tangent.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.VertexFormats.VertexNormalMappingLightMap.TexCoord">
+            <summary>
+            First vertex texture coordinate.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.VertexFormats.VertexNormalMappingLightMap.TexCoord2">
+            <summary>
+            Second vertex texture coordinate.
+            </summary>
+        </member>
+        <member name="F:WaveEngine.Materials.VertexFormats.VertexNormalMappingLightMap.VertexFormat">
+            <summary>
+            Vertex format of this vertex.
+            </summary>
+        </member>
+        <member name="P:WaveEngine.Materials.VertexFormats.VertexNormalMappingLightMap.WaveEngine#Common#Graphics#IBasicVertex#VertexFormat">
+            <summary>
+            Gets the vertex format.
+            </summary>
+        </member>
+        <member name="M:WaveEngine.Materials.VertexFormats.VertexNormalMappingLightMap.#ctor(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WaveEngine.Materials.VertexFormats.VertexNormalMappingLightMap" /> struct.
+            </summary>
+            <param name="position">The position.</param>
+            <param name="normal">The normal.</param>
+            <param name="binormal">The binormal.</param>
+            <param name="tangent">The tangent.</param>
+            <param name="texCoord">The first texture coordinate.</param>
+            <param name="texCoord2">The tex coord2.</param>
+        </member>
+        <member name="M:WaveEngine.Materials.VertexFormats.VertexNormalMappingLightMap.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:WaveEngine.Materials.VertexFormats.VertexNormalMappingLightMap" /> struct.
+            </summary>
+        </member>
+    </members>
+</doc>
