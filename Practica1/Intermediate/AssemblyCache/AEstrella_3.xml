@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AEstrella_3</name>
+    </assembly>
+    <members>
+        <member name="P:AEstrella.Punto.X">
+            <summary>
+            Posición X en el plano
+            </summary>
+        </member>
+        <member name="P:AEstrella.Punto.Y">
+            <summary>
+            Posicion Y en el plano
+            </summary>
+        </member>
+        <member name="P:AEstrella.Punto.H">
+            <summary>
+             Coste según la función heurística hasta la meta 
+            </summary>
+        </member>
+        <member name="P:AEstrella.Punto.G">
+            <summary>
+            Coste desde el inicio
+            </summary>
+        </member>
+        <member name="P:AEstrella.Punto.F">
+            <summary>
+            Suma de las funciones g y h
+            </summary>
+        </member>
+        <member name="P:AEstrella.Punto.Abierto">
+            <summary>
+            Indica si el nodo ya ha sido tratado
+            </summary>
+        </member>
+    </members>
+</doc>

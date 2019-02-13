@@ -1,0 +1,2 @@
+C:\hlocal\IC\Practica1\AEstrella\obj\Debug\AEstrella.csprojAssemblyReference.cache
+C:\hlocal\IC\Practica1\AEstrella\obj\Debug\AEstrella.csproj.CoreCompileInputs.cache

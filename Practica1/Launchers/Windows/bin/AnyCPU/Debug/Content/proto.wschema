@@ -1,0 +1,761 @@
+
+Y
++WaveEngine.Components.Animation.Animation2DcurrentAnimationCurrentAnimation
+ê
++WaveEngine.Components.Animation.Animation3DApplyRootMotionCurrentAnimation	modelPathPlayAutomaticallyplaybackRate
+é
+-WaveEngine.Components.Animation.AnimationBaseCurrentAnimationPlayAutomatically0≤+WaveEngine.Components.Animation.Animation2D
+ë
+7WaveEngine.Framework.Models.Profiles.AnimationClipModelAdditiveReferenceFrame AdditiveReferenceSourceTrackEndTime
+Events	FramerateInPlaceModeIsAditiveClipName	
+RootMotion
+RootMotionNodeSourceTrack	StartTime
+U
+5WaveEngine.Framework.Animation.AnimationKeyframeEventTagTime	Value
+a
+8WaveEngine.Framework.Models.Profiles.AnimationTrackModelDuration	FramerateName
+7
+*WaveEngine.Framework.Animation.AnimationUI	State
+X
+(WaveEngine.ImageEffects.AntialiasingLens
+Reduce_Min
+Reduce_MulSpan_max
+:
+$WaveEngine.Components.AR.ARCameraRigShowPointCloud
+%
+#WaveEngine.Components.AR.ARProvider
+È
+.WaveEngine.Framework.Models.Settings.ASettings
+Categories5:1WaveEngine.Framework.Models.Settings.GameSettings8@4WaveEngine.Framework.Models.Settings.ProjectSettings6C2WaveEngine.Framework.Models.Settings.SceneSettings
+Ï
+/WaveEngine.Framework.Models.Assets.AssetElementAssociatedFilesProfilesZipCompress3/WaveEngine.Framework.Models.Assets.CubeMapModel0,WaveEngine.Framework.Models.Assets.FontModel62WaveEngine.Framework.Models.Assets.ModelAssetModel1-WaveEngine.Framework.Models.Assets.SoundModel3/WaveEngine.Framework.Models.Assets.TextureModel
+Z
+&WaveEngine.Framework.Models.AssetModel	AsRaw	Asset	ThumbnailVersion
+8
+'WaveEngine.Framework.Animation.BackEase	Amplitude
+0
+"WaveEngine.Framework.BaseDecorator
+Entity
+Ç
+4WaveEngine.Framework.Models.Entities.BaseEntityModel
+isDisabledisStatic	isVisiblenameSerializeChildrenstag40WaveEngine.Framework.Models.Entities.EntityModel<8WaveEngine.Framework.Models.Entities.PrefabInstanceModel
+ø
+'WaveEngine.Framework.Graphics.BaseModel/K+WaveEngine.Framework.Graphics.LoadableModel2L.WaveEngine.Components.Graphics3D.MeshComponent/M+WaveEngine.Components.Toolkit.TextComponent
+ë	
+WaveEngine.Framework.Behavior
+isDisabledUpdateOrder/N+WaveEngine.Components.Animation.Animation3D1O-WaveEngine.Components.Animation.AnimationBase.P*WaveEngine.Framework.Animation.AnimationUI6Q2WaveEngine.Framework.Physics3D.ContactTestBehavior6R2WaveEngine.Components.Cameras.FreeCamera2DBehavior6S2WaveEngine.Components.Cameras.FreeCamera3DBehavior3T/WaveEngine.Framework.Graphics.LensFlareBehavior0U,WaveEngine.Components.Toolkit.LookAtBehavior/V+WaveEngine.Framework.Physics3D.PhysicBody3D-W)WaveEngine.Framework.Physics3D.RayEmitter.X*WaveEngine.Framework.Physics2D.RigidBody2D5Y1WaveEngine.Framework.Physics3D.SetCollisionEvents-Z)WaveEngine.Framework.Sound.SoundEmitter3D.[*WaveEngine.Framework.Sound.SoundListener3D,\(WaveEngine.Components.Graphics3D.Spinner3]/WaveEngine.Framework.Physics3D.SweepTestEmitter*^&WaveEngine.Components.Toolkit.Tagalong:_6WaveEngine.Framework.Physics3D.TestCharacterController0`,WaveEngine.Components.Gestures.TouchGestures6a2WaveEngine.Components.Cameras.ViewCamera3DBehavior(b$WaveEngine.Components.VR.VRCameraRig'c#WaveEngine.Components.VR.VRProvider
+Å
+0WaveEngine.Components.Primitives.BezierPointInfo	ColorInboundHandleOutboundHandlePosition	Thickness
+ù
+*WaveEngine.Components.Graphics2D.BillboardBillboardTypeisGlobalAsset
+OriginRotationtexturePathTexturePath	TintColor
+H
+9WaveEngine.Components.Shared.Graphics3D.BillboardRendererlayerId
+Å
+0WaveEngine.Common.Graphics.BlendStateDescriptionAlphaToCoverageEnableIndependentBlendEnableRenderTarget0RenderTarget1RenderTarget2RenderTarget3RenderTarget4RenderTarget5	RenderTarget6
+RenderTarget7
+˚
+<WaveEngine.Common.Graphics.BlendStateRenderTargetDescriptionBlendEnableBlendOperationAlphaBlendOperationColorColorWriteChannelsDestinationBlendAlphaDestinationBlendColorSourceBlendAlphaSourceBlendColor
+e
+!WaveEngine.ImageEffects.BloomLens
+BloomScaleBloomThreshold	BloomTint	Intensity
+°
+!WaveEngine.ImageEffects.BokehLens	FilmWidthFocalDistanceFocalLength
+FStopsMaxBlurQualityShineAmountShineThreshold
+6
+"WaveEngine.Common.Math.BoundingBoxMaxMin
+Y
+*WaveEngine.Common.Math.BoundingOrientedBox
+Center
+HalfExtentOrientation
+?
+%WaveEngine.Common.Math.BoundingSphere
+Center
+Radius
+O
+,WaveEngine.Framework.Physics3D.BoxCollider3DorientationOffsetsize
+Ù
+$WaveEngine.Framework.Graphics.CameraBackgroundColorCameraOrder
+ClearDepth
+ClearFlagsClearStencil
+DepthRangeFarPlaneFieldOfView	FrustumCullingEnabled
+IsActiveLayerMaskDefaultValue	NearPlaneUpVectorViewport*d&WaveEngine.Framework.Graphics.Camera2D*e&WaveEngine.Framework.Graphics.Camera3D
+{
+&WaveEngine.Framework.Graphics.Camera2DcustomVirtualScreendistancerotationvanishingPointzoom
+í
+&WaveEngine.Framework.Graphics.Camera3DAspectRatioFarPlaneFieldOfView	NearPlane)∂$WaveEngine.Components.AR.ARCameraRig
+-
++WaveEngine.Framework.Graphics.CameraFrustum
+M
+)WaveEngine.Components.Cameras.CameraPoint
+LookAtPositionUp
+a
+0WaveEngine.Framework.Physics3D.CapsuleCollider3D
+heightorientationOffset
+radius
+X
+,WaveEngine.Components.Graphics3D.CapsuleMesh
+Height
+RadiusTessellation
+o
+4WaveEngine.Framework.Physics3D.CharacterController3D	fallSpeedgravity	jumpSpeedmaxSlope
+I
+/WaveEngine.ImageEffects.ChromaticAberrationLensAberrationStrength
+=
+/WaveEngine.Framework.Physics2D.CircleCollider2D
+Radius
+ß
+)WaveEngine.Framework.Physics2D.Collider2DautoRefreshCollidesWithCollisionCategoriesDebugLineColorDensityFriction
+GroupIndexIsSensor
+	offset
+Restitution3f/WaveEngine.Framework.Physics2D.CircleCollider2D1g-WaveEngine.Framework.Physics2D.EdgeCollider2D4h0WaveEngine.Framework.Physics2D.PolygonCollider2D6i2WaveEngine.Framework.Physics2D.RectangleCollider2D
+ù
+)WaveEngine.Framework.Physics3D.Collider3D
+margin
+offset`j\WaveEngine.Framework.Physics3D.Collider3D`1[WaveEngine.Common.Physics3D.IBoxColliderShape3D]dk`WaveEngine.Framework.Physics3D.Collider3D`1[WaveEngine.Common.Physics3D.ICapsuleColliderShape3D]al]WaveEngine.Framework.Physics3D.Collider3D`1[WaveEngine.Common.Physics3D.IConeColliderShape3D]emaWaveEngine.Framework.Physics3D.Collider3D`1[WaveEngine.Common.Physics3D.ICylinderColliderShape3D]an]WaveEngine.Framework.Physics3D.Collider3D`1[WaveEngine.Common.Physics3D.IMeshColliderShape3D]co_WaveEngine.Framework.Physics3D.Collider3D`1[WaveEngine.Common.Physics3D.ISphereColliderShape3D]
+>
+ WaveEngine.Common.Graphics.ColorABGR
+=
++WaveEngine.ImageEffects.ColorCorrectionLens
+ColorSpace
+%
+#WaveEngine.Common.Curves.ColorCurve
+(
+&WaveEngine.Common.Curves.ColorKeyframe
+º
+WaveEngine.Framework.Component'#WaveEngine.Components.AR.ARProvider+'WaveEngine.Framework.Graphics.BaseModel!WaveEngine.Framework.Behavior.*WaveEngine.Components.Graphics2D.Billboard($WaveEngine.Framework.Graphics.Camera-)WaveEngine.Framework.Physics2D.Collider2D-)WaveEngine.Framework.Physics3D.Collider3D!WaveEngine.Framework.Drawableä ÖWaveEngine.Framework.Physics2D.Joint2D`2[WaveEngine.Common.Physics2D.IDistanceJoint2D,WaveEngine.Common.Physics2D.DistanceJointDef2D]É!WaveEngine.Framework.Physics2D.Joint2D`2[WaveEngine.Common.Physics2D.IMouseJoint2D,WaveEngine.Common.Physics2D.MouseJointDef2D]å"áWaveEngine.Framework.Physics2D.Joint2D`2[WaveEngine.Common.Physics2D.IPrismaticJoint2D,WaveEngine.Common.Physics2D.PrismaticJointDef2D]ä#ÖWaveEngine.Framework.Physics2D.Joint2D`2[WaveEngine.Common.Physics2D.IRevoluteJoint2D,WaveEngine.Common.Physics2D.RevoluteJointDef2D]Å$}WaveEngine.Framework.Physics2D.Joint2D`2[WaveEngine.Common.Physics2D.IRopeJoint2D,WaveEngine.Common.Physics2D.RopeJointDef2D]Å%}WaveEngine.Framework.Physics2D.Joint2D`2[WaveEngine.Common.Physics2D.IWeldJoint2D,WaveEngine.Common.Physics2D.WeldJointDef2D]É&WaveEngine.Framework.Physics2D.Joint2D`2[WaveEngine.Common.Physics2D.IWheelJoint2D,WaveEngine.Common.Physics2D.WheelJointDef2D]å'áWaveEngine.Framework.Physics3D.Joint3D`2[WaveEngine.Common.Physics3D.IConeTwistJoint3D,WaveEngine.Common.Physics3D.ConeTwistJointDef3D]É(WaveEngine.Framework.Physics3D.Joint3D`2[WaveEngine.Common.Physics3D.IFixedJoint3D,WaveEngine.Common.Physics3D.FixedJointDef3D]Å)}WaveEngine.Framework.Physics3D.Joint3D`2[WaveEngine.Common.Physics3D.IGearJoint3D,WaveEngine.Common.Physics3D.GearJointDef3D]É*WaveEngine.Framework.Physics3D.Joint3D`2[WaveEngine.Common.Physics3D.IHingeJoint3D,WaveEngine.Common.Physics3D.HingeJointDef3D]í+çWaveEngine.Framework.Physics3D.Joint3D`2[WaveEngine.Common.Physics3D.IPointToPointJoint3D,WaveEngine.Common.Physics3D.PointToPointJointDef3D]Ü,ÅWaveEngine.Framework.Physics3D.Joint3D`2[WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D]ê-ãWaveEngine.Framework.Physics3D.Joint3D`2[WaveEngine.Common.Physics3D.IGeneric6DofJoint3D,WaveEngine.Common.Physics3D.Generic6DofJointDef3D]ú.óWaveEngine.Framework.Physics3D.Joint3D`2[WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D,WaveEngine.Common.Physics3D.Generic6DofSpringJointDef3D]&/"WaveEngine.Framework.Graphics.Lens10-WaveEngine.Framework.Graphics.LightProperties/1+WaveEngine.Components.Graphics2D.Material2D622WaveEngine.Components.Graphics3D.MaterialComponent13-WaveEngine.Components.Graphics3D.MaterialsMap440WaveEngine.Components.Particles.ParticleSystem2D450WaveEngine.Components.Particles.ParticleSystem3D+6'WaveEngine.Components.Graphics2D.Sprite07,WaveEngine.Components.Graphics2D.SpriteAtlas-8)WaveEngine.Framework.Graphics.Transform3D)9%WaveEngine.Components.VR.VRController
+^
+-WaveEngine.Framework.Physics3D.ConeCollider3D
+heightorientationOffset
+radius
+W
+)WaveEngine.Components.Graphics3D.ConeMeshDiameter
+HeightTessellation
+ª
+/WaveEngine.Framework.Physics3D.ConeTwistJoint3D
+anchorangularOnlyAutoConfigureConnectedaxisconnectedAnchorconnectedAxisdamping	fixThresh	limitBiasFactor
+limitRelaxationFactor
+limitslimitSoftnessmaxMotorImpulsemotorTargetuseMotor
+M
+2WaveEngine.Framework.Physics3D.ContactTestBehavior	ClearPairPath
+@
+'WaveEngine.ImageEffects.ConvolutionLens
+Filter	Scale
+D
+/WaveEngine.Framework.Models.Assets.CubeMapModelAntialiasType
+V
+8WaveEngine.Framework.Models.Profiles.CubeMapProfileModelOutputFormatSize
+u
+)WaveEngine.Components.Graphics3D.CubeMeshSize	UTileUVHorizontalFlipUVVerticalFlip	YTile
+-
++WaveEngine.Components.Graphics3D.CustomMesh
+b
+1WaveEngine.Framework.Physics3D.CylinderCollider3D
+heightorientationOffset
+radius
+[
+-WaveEngine.Components.Graphics3D.CylinderMeshDiameter
+HeightTessellation
+ã
+.WaveEngine.Framework.Graphics.DeferredMaterial-§(WaveEngine.Materials.EnvironmentMaterial*•%WaveEngine.Materials.StandardMaterial
+K
+%WaveEngine.Framework.DependencyObject"WaveEngine.Framework.Component
+r
+(WaveEngine.ImageEffects.DepthOfFieldLens	BlurScaleDownSampleFactorFocusDistance
+FocusRange
+C
+%WaveEngine.Common.Graphics.DepthRangeMaxDepthMinDepth
+•
+;WaveEngine.Common.Graphics.DepthStencilOperationDescriptionStencilDepthFailOperationStencilFailOperationStencilFunctionStencilPassOperation
+Ã
+7WaveEngine.Common.Graphics.DepthStencilStateDescriptionBackFaceDepthEnableDepthFunctionDepthWriteMask	FrontFaceStencilEnableStencilReadMaskStencilWriteMask
+)
+'WaveEngine.Common.Graphics.DepthTexture
+0
+.WaveEngine.Framework.Graphics.DirectionalLight
+:
+8WaveEngine.Framework.Graphics.DirectionalLightProperties
+8
+6WaveEngine.Framework.Graphics.DirectionalLightRenderer
+a
+.WaveEngine.Framework.Physics2D.DistanceJoint2DdampingRatiodistancefrequencyHz
+3
+&WaveEngine.ImageEffects.DistortionLens	Power
+•
+WaveEngine.Framework.DrawableFrustumCullingEnabled	IsVisible,p(WaveEngine.Framework.Graphics.Drawable2D,q(WaveEngine.Framework.Graphics.Drawable3D
+∑
+(WaveEngine.Framework.Graphics.Drawable2DlayerId,Ω'WaveEngine.Framework.Graphics.LensFlare8æ3WaveEngine.Components.Graphics2D.LineMeshRenderer2D>ø9WaveEngine.Components.Graphics2D.ParticleSystemRenderer2D2¿-WaveEngine.Components.Graphics2D.QuadRenderer9¡4WaveEngine.Components.Graphics2D.SpriteAtlasRenderer4¬/WaveEngine.Components.Graphics2D.SpriteRenderer1√,WaveEngine.Components.Toolkit.TextRenderer2D
+˙
+(WaveEngine.Framework.Graphics.Drawable3D>ƒ9WaveEngine.Components.Shared.Graphics3D.BillboardRenderer0≈+WaveEngine.Framework.Graphics.CameraFrustum;∆6WaveEngine.Framework.Graphics.DirectionalLightRenderer8«3WaveEngine.Components.Graphics3D.LineMeshRenderer3D2»-WaveEngine.Components.Graphics3D.MeshRenderer>…9WaveEngine.Components.Graphics3D.ParticleSystemRenderer3D5 0WaveEngine.Framework.Graphics.PointLightRenderer9À4WaveEngine.Components.Graphics3D.SkinnedMeshRenderer)Ã$WaveEngine.Framework.Graphics.Skybox4Õ/WaveEngine.Framework.Graphics.SpotLightRenderer6Œ1WaveEngine.Framework.Physics3D.TestPointComponent1œ,WaveEngine.Components.Toolkit.TextRenderer3D3–.WaveEngine.Framework.Physics3D.TriggerVolume3D
+3
+1WaveEngine.Framework.Animation.EasingFunctionBase
+=
+-WaveEngine.Framework.Physics2D.EdgeCollider2Dvertices
+O
+!WaveEngine.Common.Graphics.Effect*;&WaveEngine.Framework.Graphics.Material
+K
+0WaveEngine.Framework.Models.Entities.EntityModelSerializeComponents
+w
+2WaveEngine.Framework.Models.Entities.EntityPointerComponentIndexPointerPathProperty
+SourcePath
+Í
+(WaveEngine.Materials.EnvironmentMaterialambientColordiffuseColordiffusePathEnvironmentAmountenvironmentPathFresnelEnabledFresnelFactorLightingEnabled	
+normalPath
+SpecularPower
+Ñ
+7WaveEngine.Framework.Models.Profiles.ExportProfileModelExcludeAssetName<	8WaveEngine.Framework.Models.Profiles.CubeMapProfileModel9
+5WaveEngine.Framework.Models.Profiles.FontProfileModel:6WaveEngine.Framework.Models.Profiles.ModelProfileModel:6WaveEngine.Framework.Models.Profiles.SoundProfileModel<8WaveEngine.Framework.Models.Profiles.TextureProfileModel
+5
+$WaveEngine.ImageEffects.FastBlurLens	BlurScale
+:
+)WaveEngine.Components.Graphics3D.FileMesh	ModelPath
+/
+%WaveEngine.Framework.Models.FileModelId
+d
+%WaveEngine.ImageEffects.FilmGrainLensGrainIntensityMaxGrainIntensityMin	GrainSize
+C
+#WaveEngine.ImageEffects.FishEyeLens	StrengthX	StrengthY
+-
++WaveEngine.Components.Cameras.FixedCamera2D
+-
++WaveEngine.Components.Cameras.FixedCamera3D
+á
++WaveEngine.Framework.Physics3D.FixedJoint3D
+anchorAutoConfigureConnectedaxisconnectedAnchorconnectedAxis
+a
+*WaveEngine.Framework.Graphics.FlareElement	ColorPosition	ScaleTextureName
+%
+#WaveEngine.Common.Curves.FloatCurve
+(
+&WaveEngine.Common.Curves.FloatKeyframe
+h
+WaveEngine.ImageEffects.FogLens
+EndFogFogColor
+FogDensityStartFog	Technique
+¢
+,WaveEngine.Framework.Models.Assets.FontModelCharacterSet	CustomSetDefaultCharacter
+FontFamilyFontSizeInnerSpacingSpacing
+7
+5WaveEngine.Framework.Models.Profiles.FontProfileModel
+ı
+$WaveEngine.Materials.ForwardMaterial	AlphaambientColorambientPathdiffuseColordiffusePathLightingEnabledReferenceAlphaSpecularIntensity	SpecularPower
+TexcoordOffsetVertexColorEnable
+,
+*WaveEngine.Components.Cameras.FreeCamera2D
+f
+2WaveEngine.Components.Cameras.FreeCamera2DBehaviorRotationSpeed	SpeedWheelZoomSpeed
+,
+*WaveEngine.Components.Cameras.FreeCamera3D
+l
+2WaveEngine.Components.Cameras.FreeCamera3DBehaviorGamepadRotationSpeedRotationSpeed	Speed
+=
+)WaveEngine.Framework.Models.GameInfoModelGameSettings
+3
+1WaveEngine.Framework.Models.Settings.GameSettings
+6
+(WaveEngine.ImageEffects.GaussianBlurLens
+Factor
+p
+*WaveEngine.Framework.Physics3D.GearJoint3DAutoConfigureConnectedaxisconnectedAxis	ratio
+3
+1WaveEngine.Framework.Physics3D.Generic6DofJoint3D
+@
+ WaveEngine.ImageEffects.GlowLens	GlowScale	Intensity
+'
+%WaveEngine.ImageEffects.GrayScaleLens
+ 
++WaveEngine.Framework.Physics3D.HingeJoint3D
+anchorAutoConfigureConnectedaxisconnectedAnchorconnectedAxislimitBiasFactorlimitRelaxationFactorlimitSoftness	lowerAngularLimit
+maxMotorImpulsemotorTargetVelocityupperAngularLimituseAngularLimitsuseMotor
+$
+"WaveEngine.ImageEffects.InvertLens
+˛
+
+"WaveEngine.Framework.Graphics.Lens
+Active-Å(WaveEngine.ImageEffects.AntialiasingLens&Ç!WaveEngine.ImageEffects.BloomLens&É!WaveEngine.ImageEffects.BokehLens4Ñ/WaveEngine.ImageEffects.ChromaticAberrationLens0Ö+WaveEngine.ImageEffects.ColorCorrectionLens,Ü'WaveEngine.ImageEffects.ConvolutionLens-á(WaveEngine.ImageEffects.DepthOfFieldLens+à&WaveEngine.ImageEffects.DistortionLens)â$WaveEngine.ImageEffects.FastBlurLens*ä%WaveEngine.ImageEffects.FilmGrainLens(ã#WaveEngine.ImageEffects.FishEyeLens$åWaveEngine.ImageEffects.FogLens-ç(WaveEngine.ImageEffects.GaussianBlurLens%é WaveEngine.ImageEffects.GlowLens*è%WaveEngine.ImageEffects.GrayScaleLens'ê"WaveEngine.ImageEffects.InvertLens*ë%WaveEngine.ImageEffects.LensFlareLens+í&WaveEngine.ImageEffects.LightShaftLens+ì&WaveEngine.ImageEffects.MotionBlurLens)î$WaveEngine.ImageEffects.PixelateLens*ï%WaveEngine.ImageEffects.PosterizeLens+ñ&WaveEngine.ImageEffects.RadialBlurLens*ó%WaveEngine.ImageEffects.ScanlinesLens.ò)WaveEngine.ImageEffects.ScreenOverlayLens&ô!WaveEngine.ImageEffects.SepiaLens&ö!WaveEngine.ImageEffects.SobelLens%õ WaveEngine.ImageEffects.SSAOLens'ú"WaveEngine.ImageEffects.TilingLens*ù%WaveEngine.ImageEffects.TiltShiftLens,û'WaveEngine.ImageEffects.ToneMappingLens)ü$WaveEngine.ImageEffects.VignetteLens
+R
+'WaveEngine.Framework.Graphics.LensFlareFadeTime
+Flares	IsBlocked
+J
+/WaveEngine.Framework.Graphics.LensFlareBehaviorMaxOccluderDistance
+~
+%WaveEngine.ImageEffects.LensFlareLensBias
+DistortionGhostDispersal	HaloWidth	Intensity	Scale
+é
+-WaveEngine.Framework.Graphics.LightProperties	Color	IntensityisLightDisabled=†8WaveEngine.Framework.Graphics.DirectionalLightProperties7°2WaveEngine.Framework.Graphics.PointLightProperties6¢1WaveEngine.Framework.Graphics.SpotLightProperties
+˘
+&WaveEngine.ImageEffects.LightShaftLensAutoIntensity	Blend	DecayDensityDirectionalLightDownSampleFactorExposureHaloEnabled	Quality
+SunEdgeSharpnessSunIntensity	SunRadius
+Weight
+.
+,WaveEngine.Components.Primitives.LineArcMesh
+ﬂ
+0WaveEngine.Components.Primitives.LineArcMeshBase	angle	color
+radiustessellation	thickness1⁄,WaveEngine.Components.Primitives.LineArcMesh5€0WaveEngine.Components.Primitives.LinePolygonMesh
+g
+/WaveEngine.Components.Primitives.LineBezierMeshbezierLinePoints
+bezierType
+resolution
+;
+)WaveEngine.Components.Primitives.LineMesh
+LinePoints
+ˇ
+-WaveEngine.Components.Primitives.LineMeshBaseIsCameraAligned
+isLooplineTypeTexcoordOffsettexturePathTextureTilingUseWorldSpace5”0WaveEngine.Components.Primitives.LineArcMeshBase4‘/WaveEngine.Components.Primitives.LineBezierMesh.’)WaveEngine.Components.Primitives.LineMesh7÷2WaveEngine.Components.Primitives.LineRectangleMesh
+5
+3WaveEngine.Components.Graphics2D.LineMeshRenderer2D
+B
+3WaveEngine.Components.Graphics3D.LineMeshRenderer3DlayerId
+X
+.WaveEngine.Components.Primitives.LinePointInfo	ColorPosition	Thickness
+2
+0WaveEngine.Components.Primitives.LinePolygonMesh
+q
+2WaveEngine.Components.Primitives.LineRectangleMesh	color
+height
+origin	thickness	width
+<
++WaveEngine.Framework.Graphics.LoadableModel	ModelPath
+•
+,WaveEngine.Components.Toolkit.LookAtBehaviorAxisaxisConstraintFliplocalOrientationlookAtEntityOrientationAxistargetEntity
+¢
+&WaveEngine.Framework.Graphics.Material	AssetPathlayerId2=.WaveEngine.Framework.Graphics.DeferredMaterial(>$WaveEngine.Materials.ForwardMaterial
+;
++WaveEngine.Components.Graphics2D.Material2DMaterial
+x
+2WaveEngine.Components.Graphics3D.MaterialComponent	AsignedToMaterialPathUseCopyuseDummyMaterial
+U
+)WaveEngine.Framework.Models.MaterialModelMaterial	ThumbnailVersion
+û
+-WaveEngine.Components.Graphics3D.MaterialsMapDefaultMaterialPathMaterialsPathuseDefaultMaterialuseDummyMaterialUseMaterialCopy
+Ø
+WaveEngine.Common.Math.MatrixM11M12M13M14M21M22M23M24	M31
+M32M33M34M41M42M43M44
+s
+ WaveEngine.Common.Math.Matrix3x3M11M12M13M21M22M23M31M32	M33
+^
+-WaveEngine.Framework.Physics3D.MeshCollider3DisConvexorientationOffsetsize
+ô
+.WaveEngine.Components.Graphics3D.MeshComponentModelMeshName1¶,WaveEngine.Components.Graphics3D.CapsuleMesh.ß)WaveEngine.Components.Graphics3D.ConeMesh.®)WaveEngine.Components.Graphics3D.CubeMesh0©+WaveEngine.Components.Graphics3D.CustomMesh2™-WaveEngine.Components.Graphics3D.CylinderMesh.´)WaveEngine.Components.Graphics3D.FileMesh2¨-WaveEngine.Components.Primitives.LineMeshBase/≠*WaveEngine.Components.Graphics3D.PlaneMesh1Æ,WaveEngine.Components.Graphics3D.PyramidMesh0Ø+WaveEngine.Components.Graphics3D.SphereMesh0∞+WaveEngine.Components.Graphics3D.TeapotMesh/±*WaveEngine.Components.Graphics3D.TorusMesh
+{
+&WaveEngine.Common.Graphics.MeshContentBoundingBoxMorphTargetCountMorphTargetWeightsNameSkin
+j
+,WaveEngine.Framework.Models.Assets.MeshModelMaterialIndexNameNumFacesNumVertices
+/
+-WaveEngine.Components.Graphics3D.MeshRenderer
+›
+2WaveEngine.Framework.Models.Assets.ModelAssetModel	ClipsEmbeddedResourcesExportAnimationsGenerateTangentSpace	Materials
+Meshes	NodesSourceAnimationTracks	SwapWindingOrder
+ë
+5WaveEngine.Framework.Models.Assets.ModelMaterialModelAmbientColorAmbientTextureFileDiffuseColorDiffuseTextureFileEmissiveColorEmissiveTextureFileNameNormalTextureFile	Opacity
+SpecularColorSpecularTextureFile
+8
+6WaveEngine.Framework.Models.Profiles.ModelProfileModel
+E
+&WaveEngine.ImageEffects.MotionBlurLens
+BlurLengthQuality
+j
++WaveEngine.Framework.Physics2D.MouseJoint2DdampingRatiofrequencyHzmaxForce
+target
+ù
+&WaveEngine.Common.Graphics.NodeContentChildIndicesMeshMorphTargetWeightsNameOrientation	ScaleSkinTranslation
+à
+,WaveEngine.Framework.Models.Assets.NodeModelChildren
+MeshesNameOrientation
+ParentPosition	Scale
+[
+AWaveEngine.Framework.Models.Settings.Categories.OptimizationsDataUseBinaryResources
+‹
+0WaveEngine.Components.Particles.ParticleSystem2DAlphaEnabled
+BouncinessCollisionBehaviorCollisionBottomCollisionLeftCollisionRightCollisionSpreadCollisionTop	CollisionType
+EmitEmitRateEmitterShapeEmitterSizeEndDeltaScaleGravityInitialAngleInitialAngleVariationInterpolationColorsLinearColorEnabledLocalVelocityMaxColorMaxLifeMaxRotateSpeedMaxSizeMinColorMinLifeMinRotateSpeedMinSizeNumParticlesRandomVelocitySortEnabled
+ô
+0WaveEngine.Components.Particles.ParticleSystem3DAlphaEnabled
+BouncinessCollisionBehaviorCollisionMaxCollisionMinCollisionSpreadCollisionTypeEmit	EmitRate
+EmitterShapeEmitterSizeendDeltaScaleEndDeltaScaleGravityInitialAngleInterpolationColorsLinearColorEnabledLocalVelocityMaxColorMaxLifeMaxRotateSpeedMaxSizeMinColorMinLifeMinRotateSpeedMinSizenumParticlesRandomVelocity
+;
+9WaveEngine.Components.Graphics2D.ParticleSystemRenderer2D
+;
+9WaveEngine.Components.Graphics3D.ParticleSystemRenderer3D
+Î
++WaveEngine.Framework.Physics3D.PhysicBody3DCcdMotionThresholdCcdSweptSphereRadiusCollisionCategoriesFrictionIsSensorMaskBitsRestitutionRollingFrictionà≥ÇWaveEngine.Framework.Physics3D.PhysicBody3D`2[WaveEngine.Common.Physics3D.IGhostBody3D,WaveEngine.Common.Physics3D.GhostBodyDef3D]à¥ÇWaveEngine.Framework.Physics3D.PhysicBody3D`2[WaveEngine.Common.Physics3D.IRigidBody3D,WaveEngine.Common.Physics3D.RigidBodyDef3D]äµÑWaveEngine.Framework.Physics3D.PhysicBody3D`2[WaveEngine.Common.Physics3D.IStaticBody3D,WaveEngine.Common.Physics3D.StaticBodyDef3D]
+n
+>WaveEngine.Framework.Models.Settings.Categories.PhysicCategory
+AllowSleep	Gravity2D	Gravity3D
+5
+$WaveEngine.ImageEffects.PixelateLens	PixelSize
+1
+WaveEngine.Common.Math.PlaneD
+Normal
+ù
+*WaveEngine.Components.Graphics3D.PlaneMesh
+Height
+NormalTwoSides	UTileUVHorizontalFlipUVVerticalFlip	Width	YTile
+,
+WaveEngine.Common.Math.PointXY
+*
+(WaveEngine.Framework.Graphics.PointLight
+D
+2WaveEngine.Framework.Graphics.PointLightProperties
+LightRange
+2
+0WaveEngine.Framework.Graphics.PointLightRenderer
+q
+2WaveEngine.Framework.Physics3D.PointToPointJoint3D
+anchorAutoConfigureConnectedconnectedAnchor
+°
+0WaveEngine.Framework.Physics2D.PolygonCollider2DdetectHolesinternalDatarotationOffsetsizeTexturePath	thresholdvertices
+?
+/WaveEngine.Framework.Physics2D.PolygonShapeDataVertices
+?
+%WaveEngine.ImageEffects.PosterizeLens	GammaRegions
+±
+8WaveEngine.Framework.Models.Entities.PrefabInstanceModelAdditionalComponentsmodifiedProperties
+PrefabElemPrefabId
+PrefabPathRemovedComponents
+U
+.WaveEngine.Framework.Models.Assets.PrefabModelEntityModelEntityPointers
+∆
+/WaveEngine.Framework.Physics2D.PrismaticJoint2D	axisAngleenableLimitsenableMotorlowerTranslationmaxMotorForce
+motorSpeedreferenceAngleupperTranslation
+è
+(WaveEngine.Framework.Models.ProfileModelAlphaCompressionFormatLauncherTypeNameNonAlphaCompressionFormatPlatform
+L
+<WaveEngine.Framework.Models.Settings.Categories.ProfilesDataProfiles
+{
+(WaveEngine.Framework.Models.ProjectModelGameInfoPathResourcesPathSettingsVersionWaveVersion
+6
+4WaveEngine.Framework.Models.Settings.ProjectSettings
+8
+,WaveEngine.Components.Graphics3D.PyramidMeshSize
+M
+-WaveEngine.Components.Graphics2D.QuadRenderer	texcoord1	texcoord2
+?
+!WaveEngine.Common.Math.QuaternionWXYZ
+Q
+&WaveEngine.ImageEffects.RadialBlurLens	BlurWidth
+CenterNsamples
+Ú
+5WaveEngine.Common.Graphics.RasterizerStateDescriptionAntialiasedLineEnableCullMode	DepthBiasDepthBiasClampDepthClipEnableFillModeFrontCounterClockwiseMultisampleEnable	SlopeScaledDepthBias
+9
+WaveEngine.Common.Math.Ray	DirectionPosition
+W
+)WaveEngine.Framework.Physics3D.RayEmitterAllDistance	ForceMask
+G
+ WaveEngine.Common.Math.Rectangle
+Height	WidthXY
+R
+2WaveEngine.Framework.Physics2D.RectangleCollider2DrotationOffsetsize
+H
+!WaveEngine.Common.Math.RectangleF
+Height	WidthXY
+:
+)WaveEngine.Framework.Graphics.RenderLayer	IsVisible
+S
+?WaveEngine.Framework.Models.Settings.Categories.RenderLayerDataRenderLayers
+Æ
+1WaveEngine.Common.Graphics.RenderLayerDescription	blendMode
+DepthRangedepthStencilModeId
+IsGUILayerNamerasterizeModerenderState
+
+1WaveEngine.Common.Graphics.RenderStateDescription
+BlendState
+DepthRangeDepthStencilStateRasterizerState
+)
+'WaveEngine.Common.Graphics.RenderTarget
+´
+.WaveEngine.Framework.Physics2D.RevoluteJoint2DenableLimitsenableMotor
+lowerAnglemaxMotorTorque
+motorSpeedreferenceAngle
+upperAngle
+ﬁ
+*WaveEngine.Framework.Physics2D.RigidBody2D
+AllowSleepAngularDampingAngularVelocity	AwakeFixedRotationGravityScaleIsBulletLinearDamping	LinearVelocity
+PhysicBodyType
+·
+*WaveEngine.Framework.Physics3D.RigidBody3DAngularDampingAngularFactorAngularVelocityGravityLinearDampingLinearFactorLinearVelocityMass	OverrideGravity
+PhysicBodyType
+;
+*WaveEngine.Framework.Physics2D.RopeJoint2D	maxLength
+–
+2WaveEngine.Common.Graphics.SamplerStateDescriptionAddressUAddressVAddressWBorderColorVectorComparisonFunc
+FilterMaxAnisotropy
+MaxLOD
+	MinLOD
+
+MipLODBias
+I
+%WaveEngine.ImageEffects.ScanlinesLensAttenuationLinesFactor
+X
+&WaveEngine.Framework.Models.SceneModelEntitiesEntityPointersSettings
+F
+DWaveEngine.Framework.Models.Settings.Categories.SceneRenderLayerData
+4
+2WaveEngine.Framework.Models.Settings.SceneSettings
+F
+)WaveEngine.ImageEffects.ScreenOverlayLensModeTexturePath
+Å
+!WaveEngine.ImageEffects.SepiaLensDarkToneDesaturationGlobalAlphaGreyTransfer	ImageTone
+Toning
+≤
+'WaveEngine.Common.IO.SerializableObject3/WaveEngine.Framework.Models.Assets.AssetElement)%WaveEngine.Framework.DependencyObject%<!WaveEngine.Common.Graphics.Effect;?7WaveEngine.Framework.Models.Profiles.AnimationClipModel5A1WaveEngine.Common.Graphics.RenderLayerDescription5B1WaveEngine.Common.Graphics.RenderStateDescriptionDWaveEngine.Common.Service6F2WaveEngine.Framework.Graphics.SpriteSheetAnimation
+C
+WaveEngine.Common.Service&E"WaveEngine.Common.UpdatableService
+P
+<WaveEngine.Framework.Models.Settings.Categories.ServicesDataServiceItems
+>
+1WaveEngine.Framework.Physics3D.SetCollisionEvents	Clear
+R
+/WaveEngine.Common.Graphics.SkeletonJointContentInverseBindPose
+NodeId
+M
+&WaveEngine.Common.Graphics.SkinContent
+JointsName	RootJoint
+~
+4WaveEngine.Components.Graphics3D.SkinnedMeshRenderer
+jointPathsmorphTargetWeightsQualityrootJointPath
+H
+$WaveEngine.Framework.Graphics.SkyboxCubemapPathOrientation
+®
+,WaveEngine.Framework.Physics3D.SliderJoint3D
+anchorAutoConfigureConnectedaxisconnectedAnchorconnectedAxislowerAngularLimitlowerLinearLimitmaxAngularMotorForce	maxLinearMotorForce
+targetAngularMotorVelocitytargetLinearMotorVelocityupperAngularLimitupperLinearLimituseAngularLimitsuseAngularMotoruseLinearLimitsuseLinearMotor
+>
+!WaveEngine.ImageEffects.SobelLens
+Effect	Threshold
+ô
+)WaveEngine.Framework.Sound.SoundEmitter3DDistanceScaleDopplerScaleIsMutedLoopPlayAutomatically	SoundPath
+Volume
+,
+*WaveEngine.Framework.Sound.SoundListener3D
+e
+-WaveEngine.Framework.Models.Assets.SoundModelBitsChannelsDuration
+SampleRate
+]
+6WaveEngine.Framework.Models.Profiles.SoundProfileModelAudioQualityChannelFormat
+=
+/WaveEngine.Framework.Physics3D.SphereCollider3D
+radius
+w
++WaveEngine.Components.Graphics3D.SphereMeshDiameterTessellationUVHorizontalFlipUVVerticalFlip
+B
+(WaveEngine.Components.Graphics3D.SpinnerAxisTotalIncreases
+)
+'WaveEngine.Framework.Graphics.SpotLight
+W
+1WaveEngine.Framework.Graphics.SpotLightPropertieslightConeAngle
+lightRange
+1
+/WaveEngine.Framework.Graphics.SpotLightRenderer
+
+,WaveEngine.Framework.Physics3D.SpringJoint3DequilibriumPointspringDampingspringEnabledspringStiffness
+É
+'WaveEngine.Components.Graphics2D.SpriteIsGlobalAssetmaterialPathSourceRectangletexturePath	TintColor
+v
+,WaveEngine.Components.Graphics2D.SpriteAtlasisGlobalAssetspriteSheetPathtextureName	TintColor
+6
+4WaveEngine.Components.Graphics2D.SpriteAtlasRenderer
+?
+/WaveEngine.Components.Graphics2D.SpriteRendererDrawMode
+`
+2WaveEngine.Framework.Graphics.SpriteSheetAnimation	FirstFramesPerSecond
+Length
+≤
+3WaveEngine.Framework.Models.Assets.SpriteSheetModel
+Animations	KeepOrder	MaxHeightMaxWidthPadding	ResourcesSpacing
+Static
+	Status
+g
+<WaveEngine.Framework.Models.Profiles.SpriteSheetProfileModelForceSquareRequiresPowerOfTwo
+f
+1WaveEngine.Framework.Graphics.SpriteSheetResourceNameOffsetXOffsetY	Rectangle
+r
+ WaveEngine.ImageEffects.SSAOLensAOIntensityDistanceThresholdDownSampleFactorFilterRadius
+¡
+%WaveEngine.Materials.StandardMaterial	AlphaambientColordiffuse1Pathdiffuse2PathdiffuseColor
+EffectModeemissiveColoremissivePath	EnvironmentAmount
+environmentPathFresnelFactorFresnelTermEnabled	IBLFactoriblPathLightingEnabled
+normalPathReferenceAlphaspecularPathSpecularPowerTexcoordOffset1TexcoordOffset2VertexColorEnable
+-
++WaveEngine.Framework.Physics3D.StaticBody3D
+R
+/WaveEngine.Framework.Physics3D.SweepTestEmitterAllDistanceMask
+å
+&WaveEngine.Components.Toolkit.TagalongMaxAngleMaxDistanceMinDistanceSmoothDistanceFactorSmoothPositionFactor
+I
++WaveEngine.Components.Graphics3D.TeapotMeshSizeTessellation
+C
+6WaveEngine.Framework.Physics3D.TestCharacterController	Speed
+C
+1WaveEngine.Framework.Physics3D.TestPointComponent
+ShapeIndex
+∏
++WaveEngine.Components.Toolkit.TextComponent	alphafontPath
+foregroundlineSpacing
+origin	scaletexttextAlignment	textWrapping	
+width
+.
+,WaveEngine.Components.Toolkit.TextRenderer2D
+;
+,WaveEngine.Components.Toolkit.TextRenderer3DLayerId
+Ç
+"WaveEngine.Common.Graphics.Texture	AssetPath	Faces
+Format
+Height
+LevelsType	Usage	Width
+v
+'WaveEngine.Framework.Graphics.Texture2DContentAreaHorizontalScalableAnchorsVerticalScalableAnchors
+˜
+/WaveEngine.Framework.Models.Assets.TextureModelAntialiasTypeGenerateMipMaps
+HeightNinePatchTypePremultipliedAlphasamplerModeSamplerState	Width7J3WaveEngine.Framework.Models.Assets.SpriteSheetModel
+ÿ
+8WaveEngine.Framework.Models.Profiles.TextureProfileModelOutputFormatScaledHeightScaledPercentageScaledWidthScalingType@I<WaveEngine.Framework.Models.Profiles.SpriteSheetProfileModel
+M
+!WaveEngine.Framework.UI.Thickness
+BottomLeft	RightTop
+Q
+"WaveEngine.ImageEffects.TilingLens	EdgeColorNumTiles
+Threshhold
+h
+%WaveEngine.ImageEffects.TiltShiftLens	BlurScaleDownSampleScale	PowerTiltPosition
+P
+'WaveEngine.ImageEffects.ToneMappingLensExposure	GammaOperator
+[
+*WaveEngine.Components.Graphics3D.TorusMeshDiameterTessellation	Thickness
+ò
+,WaveEngine.Components.Gestures.TouchGesturesEnabledGesturesManualTouchOrderMaxScaleMinScaleProjectCamera
+TouchOrder
+Ü
+)WaveEngine.Framework.Graphics.Transform2D
+effectOpacity
+origin	RectanglescreenPositiontransformMode
+î
+)WaveEngine.Framework.Graphics.Transform3DLocalOrientationLocalPosition
+LocalScale.£)WaveEngine.Framework.Graphics.Transform2D
+0
+.WaveEngine.Framework.Physics3D.TriggerVolume3D
+$
+"WaveEngine.Common.UpdatableService
+.
+WaveEngine.Common.Math.Vector2XY
+5
+WaveEngine.Common.Math.Vector3XYZ
+<
+WaveEngine.Common.Math.Vector4WXYZ
+,
+*WaveEngine.Components.Cameras.ViewCamera3D
+G
+2WaveEngine.Components.Cameras.ViewCamera3DBehaviorRotationSpeed
+J
+#WaveEngine.Common.Graphics.Viewport
+Height	WidthXY
+ä
+@WaveEngine.Framework.Models.Settings.Categories.ViewportCategoryEnabled
+ExpandModeVirtualHeightVirtualWidth
+<
+$WaveEngine.ImageEffects.VignetteLens	Power	Radio
+
+2WaveEngine.Framework.Managers.VirtualScreenManagerEnabled
+ExpandStretchVirtualHeightVirtualWidth
+ë
+$WaveEngine.Components.VR.VRCameraRigbackgroundColor
+clearFlagsDisablefarPlane
+Monoscopic	nearPlane
+vrMode
+\
+%WaveEngine.Components.VR.VRControllerControllerIndexRoleTrackingLostMode
+%
+#WaveEngine.Components.VR.VRProvider
+c
+*WaveEngine.Framework.Physics2D.WeldJoint2DdampingRatiofrequencyHzreferenceAngle
+î
++WaveEngine.Framework.Physics2D.WheelJoint2D	axisAngledampingRatioenableMotorfrequencyHzmaxMotorTorque
+motorSpeed
+ë
+\WaveEngine.Framework.Physics3D.Collider3D`1[WaveEngine.Common.Physics3D.IBoxColliderShape3D]1∑,WaveEngine.Framework.Physics3D.BoxCollider3D
+ô
+`WaveEngine.Framework.Physics3D.Collider3D`1[WaveEngine.Common.Physics3D.ICapsuleColliderShape3D]5∏0WaveEngine.Framework.Physics3D.CapsuleCollider3D
+¿
+ÇWaveEngine.Framework.Physics3D.PhysicBody3D`2[WaveEngine.Common.Physics3D.IGhostBody3D,WaveEngine.Common.Physics3D.GhostBodyDef3D]9◊4WaveEngine.Framework.Physics3D.CharacterController3D
+ó
+iWaveEngine.Common.Curves.Curve`2[WaveEngine.Common.Graphics.Color,WaveEngine.Common.Curves.ColorKeyframe]	cacheSizeisCached	keyframes
+ç
+JWaveEngine.Common.Curves.CurveKeyframe`1[WaveEngine.Common.Graphics.Color]Lerp	Value*G&WaveEngine.Common.Curves.ColorKeyframe
+ì
+]WaveEngine.Framework.Physics3D.Collider3D`1[WaveEngine.Common.Physics3D.IConeColliderShape3D]2π-WaveEngine.Framework.Physics3D.ConeCollider3D
+≤
+áWaveEngine.Framework.Physics3D.Joint3D`2[WaveEngine.Common.Physics3D.IConeTwistJoint3D,WaveEngine.Common.Physics3D.ConeTwistJointDef3D]
+breakpointcollideConnectedconnectedEntityPathdebugDrawSizeisActiveneedsFeedback3y/WaveEngine.Framework.Physics3D.ConeTwistJoint3D
+õ
+aWaveEngine.Framework.Physics3D.Collider3D`1[WaveEngine.Common.Physics3D.ICylinderColliderShape3D]6∫1WaveEngine.Framework.Physics3D.CylinderCollider3D
+™
+ÖWaveEngine.Framework.Physics2D.Joint2D`2[WaveEngine.Common.Physics2D.IDistanceJoint2D,WaveEngine.Common.Physics2D.DistanceJointDef2D]
+anchor
+breakpointcollideConnectedconnectedAnchorconnectedEntityPathisActive2r.WaveEngine.Framework.Physics2D.DistanceJoint2D
+•
+WaveEngine.Framework.Physics3D.Joint3D`2[WaveEngine.Common.Physics3D.IFixedJoint3D,WaveEngine.Common.Physics3D.FixedJointDef3D]
+breakpointcollideConnectedconnectedEntityPathdebugDrawSizeisActiveneedsFeedback/z+WaveEngine.Framework.Physics3D.FixedJoint3D
+Ñ
+VWaveEngine.Common.Curves.Curve`2[System.Single,WaveEngine.Common.Curves.FloatKeyframe]	cacheSizeisCached	keyframes
+z
+7WaveEngine.Common.Curves.CurveKeyframe`1[System.Single]Lerp	Value*H&WaveEngine.Common.Curves.FloatKeyframe
+¢
+}WaveEngine.Framework.Physics3D.Joint3D`2[WaveEngine.Common.Physics3D.IGearJoint3D,WaveEngine.Common.Physics3D.GearJointDef3D]
+breakpointcollideConnectedconnectedEntityPathdebugDrawSizeisActiveneedsFeedback.{*WaveEngine.Framework.Physics3D.GearJoint3D
+∏
+ûWaveEngine.Framework.Physics3D.GenericAbstract6DofJoint3D`2[WaveEngine.Common.Physics3D.IGeneric6DofJoint3D,WaveEngine.Common.Physics3D.Generic6DofJointDef3D]
+anchorAutoConfigureConnectedaxisconnectedAnchorconnectedAxislowerAngularLimitlowerLinearLimitupperAngularLimit	upperLinearLimit
+useAngularLimitsuseLinearLimits6—1WaveEngine.Framework.Physics3D.Generic6DofJoint3D
+•
+WaveEngine.Framework.Physics3D.Joint3D`2[WaveEngine.Common.Physics3D.IHingeJoint3D,WaveEngine.Common.Physics3D.HingeJointDef3D]
+breakpointcollideConnectedconnectedEntityPathdebugDrawSizeisActiveneedsFeedback/|+WaveEngine.Framework.Physics3D.HingeJoint3D
+ì
+]WaveEngine.Framework.Physics3D.Collider3D`1[WaveEngine.Common.Physics3D.IMeshColliderShape3D]2ª-WaveEngine.Framework.Physics3D.MeshCollider3D
+†
+WaveEngine.Framework.Physics2D.Joint2D`2[WaveEngine.Common.Physics2D.IMouseJoint2D,WaveEngine.Common.Physics2D.MouseJointDef2D]
+anchor
+breakpointcollideConnectedconnectedAnchorconnectedEntityPathisActive/s+WaveEngine.Framework.Physics2D.MouseJoint2D
+ª
+çWaveEngine.Framework.Physics3D.Joint3D`2[WaveEngine.Common.Physics3D.IPointToPointJoint3D,WaveEngine.Common.Physics3D.PointToPointJointDef3D]
+breakpointcollideConnectedconnectedEntityPathdebugDrawSizeisActiveneedsFeedback6}2WaveEngine.Framework.Physics3D.PointToPointJoint3D
+≠
+áWaveEngine.Framework.Physics2D.Joint2D`2[WaveEngine.Common.Physics2D.IPrismaticJoint2D,WaveEngine.Common.Physics2D.PrismaticJointDef2D]
+anchor
+breakpointcollideConnectedconnectedAnchorconnectedEntityPathisActive3t/WaveEngine.Framework.Physics2D.PrismaticJoint2D
+™
+ÖWaveEngine.Framework.Physics2D.Joint2D`2[WaveEngine.Common.Physics2D.IRevoluteJoint2D,WaveEngine.Common.Physics2D.RevoluteJointDef2D]
+anchor
+breakpointcollideConnectedconnectedAnchorconnectedEntityPathisActive2u.WaveEngine.Framework.Physics2D.RevoluteJoint2D
+∂
+ÇWaveEngine.Framework.Physics3D.PhysicBody3D`2[WaveEngine.Common.Physics3D.IRigidBody3D,WaveEngine.Common.Physics3D.RigidBodyDef3D]/ÿ*WaveEngine.Framework.Physics3D.RigidBody3D
+ù
+}WaveEngine.Framework.Physics2D.Joint2D`2[WaveEngine.Common.Physics2D.IRopeJoint2D,WaveEngine.Common.Physics2D.RopeJointDef2D]
+anchor
+breakpointcollideConnectedconnectedAnchorconnectedEntityPathisActive.v*WaveEngine.Framework.Physics2D.RopeJoint2D
+©
+ÅWaveEngine.Framework.Physics3D.Joint3D`2[WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D]
+breakpointcollideConnectedconnectedEntityPathdebugDrawSizeisActiveneedsFeedback0~,WaveEngine.Framework.Physics3D.SliderJoint3D
+ó
+_WaveEngine.Framework.Physics3D.Collider3D`1[WaveEngine.Common.Physics3D.ISphereColliderShape3D]4º/WaveEngine.Framework.Physics3D.SphereCollider3D
+ø
+™WaveEngine.Framework.Physics3D.GenericAbstract6DofJoint3D`2[WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D,WaveEngine.Common.Physics3D.Generic6DofSpringJointDef3D]
+anchorAutoConfigureConnectedaxisconnectedAnchorconnectedAxislowerAngularLimitlowerLinearLimitupperAngularLimit	upperLinearLimit
+useAngularLimitsuseLinearLimits1“,WaveEngine.Framework.Physics3D.SpringJoint3D
+π
+ÑWaveEngine.Framework.Physics3D.PhysicBody3D`2[WaveEngine.Common.Physics3D.IStaticBody3D,WaveEngine.Common.Physics3D.StaticBodyDef3D]0Ÿ+WaveEngine.Framework.Physics3D.StaticBody3D
+ù
+}WaveEngine.Framework.Physics2D.Joint2D`2[WaveEngine.Common.Physics2D.IWeldJoint2D,WaveEngine.Common.Physics2D.WeldJointDef2D]
+anchor
+breakpointcollideConnectedconnectedAnchorconnectedEntityPathisActive.w*WaveEngine.Framework.Physics2D.WeldJoint2D
+†
+WaveEngine.Framework.Physics2D.Joint2D`2[WaveEngine.Common.Physics2D.IWheelJoint2D,WaveEngine.Common.Physics2D.WheelJointDef2D]
+anchor
+breakpointcollideConnectedconnectedAnchorconnectedEntityPathisActive/x+WaveEngine.Framework.Physics2D.WheelJoint2D
+ß
+ãWaveEngine.Framework.Physics3D.Joint3D`2[WaveEngine.Common.Physics3D.IGeneric6DofJoint3D,WaveEngine.Common.Physics3D.Generic6DofJointDef3D]
+breakpointcollideConnectedconnectedEntityPathdebugDrawSizeisActiveneedsFeedback£ûWaveEngine.Framework.Physics3D.GenericAbstract6DofJoint3D`2[WaveEngine.Common.Physics3D.IGeneric6DofJoint3D,WaveEngine.Common.Physics3D.Generic6DofJointDef3D]
+¿
+óWaveEngine.Framework.Physics3D.Joint3D`2[WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D,WaveEngine.Common.Physics3D.Generic6DofSpringJointDef3D]
+breakpointcollideConnectedconnectedEntityPathdebugDrawSizeisActiveneedsFeedback∞Ä™WaveEngine.Framework.Physics3D.GenericAbstract6DofJoint3D`2[WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D,WaveEngine.Common.Physics3D.Generic6DofSpringJointDef3D]
+”
+5WaveEngine.Framework.Models.Settings.ISettingCategoryEAWaveEngine.Framework.Models.Settings.Categories.OptimizationsDataB>WaveEngine.Framework.Models.Settings.Categories.PhysicCategory@<WaveEngine.Framework.Models.Settings.Categories.ProfilesDataC?WaveEngine.Framework.Models.Settings.Categories.RenderLayerDataHDWaveEngine.Framework.Models.Settings.Categories.SceneRenderLayerData@<WaveEngine.Framework.Models.Settings.Categories.ServicesDataD@WaveEngine.Framework.Models.Settings.Categories.ViewportCategory62WaveEngine.Framework.Managers.VirtualScreenManager
