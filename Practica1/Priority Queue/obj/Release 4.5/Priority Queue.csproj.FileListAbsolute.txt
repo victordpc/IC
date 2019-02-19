@@ -1,0 +1,6 @@
+C:\hlocal\High-Speed-Priority-Queue-for-C-Sharp-master\High-Speed-Priority-Queue-for-C-Sharp-master\Priority Queue\bin\Release\net45\Priority Queue.xml
+C:\hlocal\High-Speed-Priority-Queue-for-C-Sharp-master\High-Speed-Priority-Queue-for-C-Sharp-master\Priority Queue\bin\Release\net45\Priority Queue.dll
+C:\hlocal\High-Speed-Priority-Queue-for-C-Sharp-master\High-Speed-Priority-Queue-for-C-Sharp-master\Priority Queue\bin\Release\net45\Priority Queue.pdb
+C:\hlocal\High-Speed-Priority-Queue-for-C-Sharp-master\High-Speed-Priority-Queue-for-C-Sharp-master\Priority Queue\obj\Release 4.5\Priority Queue.csproj.CoreCompileInputs.cache
+C:\hlocal\High-Speed-Priority-Queue-for-C-Sharp-master\High-Speed-Priority-Queue-for-C-Sharp-master\Priority Queue\obj\Release 4.5\Priority Queue.dll
+C:\hlocal\High-Speed-Priority-Queue-for-C-Sharp-master\High-Speed-Priority-Queue-for-C-Sharp-master\Priority Queue\obj\Release 4.5\Priority Queue.pdb

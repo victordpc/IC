@@ -1,0 +1,12 @@
+C:\hlocal\High-Speed-Priority-Queue-for-C-Sharp-master\High-Speed-Priority-Queue-for-C-Sharp-master\Priority Queue\bin\Debug\Priority Queue.dll
+C:\hlocal\High-Speed-Priority-Queue-for-C-Sharp-master\High-Speed-Priority-Queue-for-C-Sharp-master\Priority Queue\bin\Debug\Priority Queue.pdb
+C:\hlocal\High-Speed-Priority-Queue-for-C-Sharp-master\High-Speed-Priority-Queue-for-C-Sharp-master\Priority Queue\obj\Debug\Priority Queue.csprojAssemblyReference.cache
+C:\hlocal\High-Speed-Priority-Queue-for-C-Sharp-master\High-Speed-Priority-Queue-for-C-Sharp-master\Priority Queue\obj\Debug\Priority Queue.csproj.CoreCompileInputs.cache
+C:\hlocal\High-Speed-Priority-Queue-for-C-Sharp-master\High-Speed-Priority-Queue-for-C-Sharp-master\Priority Queue\obj\Debug\Priority Queue.dll
+C:\hlocal\High-Speed-Priority-Queue-for-C-Sharp-master\High-Speed-Priority-Queue-for-C-Sharp-master\Priority Queue\obj\Debug\Priority Queue.pdb
+C:\hlocal\IC\Practica1\Priority Queue\bin\Debug\Priority Queue.dll
+C:\hlocal\IC\Practica1\Priority Queue\bin\Debug\Priority Queue.pdb
+C:\hlocal\IC\Practica1\Priority Queue\obj\Debug\Priority Queue.csprojAssemblyReference.cache
+C:\hlocal\IC\Practica1\Priority Queue\obj\Debug\Priority Queue.csproj.CoreCompileInputs.cache
+C:\hlocal\IC\Practica1\Priority Queue\obj\Debug\Priority Queue.dll
+C:\hlocal\IC\Practica1\Priority Queue\obj\Debug\Priority Queue.pdb
