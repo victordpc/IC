@@ -10,3 +10,5 @@ C:\hlocal\IC\Practica1\Priority Queue\obj\Debug\Priority Queue.csprojAssemblyRef
 C:\hlocal\IC\Practica1\Priority Queue\obj\Debug\Priority Queue.csproj.CoreCompileInputs.cache
 C:\hlocal\IC\Practica1\Priority Queue\obj\Debug\Priority Queue.dll
 C:\hlocal\IC\Practica1\Priority Queue\obj\Debug\Priority Queue.pdb
+C:\hlocal\IC\Practica1\packages\Priority Queue\Priority Queue.dll
+C:\hlocal\IC\Practica1\packages\Priority Queue\Priority Queue.pdb

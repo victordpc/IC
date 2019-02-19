@@ -1,0 +1,10 @@
+C:\hlocal\IC\Practica1\AEstrella\bin\Debug\Algoritmia.dll
+C:\hlocal\IC\Practica1\AEstrella\bin\Debug\Algoritmia.pdb
+C:\hlocal\IC\Practica1\AEstrella\bin\Debug\Priority Queue.dll
+C:\hlocal\IC\Practica1\AEstrella\bin\Debug\Priority Queue.pdb
+C:\hlocal\IC\Practica1\AEstrella\obj\Debug\Algoritmia.csprojAssemblyReference.cache
+C:\hlocal\IC\Practica1\AEstrella\obj\Debug\Algoritmia.csproj.CoreCompileInputs.cache
+C:\hlocal\IC\Practica1\AEstrella\obj\Debug\Algoritmia.dll
+C:\hlocal\IC\Practica1\AEstrella\obj\Debug\Algoritmia.pdb
+C:\hlocal\IC\Practica1\packages\Algoritmia\Algoritmia.dll
+C:\hlocal\IC\Practica1\packages\Algoritmia\Algoritmia.pdb

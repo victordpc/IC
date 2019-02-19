@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Algoritmia_5</name>
+    </assembly>
+    <members>
+        <member name="P:Algoritmia.Punto.Padre">
+            <summary>
+            Punto del mapa precedente en la ruta
+            </summary>
+        </member>
+        <member name="P:Algoritmia.Punto.X">
+            <summary>
+            Posición X en el plano
+            </summary>
+        </member>
+        <member name="P:Algoritmia.Punto.Y">
+            <summary>
+            Posicion Y en el plano
+            </summary>
+        </member>
+        <member name="P:Algoritmia.Punto.H">
+            <summary>
+             Coste según la función heurística hasta la meta 
+            </summary>
+        </member>
+        <member name="P:Algoritmia.Punto.G">
+            <summary>
+            Coste desde el inicio
+            </summary>
+        </member>
+        <member name="P:Algoritmia.Punto.F">
+            <summary>
+            Suma de las funciones g y h
+            </summary>
+        </member>
+        <member name="P:Algoritmia.Punto.Valor">
+            <summary>
+            Coste añadido de la casilla
+            </summary>
+        </member>
+        <member name="P:Algoritmia.Punto.Abierto">
+            <summary>
+            Indica si el nodo ya ha sido tratado
+            </summary>
+        </member>
+        <member name="P:Algoritmia.Punto.Permitido">
+            <summary>
+            Indica si está permitido usar el nodo
+            </summary>
+        </member>
+        <member name="M:Algoritmia.Punto.GetCoordenada">
+            <summary>
+            Devuelve la coordenada del punto en el mapa
+            </summary>
+            <returns>Objeto Coordenada con las transposición del punto en el mapa</returns>
+        </member>
+    </members>
+</doc>

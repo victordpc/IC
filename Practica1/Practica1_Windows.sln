@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica1", "Launchers\Wind
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Practica1Source", "SharedSource\Main\Practica1Source.shproj", "{846D34C8-E537-4DC7-B646-CFF649CE42E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algoritmia", "AEstrella\Algoritmia.csproj", "{9A079A93-44DF-4B44-AFE1-560E579716A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algoritmia", "Algoritmia\Algoritmia.csproj", "{9A079A93-44DF-4B44-AFE1-560E579716A8}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
