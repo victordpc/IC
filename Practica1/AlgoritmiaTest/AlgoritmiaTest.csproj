@@ -49,8 +49,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AEstrellaTests.cs" />
+    <Compile Include="AlgoritmiaTests.cs" />
     <Compile Include="CalculoTests.cs" />
+    <Compile Include="CoordenadaTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PuntoTests.cs" />
   </ItemGroup>
@@ -61,12 +62,12 @@
     <ProjectReference Include="..\Algoritmia\Algoritmia.csproj">
       <Project>{9a079a93-44df-4b44-afe1-560e579716a8}</Project>
       <Name>Algoritmia</Name>
-      <Private>False</Private>
+      <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\Priority Queue\Priority Queue.csproj">
       <Project>{1531c1ea-bd53-41d1-a34b-cfcdf79d2651}</Project>
       <Name>Priority Queue</Name>
-      <Private>False</Private>
+      <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

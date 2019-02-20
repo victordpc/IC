@@ -102,14 +102,14 @@ namespace Algoritmia
 
         public override string ToString()
         {
-            return "X: " + X.ToString() +
-                   " Y: " + Y.ToString() +
-                   " H: " + H.ToString() +
-                   " G: " + G.ToString() +
-                   " F: " + F.ToString() +
-                   " Valor: " + Valor.ToString() +
-                   " Abierto: " + Abierto.ToString() +
-                   " Permitido; " + Permitido.ToString();
+            return "X: " + X.ToString() +";"+
+                   " Y: " + Y.ToString() + ";" +
+                   " H: " + H.ToString() + ";" +
+                   " G: " + G.ToString() + ";" +
+                   " F: " + F.ToString() + ";" +
+                   " Valor: " + Valor.ToString() + ";" +
+                   " Abierto: " + Abierto.ToString() + ";" +
+                   " Permitido: " + Permitido.ToString()+";" ;
             
         }
     }

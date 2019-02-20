@@ -1,76 +1,40 @@
 ﻿using Priority_Queue;
-using System;
-using System.Collections.Generic;
 
 namespace Algoritmia
 {
-    public static class Algoritmia
-    {
-
-        public static AEstrellaResultado CalculoAEstrella(Coordenada inicio, Coordenada meta, Punto[,] mapa)
-        {
-            AEstrella aEstrella = new AEstrella(inicio, meta, mapa);
-            return aEstrella.Algoritmo();
-        }
-
-        public static AEstrellaResultado CalculoAEstrella(Coordenada inicio, Coordenada meta, Punto[,] mapa, params Coordenada[] waypoints)
-        {
-            AEstrellaResultado resultado = new AEstrellaResultado(new List<Coordenada>(), 0);
-            Coordenada[] puntos = new Coordenada[waypoints.Length + 2];
-
-            int i = 0;
-            puntos[i++] = inicio;
-            for (; i <= waypoints.Length; i++)
-            {
-                puntos[i] = waypoints[i - 1];
-            }
-            puntos[i] = meta;
-
-            i = 1;
-            for (; i < puntos.Length; i++)
-            {
-                AEstrella aEstrella = new AEstrella(puntos[i - 1], puntos[i], mapa);
-                AEstrellaResultado parcial = aEstrella.Algoritmo();
-                if (parcial.Camino==null)
-                {
-                    return new AEstrellaResultado(mapa, null, 0.0);
-                }
-                resultado.Coste += parcial.Coste;
-                resultado.Camino.AddRange(parcial.Camino);
-                aEstrella.LimpiarListas();
-            }
-            return resultado;
-        }
-
-    }
-
+    /// <summary>
+    /// Clase que implementa el algoritmo A*
+    /// </summary>
     internal class AEstrella : IAEstrella
     {
-        internal AEstrella(Coordenada inicio, Coordenada meta, Punto[,] mapa)
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="inicio">Punto de inicio</param>
+        /// <param name="meta">Punto de fin</param>
+        /// <param name="mapa">Mapa donde se ejecuta el algoritmo</param>
+        internal AEstrella(Coordenada inicio, Coordenada meta, bool movimientoDiagonal, bool movimientoOrtogonal, Punto[,] mapa)
         {
             Inicio = inicio;
             Meta = meta;
             Mapa = mapa;
             Abierta = new FastPriorityQueue<Punto>(mapa.Length);
             Waypoints = null;
+            MovimientoDiagonal = movimientoDiagonal;
+            MovimientoOrtogonal = movimientoOrtogonal;
         }
 
-
-        private Coordenada Inicio { get; set; }
-
-        private Coordenada Meta { get; set; }
-
-        private Punto[,] Mapa { get; set; }
-
-        private FastPriorityQueue<Punto> Abierta { get; set; }
-
-        private Coordenada[] Waypoints { get; set; }
-
-        public AEstrellaResultado Algoritmo()
+        /// <summary>
+        /// Llamada al algoritmo
+        /// </summary>
+        /// <returns>Objeto con el camino y el coste asociado</returns>
+        public override AEstrellaResultado Algoritmo()
         {
             AEstrellaResultado resultado = null;
+
             // Calculamos la heuristica entre el inicio y el final
             Mapa[Inicio.X, Inicio.Y].H = Calculo.Distancia(Inicio, Meta);
+
             // Agregamos el nodo inicio a la lista abierta
             Mapa[Inicio.X, Inicio.Y].Abierto = true;
             Abierta.Enqueue(Mapa[Inicio.X, Inicio.Y], Mapa[Inicio.X, Inicio.Y].F);
@@ -83,33 +47,10 @@ namespace Algoritmia
             return resultado;
         }
 
-        private AEstrellaResultado ProcesarResultado(Punto resultadoAlgoritmo)
-        {
-            AEstrellaResultado resultado;
-            if (resultadoAlgoritmo == null)
-            {
-                resultado = new AEstrellaResultado(Mapa, null, 0.0);
-            }
-            else
-            {
-                resultado = new AEstrellaResultado(Mapa, new List<Coordenada>(), resultadoAlgoritmo.F);
-                TratarCaminoResultado(resultadoAlgoritmo, resultado);
-            }
-            return resultado;
-        }
-
-        private static void TratarCaminoResultado(Punto resultadoAlgoritmo, AEstrellaResultado resultado)
-        {
-            Punto actual = resultadoAlgoritmo;
-            while (actual != null)
-            {
-                resultado.Camino.Add(actual.GetCoordenada());
-                actual = actual.Padre;
-            }
-            resultado.Camino.Reverse();
-
-        }
-
+        /// <summary>
+        /// Ejecución del algoritmo
+        /// </summary>
+        /// <returns>Punto del mapa al que se llega</returns>
         private Punto CalculoAlgoritmo()
         {
             Punto resultado;
@@ -126,59 +67,130 @@ namespace Algoritmia
                 resultado = Mapa[Meta.X, Meta.Y];
             else
             {
-
                 // Expansion del punto actual
-                for (int i = -1; i <= 1; i++)
+                if (MovimientoDiagonal && MovimientoOrtogonal)
+                    ExpansionConDiagonales(actual);
+                else
                 {
-                    if (actual.X + i >= 0 && actual.X + i < Mapa.GetLength(0))
-                    {
-                        for (int j = -1; j <= 1; j++)
-                        {
-                            if (actual.Y + j >= 0 && actual.Y + j < Mapa.GetLength(1))
-                            {
-                                if (Mapa[actual.X + i, actual.Y + j].Permitido)
-                                {
-                                    // Calculamos los costes de acceder
-                                    double coste = Calculo.Distancia(Mapa[actual.X, actual.Y], Mapa[actual.X + i, actual.Y + j]);
-
-                                    if (Mapa[actual.X + i, actual.Y + j].Abierto == true)// Actualizamos la lista abierta
-                                    {
-                                        if (Mapa[actual.X + i, actual.Y + j].G > Mapa[actual.X, actual.Y].G + coste) // Si el coste es menor
-                                        {
-                                            Mapa[actual.X + i, actual.Y + j].G = Mapa[actual.X, actual.Y].G + coste;
-                                            Mapa[actual.X + i, actual.Y + j].Padre = Mapa[actual.X, actual.Y];
-                                            Abierta.UpdatePriority(Mapa[actual.X + i, actual.Y + j], Mapa[actual.X + i, actual.Y + j].F);
-                                        }
-                                    }
-                                    else if (Mapa[actual.X + i, actual.Y + j].Abierto == null) // Agregamos a la lista abierta
-                                    {
-                                        Mapa[actual.X + i, actual.Y + j].Abierto = true;
-                                        Mapa[actual.X + i, actual.Y + j].G = Mapa[actual.X, actual.Y].G + coste;
-                                        Mapa[actual.X + i, actual.Y + j].H = Calculo.Distancia(Mapa[actual.X + i, actual.Y + j], Meta);
-                                        Mapa[actual.X + i, actual.Y + j].Padre = Mapa[actual.X, actual.Y];
-
-                                        Abierta.Enqueue(Mapa[actual.X + i, actual.Y + j], Mapa[actual.X + i, actual.Y + j].F);
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    if (MovimientoOrtogonal)
+                        ExpansionOrtogonal(actual);
+                    if (MovimientoDiagonal)
+                        ExpansionDiagonal(actual);
                 }
                 resultado = CalculoAlgoritmo();
             }
             return resultado;
         }
 
-        internal void LimpiarListas()
+        private void ExpansionConDiagonales(Punto actual)
         {
-            Abierta.Clear();
-            foreach (Punto item in Mapa)
+            for (int i = -1; i <= 1; i++)
             {
-                Abierta.ResetNode(item);
-                if (item.Abierto == true)
+                if (actual.X + i >= 0 && actual.X + i < Mapa.GetLength(0))
                 {
-                    item.Abierto = null;
+                    for (int j = -1; j <= 1; j++)
+                    {
+                        if (actual.Y + j >= 0 && actual.Y + j < Mapa.GetLength(1))
+                        {
+                            if (Mapa[actual.X + i, actual.Y + j].Permitido)
+                            {
+                                CostesYTratarNodos(actual, i, j);
+                            }
+                        }
+                    }
                 }
+            }
+        }
+
+        private void ExpansionOrtogonal(Punto actual)
+        {
+            for (int i = -1; i <= 1; i += 2)
+            {
+                if (actual.X + i >= 0 && actual.X + i < Mapa.GetLength(0))
+                {
+                    if (Mapa[actual.X + i, actual.Y].Permitido)
+                    {
+                        CostesYTratarNodos(actual, i, 0);
+                    }
+                }
+                if (actual.Y + i >= 0 && actual.Y + i < Mapa.GetLength(1))
+                {
+                    if (Mapa[actual.X, actual.Y + i].Permitido)
+                    {
+                        CostesYTratarNodos(actual, 0, i);
+                    }
+                }
+            }
+        }
+
+        private void ExpansionDiagonal(Punto actual)
+        {
+            for (int i = -1; i <= 1; i += 2)
+            {
+                if ((actual.X + i >= 0 && actual.X + i < Mapa.GetLength(0)) && (actual.Y + i >= 0 && actual.Y + i < Mapa.GetLength(1)))
+                {
+                    if (Mapa[actual.X + i, actual.Y + i].Permitido)
+                    {
+                        CostesYTratarNodos(actual, 0+i, 0+i);
+                    }
+                }
+                if ((actual.X + i >= 0 && actual.X + i < Mapa.GetLength(0)) && (actual.Y - i >= 0 && actual.Y - i < Mapa.GetLength(1)))
+                {
+                    if (Mapa[actual.X + i, actual.Y - i].Permitido)
+                    {
+                        CostesYTratarNodos(actual, 0+i, 0-i);
+                    }
+                }
+            }
+        }
+
+        private void CostesYTratarNodos(Punto actual, int i, int j)
+        {
+
+            // Calculamos los costes de acceder
+            double coste = Calculo.Distancia(Mapa[actual.X, actual.Y], Mapa[actual.X + i, actual.Y + j]);
+
+            if (Mapa[actual.X + i, actual.Y + j].Abierto == true)// Actualizamos la lista abierta
+            {
+                ReorientacionEnlaces(actual, i, j, coste);
+            }
+            else if (Mapa[actual.X + i, actual.Y + j].Abierto == null) // Agregamos a la lista abierta
+            {
+                NodoAAbierta(actual, i, j, coste);
+            }
+        }
+
+        /// <summary>
+        /// Pasa el nodo a la lista abierta
+        /// </summary>
+        /// <param name="actual">Punto donde está el algoritmo</param>
+        /// <param name="i">Incremento de la coordenada X</param>
+        /// <param name="j">Incremento de la coordenada Y</param>
+        /// <param name="coste">Coste del paso</param>
+        private void NodoAAbierta(Punto actual, int i, int j, double coste)
+        {
+            Mapa[actual.X + i, actual.Y + j].Abierto = true;
+            Mapa[actual.X + i, actual.Y + j].G = Mapa[actual.X, actual.Y].G + coste;
+            Mapa[actual.X + i, actual.Y + j].H = Calculo.Distancia(Mapa[actual.X + i, actual.Y + j], Meta);
+            Mapa[actual.X + i, actual.Y + j].Padre = Mapa[actual.X, actual.Y];
+
+            Abierta.Enqueue(Mapa[actual.X + i, actual.Y + j], Mapa[actual.X + i, actual.Y + j].F);
+        }
+
+        /// <summary>
+        /// Reorienta el enlace del nodo
+        /// </summary>
+        /// <param name="actual">Punto donde está el algoritmo</param>
+        /// <param name="i">Incremento de la coordenada X</param>
+        /// <param name="j">Incremento de la coordenada Y</param>
+        /// <param name="coste">Coste del paso</param>
+        private void ReorientacionEnlaces(Punto actual, int i, int j, double coste)
+        {
+            if (Mapa[actual.X + i, actual.Y + j].G > Mapa[actual.X, actual.Y].G + coste) // Si el coste es menor
+            {
+                Mapa[actual.X + i, actual.Y + j].G = Mapa[actual.X, actual.Y].G + coste;
+                Mapa[actual.X + i, actual.Y + j].Padre = Mapa[actual.X, actual.Y];
+                Abierta.UpdatePriority(Mapa[actual.X + i, actual.Y + j], Mapa[actual.X + i, actual.Y + j].F);
             }
         }
     }
