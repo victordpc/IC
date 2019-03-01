@@ -1,0 +1,10 @@
+C:\hlocal\IC\Practica1\Practica1_UI\bin\Debug\Practica1_UI.exe.config
+C:\hlocal\IC\Practica1\Practica1_UI\bin\Debug\Practica1_UI.exe
+C:\hlocal\IC\Practica1\Practica1_UI\bin\Debug\Practica1_UI.pdb
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Debug\Practica1_UI.csprojAssemblyReference.cache
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Debug\Practica1_UI.Form1.resources
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Debug\Practica1_UI.Properties.Resources.resources
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Debug\Practica1_UI.csproj.GenerateResource.cache
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Debug\Practica1_UI.csproj.CoreCompileInputs.cache
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Debug\Practica1_UI.exe
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Debug\Practica1_UI.pdb
