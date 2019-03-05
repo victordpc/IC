@@ -8,3 +8,14 @@ C:\hlocal\IC\Practica1\Practica1_UI\obj\Debug\Practica1_UI.csproj.GenerateResour
 C:\hlocal\IC\Practica1\Practica1_UI\obj\Debug\Practica1_UI.csproj.CoreCompileInputs.cache
 C:\hlocal\IC\Practica1\Practica1_UI\obj\Debug\Practica1_UI.exe
 C:\hlocal\IC\Practica1\Practica1_UI\obj\Debug\Practica1_UI.pdb
+C:\hlocal\IC\Practica1\Practica1_UI\bin\Debug\es-ES\Practica1_UI.resources.dll
+C:\hlocal\IC\Practica1\Practica1_UI\bin\Debug\es-PH\Practica1_UI.resources.dll
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Debug\Practica1_UI.Form1.es-ES.resources
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Debug\Practica1_UI.Form1.es-PH.resources
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Debug\es-ES\Practica1_UI.resources.dll
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Debug\es-PH\Practica1_UI.resources.dll
+C:\hlocal\IC\Practica1\Practica1_UI\bin\Debug\Algoritmia.dll
+C:\hlocal\IC\Practica1\Practica1_UI\bin\Debug\Priority Queue.dll
+C:\hlocal\IC\Practica1\Practica1_UI\bin\Debug\Algoritmia.pdb
+C:\hlocal\IC\Practica1\Practica1_UI\bin\Debug\Priority Queue.pdb
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Debug\Practica1_UI.csproj.CopyComplete

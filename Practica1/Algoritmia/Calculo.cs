@@ -2,7 +2,7 @@
 
 namespace Algoritmia
 {
-    public static class Calculo
+    internal static class Calculo
     {
         public static double Distancia(Punto A, Punto B)
         {

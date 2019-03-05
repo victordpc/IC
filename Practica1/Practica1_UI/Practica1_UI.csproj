@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Algoritmia">
+      <HintPath>..\packages\Algoritmia\Algoritmia.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -54,6 +57,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.es-ES.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.es-PH.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +103,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hierba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llegada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rover2_agua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rover2_hierba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rover2_roca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waypoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rover2_llegada.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

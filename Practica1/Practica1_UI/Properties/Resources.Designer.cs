@@ -63,9 +63,39 @@ namespace Practica1_UI.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap agua {
+            get {
+                object obj = ResourceManager.GetObject("agua", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hierba {
             get {
                 object obj = ResourceManager.GetObject("hierba", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap llegada {
+            get {
+                object obj = ResourceManager.GetObject("llegada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap roca {
+            get {
+                object obj = ResourceManager.GetObject("roca", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,6 +123,46 @@ namespace Practica1_UI.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rover2_agua {
+            get {
+                object obj = ResourceManager.GetObject("rover2_agua", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rover2_hierba {
+            get {
+                object obj = ResourceManager.GetObject("rover2_hierba", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rover2_llegada {
+            get {
+                object obj = ResourceManager.GetObject("rover2_llegada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rover2_roca {
+            get {
+                object obj = ResourceManager.GetObject("rover2_roca", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rover3 {
             get {
                 object obj = ResourceManager.GetObject("rover3", resourceCulture);
@@ -106,6 +176,16 @@ namespace Practica1_UI.Properties {
         internal static System.Drawing.Bitmap rover4 {
             get {
                 object obj = ResourceManager.GetObject("rover4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap waypoint {
+            get {
+                object obj = ResourceManager.GetObject("waypoint", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
