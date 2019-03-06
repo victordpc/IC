@@ -2,7 +2,7 @@
 
 namespace Algoritmia
 {
-    internal static class Calculo
+    public static class Calculo
     {
         public static double Distancia(Punto A, Punto B)
         {
@@ -24,5 +24,4 @@ namespace Algoritmia
             return Math.Sqrt(Math.Pow(A.X - B.X, 2) + Math.Pow(A.Y - B.Y, 2));
         }
     }
-
 }
