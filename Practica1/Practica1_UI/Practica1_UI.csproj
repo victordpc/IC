@@ -57,12 +57,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.es-ES.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.es-PH.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,16 +84,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\rover1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\rover2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rover3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rover4.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hierba.png" />
@@ -127,6 +112,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\rover2_llegada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rover2_waypoint.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

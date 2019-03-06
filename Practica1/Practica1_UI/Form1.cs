@@ -14,9 +14,12 @@ namespace Practica1_UI
     {
         private int _inicio;
         private int _meta;
-        private Algoritmia.AEstrellaResultado resultado = null;
-        private Algoritmia.Punto[,] mapa = null;
-        private List<Algoritmia.Coordenada> waypoints = null;
+        private Algoritmia.AEstrellaResultado _resultado = null;
+        private int _pasos;
+        private int _actual;
+        private double _coste;
+        private Algoritmia.Punto[,] _mapa = null;
+        private List<Algoritmia.Coordenada> _waypoints = null;
 
         public Form1()
         {
@@ -25,12 +28,16 @@ namespace Practica1_UI
             MarcarMovimiento();
             _inicio = 0;
             _meta = 0;
-            waypoints = new List<Algoritmia.Coordenada>();
-            mapa = new Algoritmia.Punto[tableLayoutPanel1.ColumnCount, tableLayoutPanel1.RowCount];
-            for (int i = 0; i < tableLayoutPanel1.ColumnCount; i++)
-                for (int j = 0; j < tableLayoutPanel1.RowCount; j++)
-                    mapa[i, j] = new Algoritmia.Punto(i, j);
-
+            _pasos = 0;
+            _actual = 0;
+            _waypoints = new List<Algoritmia.Coordenada>();
+            _mapa = new Algoritmia.Punto[tableLayoutPanel1.ColumnCount-1, tableLayoutPanel1.RowCount-1];
+            for (int i = 0; i < tableLayoutPanel1.ColumnCount-1; i++)
+                for (int j = 0; j < tableLayoutPanel1.RowCount-1; j++)
+                {
+                    _mapa[i, j] = new Algoritmia.Punto(i, j);
+                    ((PictureBox)tableLayoutPanel1.GetControlFromPosition(i, j)).Tag = 0;
+                }
             ResumeLayout();
         }
 
@@ -53,22 +60,23 @@ namespace Practica1_UI
             if (listView1.SelectedItems.Count == 1)
             {
                 int indiceImagen = listView1.FocusedItem.ImageIndex;
+                ((PictureBox)sender).Tag = indiceImagen;
                 ((PictureBox)sender).Image = terrenos2.Images[indiceImagen];
                 int i = tableLayoutPanel1.GetColumn((PictureBox)sender);
                 int j = tableLayoutPanel1.GetRow((PictureBox)sender);
 
-                Algoritmia.Punto seleccionado = mapa[i, j];
+                Algoritmia.Punto seleccionado = _mapa[i, j];
 
                 seleccionado.Permitido = true;
 
                 // Si la celda que borramos era un way point la quitamos de la lista
                 if (seleccionado.Valor == 6) // Way Point
-                { waypoints.Remove(new Algoritmia.Coordenada() { X = i, Y = j }); }
+                { _waypoints.Remove(new Algoritmia.Coordenada() { X = i, Y = j }); }
 
                 if (indiceImagen == 3) // Nucelar
                 { seleccionado.Permitido = false; }
                 else if (indiceImagen == 6) // // Way Point
-                { waypoints.Add(new Algoritmia.Coordenada() { X = i, Y = j }); }
+                { _waypoints.Add(new Algoritmia.Coordenada() { X = i, Y = j }); }
 
                 seleccionado.Valor = indiceImagen;
             }
@@ -76,23 +84,35 @@ namespace Practica1_UI
 
         private void reset_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < tableLayoutPanel1.ColumnCount; i++)
+            for (int i = 0; i < tableLayoutPanel1.ColumnCount-1; i++)
             {
-                for (int j = 0; j < tableLayoutPanel1.RowCount; j++)
+                for (int j = 0; j < tableLayoutPanel1.RowCount-1; j++)
                 {
+                    ((PictureBox)tableLayoutPanel1.GetControlFromPosition(i, j)).Tag = 0;
                     ((PictureBox)tableLayoutPanel1.GetControlFromPosition(i, j)).Image
                         = global::Practica1_UI.Properties.Resources.hierba;
-                    mapa[i, j].Valor = 0;
-                    mapa[i, j].Permitido = true;
+                    _mapa[i, j] = new Algoritmia.Punto(i, j);
                 }
             }
+            LimpiarLocales();
+            btnStart.Enabled = true;
+        }
+
+        private void LimpiarLocales()
+        {
             _inicio = 0;
             _meta = 0;
-            waypoints = new List<Algoritmia.Coordenada>();
+            _pasos = 0;
+            _actual = 0;
+            _waypoints = new List<Algoritmia.Coordenada>();
         }
 
         private void start_Click(object sender, EventArgs e)
         {
+            btnStart.Enabled = false;
+
+            LimpiarLocales();
+
             Algoritmia.Coordenada inicio = null;
             Algoritmia.Coordenada meta = null;
 
@@ -106,14 +126,14 @@ namespace Practica1_UI
             nadar = movimientosRover.GetItemChecked(2);
             escalar = movimientosRover.GetItemChecked(3);
 
-            for (int i = 0; i < tableLayoutPanel1.ColumnCount; i++)
-                for (int j = 0; j < tableLayoutPanel1.RowCount; j++)
-                    if (mapa[i, j].Valor == 4)
+            for (int i = 0; i < tableLayoutPanel1.ColumnCount-1; i++)
+                for (int j = 0; j < tableLayoutPanel1.RowCount-1; j++)
+                    if (_mapa[i, j].Valor == 4)
                     {
                         _inicio++;
                         inicio = new Algoritmia.Coordenada() { X = i, Y = j };
                     }
-                    else if (mapa[i, j].Valor == 5)
+                    else if (_mapa[i, j].Valor == 5)
                     {
                         _meta++;
                         meta = new Algoritmia.Coordenada() { X = i, Y = j };
@@ -124,7 +144,17 @@ namespace Practica1_UI
             {
                 if (ortogonal || diagonal)
                 {
-                    resultado = Algoritmia.Algoritmia.CalculoAEstrella(inicio, meta, diagonal, ortogonal, nadar, escalar, mapa, waypoints.ToArray());
+                    _resultado = Algoritmia.Algoritmia.CalculoAEstrella(inicio, meta, diagonal, ortogonal, nadar, escalar, _mapa, _waypoints.ToArray());
+
+                    if (_resultado.Coste > 0)
+                    {
+                        _pasos = _resultado.Camino.Count();
+                        _actual = 0;
+                        _coste = _resultado.Coste;
+                        timer1.Start();
+                    }else
+                        MessageBox.Show("No se ha encontrado una ruta.");
+
                 }
                 else
                 {
@@ -134,5 +164,53 @@ namespace Practica1_UI
             else
                 MessageBox.Show("Debe seleccionar un único inicio y fin para el recorrido.");
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            // Obtenemos el paso
+            Algoritmia.Coordenada paso = _resultado.Camino[_actual];
+
+            //Vemos que celda tiene el siguiente paso
+            PictureBox celda = (PictureBox)tableLayoutPanel1.GetControlFromPosition(paso.X, paso.Y);
+            int indice = (int)celda.Tag;
+
+            //Ponemos la imagen que corresponda
+            switch (indice)
+            {
+                case (int)Siguiente.Agua:
+                    celda.Image = global::Practica1_UI.Properties.Resources.rover2_agua;
+                    break;
+                case (int)Siguiente.Roca:
+                    celda.Image = global::Practica1_UI.Properties.Resources.rover2_roca;
+                    break;
+                case (int)Siguiente.Fin:
+                    celda.Image = global::Practica1_UI.Properties.Resources.rover2_llegada;
+                    break;
+                case (int)Siguiente.WayPoint:
+                    celda.Image = global::Practica1_UI.Properties.Resources.rover2_waypoint;
+                    break;
+                default:
+                    celda.Image = global::Practica1_UI.Properties.Resources.rover2_hierba;
+                    break;
+            }
+
+            // Incrementamos el contador
+            _actual++;
+
+            if (_actual >= _pasos)
+            {
+                timer1.Stop();
+                MessageBox.Show(String.Format("Camino encontrado con {0} pasos y coste {1}.", _pasos,_coste),"Camino encontrado",MessageBoxButtons.OK,MessageBoxIcon.None);
+            }
+        }
+    }
+
+    enum Siguiente
+    {
+        Hierba = 0,
+        Agua = 1,
+        Roca = 2,
+        Fin = 5,
+        WayPoint = 6,
     }
 }

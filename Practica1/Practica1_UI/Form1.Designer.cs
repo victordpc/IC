@@ -34,47 +34,14 @@
             this.terrenos2 = new System.Windows.Forms.ImageList(this.components);
             this.terrenos = new System.Windows.Forms.ImageList(this.components);
             this.rovers = new System.Windows.Forms.ImageList(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.movimientosRover = new System.Windows.Forms.CheckedListBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox187 = new System.Windows.Forms.PictureBox();
-            this.pictureBox186 = new System.Windows.Forms.PictureBox();
-            this.pictureBox185 = new System.Windows.Forms.PictureBox();
-            this.pictureBox184 = new System.Windows.Forms.PictureBox();
-            this.pictureBox183 = new System.Windows.Forms.PictureBox();
-            this.pictureBox181 = new System.Windows.Forms.PictureBox();
-            this.pictureBox180 = new System.Windows.Forms.PictureBox();
-            this.pictureBox179 = new System.Windows.Forms.PictureBox();
-            this.pictureBox178 = new System.Windows.Forms.PictureBox();
-            this.pictureBox177 = new System.Windows.Forms.PictureBox();
-            this.pictureBox176 = new System.Windows.Forms.PictureBox();
-            this.pictureBox175 = new System.Windows.Forms.PictureBox();
-            this.pictureBox174 = new System.Windows.Forms.PictureBox();
-            this.pictureBox172 = new System.Windows.Forms.PictureBox();
-            this.pictureBox168 = new System.Windows.Forms.PictureBox();
-            this.pictureBox00 = new System.Windows.Forms.PictureBox();
-            this.pictureBox01 = new System.Windows.Forms.PictureBox();
-            this.pictureBox02 = new System.Windows.Forms.PictureBox();
-            this.pictureBox03 = new System.Windows.Forms.PictureBox();
-            this.pictureBox04 = new System.Windows.Forms.PictureBox();
-            this.pictureBox05 = new System.Windows.Forms.PictureBox();
-            this.pictureBox06 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
@@ -160,8 +127,8 @@
             this.pictureBox111 = new System.Windows.Forms.PictureBox();
             this.pictureBox110 = new System.Windows.Forms.PictureBox();
             this.pictureBox112 = new System.Windows.Forms.PictureBox();
-            this.pictureBox114 = new System.Windows.Forms.PictureBox();
             this.pictureBox115 = new System.Windows.Forms.PictureBox();
+            this.pictureBox114 = new System.Windows.Forms.PictureBox();
             this.pictureBox116 = new System.Windows.Forms.PictureBox();
             this.pictureBox113 = new System.Windows.Forms.PictureBox();
             this.pictureBox104 = new System.Windows.Forms.PictureBox();
@@ -222,49 +189,49 @@
             this.pictureBox157 = new System.Windows.Forms.PictureBox();
             this.pictureBox165 = new System.Windows.Forms.PictureBox();
             this.pictureBox166 = new System.Windows.Forms.PictureBox();
-            this.pictureBox167 = new System.Windows.Forms.PictureBox();
-            this.pictureBox164 = new System.Windows.Forms.PictureBox();
             this.pictureBox169 = new System.Windows.Forms.PictureBox();
             this.pictureBox170 = new System.Windows.Forms.PictureBox();
             this.pictureBox171 = new System.Windows.Forms.PictureBox();
             this.pictureBox163 = new System.Windows.Forms.PictureBox();
             this.pictureBox173 = new System.Windows.Forms.PictureBox();
+            this.pictureBox164 = new System.Windows.Forms.PictureBox();
             this.pictureBox182 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox167 = new System.Windows.Forms.PictureBox();
+            this.pictureBox168 = new System.Windows.Forms.PictureBox();
+            this.pictureBox172 = new System.Windows.Forms.PictureBox();
+            this.pictureBox174 = new System.Windows.Forms.PictureBox();
+            this.pictureBox175 = new System.Windows.Forms.PictureBox();
+            this.pictureBox176 = new System.Windows.Forms.PictureBox();
+            this.pictureBox177 = new System.Windows.Forms.PictureBox();
+            this.pictureBox178 = new System.Windows.Forms.PictureBox();
+            this.pictureBox179 = new System.Windows.Forms.PictureBox();
+            this.pictureBox180 = new System.Windows.Forms.PictureBox();
+            this.pictureBox181 = new System.Windows.Forms.PictureBox();
+            this.pictureBox183 = new System.Windows.Forms.PictureBox();
+            this.pictureBox184 = new System.Windows.Forms.PictureBox();
+            this.pictureBox185 = new System.Windows.Forms.PictureBox();
+            this.pictureBox186 = new System.Windows.Forms.PictureBox();
+            this.pictureBox187 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox187)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox186)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox185)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox184)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox183)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox181)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox180)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox179)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox178)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox177)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox176)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox175)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox174)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox172)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox168)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox00)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox01)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox03)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox04)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox05)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox06)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
@@ -350,8 +317,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox111)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox110)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox112)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox114)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox115)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox114)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox116)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox113)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox104)).BeginInit();
@@ -412,15 +379,52 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox157)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox165)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox166)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox167)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox164)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox169)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox170)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox171)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox163)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox173)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox164)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox182)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox167)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox168)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox172)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox174)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox175)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox176)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox177)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox178)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox179)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox180)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox181)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox183)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox184)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox185)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox186)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox187)).BeginInit();
             this.SuspendLayout();
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 500;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // terrenos2
             // 
@@ -455,19 +459,19 @@
             this.rovers.Images.SetKeyName(2, "rover3.png");
             this.rovers.Images.SetKeyName(3, "rover4.png");
             // 
-            // button1
+            // btnReset
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.reset_Click);
+            resources.ApplyResources(this.btnReset, "btnReset");
+            this.btnReset.Name = "btnReset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.reset_Click);
             // 
-            // button2
+            // btnStart
             // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.start_Click);
+            resources.ApplyResources(this.btnStart, "btnStart");
+            this.btnStart.Name = "btnStart";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.start_Click);
             // 
             // listView1
             // 
@@ -488,10 +492,6 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Tile;
             // 
-            // columnHeader2
-            // 
-            resources.ApplyResources(this.columnHeader2, "columnHeader2");
-            // 
             // groupBox1
             // 
             resources.ApplyResources(this.groupBox1, "groupBox1");
@@ -510,15 +510,9 @@
             resources.GetString("movimientosRover.Items3")});
             this.movimientosRover.Name = "movimientosRover";
             // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
             // groupBox2
             // 
             resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.movimientosRover);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
@@ -526,1503 +520,1503 @@
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox187, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox186, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox185, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox184, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox183, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox181, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox180, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox179, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox178, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox177, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox176, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox175, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox174, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox172, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox168, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox00, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox01, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox02, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox03, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox04, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox05, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox06, 6, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox6, 7, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox17, 8, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox14, 9, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox13, 10, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox12, 11, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox15, 12, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox11, 13, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox10, 15, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox16, 14, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox25, 16, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox9, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox18, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox22, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox23, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox21, 4, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox24, 5, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox20, 6, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox19, 7, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox33, 8, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox32, 9, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox34, 10, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox31, 11, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox30, 12, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox29, 13, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox35, 14, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox28, 15, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox36, 16, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox27, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox26, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox47, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox46, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox48, 4, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox45, 5, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox44, 6, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox43, 7, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox49, 8, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox42, 9, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox41, 10, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox40, 11, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox50, 12, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox39, 13, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox51, 14, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox38, 15, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox37, 16, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox62, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox65, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox66, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox61, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox67, 4, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox60, 5, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox59, 6, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox58, 7, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox68, 8, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox57, 9, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox56, 10, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox55, 11, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox69, 12, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox54, 13, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox63, 14, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox53, 15, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox52, 16, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox72, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox73, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox71, 2, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox74, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox70, 4, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox64, 5, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox80, 6, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox79, 7, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox78, 8, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox81, 9, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox77, 10, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox82, 11, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox87, 12, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox88, 13, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox86, 14, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox85, 15, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox84, 16, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox89, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox83, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox90, 2, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox76, 3, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox75, 4, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox102, 5, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox101, 6, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox103, 7, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox100, 8, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox105, 9, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox106, 10, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox107, 11, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox109, 12, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox108, 13, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox111, 14, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox110, 15, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox112, 16, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox114, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox115, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox116, 2, 6);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox113, 3, 6);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox104, 4, 6);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox117, 5, 6);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox99, 6, 6);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox98, 7, 6);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox97, 8, 6);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox118, 9, 6);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox96, 10, 6);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox95, 11, 6);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox94, 12, 6);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox119, 13, 6);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox93, 14, 6);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox120, 15, 6);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox92, 16, 6);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox91, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox122, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox121, 2, 7);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox123, 3, 7);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox124, 4, 7);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox125, 5, 7);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox126, 6, 7);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox128, 7, 7);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox127, 8, 7);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox131, 9, 7);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox130, 10, 7);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox129, 11, 7);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox134, 12, 7);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox133, 13, 7);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox132, 14, 7);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox136, 15, 7);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox135, 16, 7);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox138, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox137, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox139, 2, 8);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox140, 3, 8);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox141, 4, 8);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox142, 5, 8);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox143, 6, 8);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox144, 7, 8);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox145, 8, 8);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox146, 9, 8);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox147, 10, 8);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox148, 11, 8);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox149, 12, 8);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox150, 13, 8);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox151, 14, 8);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox152, 15, 8);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox153, 16, 8);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox154, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox156, 1, 9);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox158, 2, 9);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox159, 3, 9);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox160, 4, 9);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox161, 5, 9);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox162, 6, 9);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox155, 7, 9);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox157, 8, 9);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox165, 9, 9);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox166, 10, 9);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox167, 16, 10);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox164, 16, 9);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox169, 11, 9);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox170, 12, 9);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox171, 13, 9);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox163, 14, 9);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox173, 15, 9);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox182, 15, 10);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox9, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox18, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox22, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox23, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox21, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox24, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox20, 6, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox19, 7, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox33, 8, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox32, 9, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox34, 10, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox31, 11, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox30, 12, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox29, 13, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox35, 14, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox28, 15, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox36, 16, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox27, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox26, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox47, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox46, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox48, 4, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox45, 5, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox44, 6, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox43, 7, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox49, 8, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox42, 9, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox41, 10, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox40, 11, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox50, 12, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox39, 13, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox51, 14, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox38, 15, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox37, 16, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox62, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox65, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox66, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox61, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox67, 4, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox60, 5, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox59, 6, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox58, 7, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox68, 8, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox57, 9, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox56, 10, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox55, 11, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox69, 12, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox54, 13, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox63, 14, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox53, 15, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox52, 16, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox72, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox73, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox71, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox74, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox70, 4, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox64, 5, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox80, 6, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox79, 7, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox78, 8, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox81, 9, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox77, 10, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox82, 11, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox87, 12, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox88, 13, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox86, 14, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox85, 15, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox84, 16, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox89, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox83, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox90, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox76, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox75, 4, 4);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox102, 5, 4);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox101, 6, 4);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox103, 7, 4);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox100, 8, 4);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox105, 9, 4);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox106, 10, 4);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox107, 11, 4);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox109, 12, 4);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox108, 13, 4);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox111, 14, 4);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox110, 15, 4);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox112, 16, 4);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox115, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox114, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox116, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox113, 3, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox104, 4, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox117, 5, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox99, 6, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox98, 7, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox97, 8, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox118, 9, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox96, 10, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox95, 11, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox94, 12, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox119, 13, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox93, 14, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox120, 15, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox92, 16, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox91, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox122, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox121, 2, 6);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox123, 3, 6);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox124, 4, 6);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox125, 5, 6);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox126, 6, 6);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox128, 7, 6);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox127, 8, 6);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox131, 9, 6);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox130, 10, 6);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox129, 11, 6);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox134, 12, 6);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox133, 13, 6);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox132, 14, 6);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox136, 15, 6);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox135, 16, 6);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox138, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox137, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox139, 2, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox140, 3, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox141, 4, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox142, 5, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox143, 6, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox144, 7, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox145, 8, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox146, 9, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox147, 10, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox148, 11, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox149, 12, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox150, 13, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox151, 14, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox152, 15, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox153, 16, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox154, 0, 8);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox156, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox158, 2, 8);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox159, 3, 8);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox160, 4, 8);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox161, 5, 8);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox162, 6, 8);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox155, 7, 8);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox157, 8, 8);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox165, 9, 8);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox166, 10, 8);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox169, 11, 8);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox170, 12, 8);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox171, 13, 8);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox163, 14, 8);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox173, 15, 8);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox164, 16, 8);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox182, 0, 10);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox13, 1, 10);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox14, 2, 10);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox25, 3, 10);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 4, 10);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox17, 5, 10);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 6, 10);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox16, 7, 10);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox4, 8, 10);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox15, 9, 10);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox12, 10, 10);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox11, 11, 10);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox10, 12, 10);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox8, 13, 10);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox7, 14, 10);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox5, 15, 10);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox6, 16, 10);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox167, 1, 9);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox168, 2, 9);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox172, 3, 9);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox174, 4, 9);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox175, 5, 9);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox176, 6, 9);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox177, 7, 9);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox178, 8, 9);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox179, 9, 9);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox180, 10, 9);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox181, 11, 9);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox183, 12, 9);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox184, 13, 9);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox185, 14, 9);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox186, 15, 9);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox187, 16, 9);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            // 
-            // pictureBox187
-            // 
-            resources.ApplyResources(this.pictureBox187, "pictureBox187");
-            this.pictureBox187.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox187.Name = "pictureBox187";
-            this.pictureBox187.TabStop = false;
-            // 
-            // pictureBox186
-            // 
-            resources.ApplyResources(this.pictureBox186, "pictureBox186");
-            this.pictureBox186.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox186.Name = "pictureBox186";
-            this.pictureBox186.TabStop = false;
-            // 
-            // pictureBox185
-            // 
-            resources.ApplyResources(this.pictureBox185, "pictureBox185");
-            this.pictureBox185.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox185.Name = "pictureBox185";
-            this.pictureBox185.TabStop = false;
-            // 
-            // pictureBox184
-            // 
-            resources.ApplyResources(this.pictureBox184, "pictureBox184");
-            this.pictureBox184.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox184.Name = "pictureBox184";
-            this.pictureBox184.TabStop = false;
-            // 
-            // pictureBox183
-            // 
-            resources.ApplyResources(this.pictureBox183, "pictureBox183");
-            this.pictureBox183.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox183.Name = "pictureBox183";
-            this.pictureBox183.TabStop = false;
-            // 
-            // pictureBox181
-            // 
-            resources.ApplyResources(this.pictureBox181, "pictureBox181");
-            this.pictureBox181.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox181.Name = "pictureBox181";
-            this.pictureBox181.TabStop = false;
-            // 
-            // pictureBox180
-            // 
-            resources.ApplyResources(this.pictureBox180, "pictureBox180");
-            this.pictureBox180.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox180.Name = "pictureBox180";
-            this.pictureBox180.TabStop = false;
-            // 
-            // pictureBox179
-            // 
-            resources.ApplyResources(this.pictureBox179, "pictureBox179");
-            this.pictureBox179.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox179.Name = "pictureBox179";
-            this.pictureBox179.TabStop = false;
-            // 
-            // pictureBox178
-            // 
-            resources.ApplyResources(this.pictureBox178, "pictureBox178");
-            this.pictureBox178.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox178.Name = "pictureBox178";
-            this.pictureBox178.TabStop = false;
-            // 
-            // pictureBox177
-            // 
-            resources.ApplyResources(this.pictureBox177, "pictureBox177");
-            this.pictureBox177.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox177.Name = "pictureBox177";
-            this.pictureBox177.TabStop = false;
-            // 
-            // pictureBox176
-            // 
-            resources.ApplyResources(this.pictureBox176, "pictureBox176");
-            this.pictureBox176.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox176.Name = "pictureBox176";
-            this.pictureBox176.TabStop = false;
-            // 
-            // pictureBox175
-            // 
-            resources.ApplyResources(this.pictureBox175, "pictureBox175");
-            this.pictureBox175.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox175.Name = "pictureBox175";
-            this.pictureBox175.TabStop = false;
-            // 
-            // pictureBox174
-            // 
-            resources.ApplyResources(this.pictureBox174, "pictureBox174");
-            this.pictureBox174.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox174.Name = "pictureBox174";
-            this.pictureBox174.TabStop = false;
-            // 
-            // pictureBox172
-            // 
-            resources.ApplyResources(this.pictureBox172, "pictureBox172");
-            this.pictureBox172.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox172.Name = "pictureBox172";
-            this.pictureBox172.TabStop = false;
-            // 
-            // pictureBox168
-            // 
-            resources.ApplyResources(this.pictureBox168, "pictureBox168");
-            this.pictureBox168.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox168.Name = "pictureBox168";
-            this.pictureBox168.TabStop = false;
-            // 
-            // pictureBox00
-            // 
-            resources.ApplyResources(this.pictureBox00, "pictureBox00");
-            this.pictureBox00.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox00.Name = "pictureBox00";
-            this.pictureBox00.TabStop = false;
-            // 
-            // pictureBox01
-            // 
-            resources.ApplyResources(this.pictureBox01, "pictureBox01");
-            this.pictureBox01.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox01.Name = "pictureBox01";
-            this.pictureBox01.TabStop = false;
-            // 
-            // pictureBox02
-            // 
-            resources.ApplyResources(this.pictureBox02, "pictureBox02");
-            this.pictureBox02.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox02.Name = "pictureBox02";
-            this.pictureBox02.TabStop = false;
-            // 
-            // pictureBox03
-            // 
-            resources.ApplyResources(this.pictureBox03, "pictureBox03");
-            this.pictureBox03.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox03.Name = "pictureBox03";
-            this.pictureBox03.TabStop = false;
-            // 
-            // pictureBox04
-            // 
-            resources.ApplyResources(this.pictureBox04, "pictureBox04");
-            this.pictureBox04.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox04.Name = "pictureBox04";
-            this.pictureBox04.TabStop = false;
-            // 
-            // pictureBox05
-            // 
-            resources.ApplyResources(this.pictureBox05, "pictureBox05");
-            this.pictureBox05.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox05.Name = "pictureBox05";
-            this.pictureBox05.TabStop = false;
-            // 
-            // pictureBox06
-            // 
-            resources.ApplyResources(this.pictureBox06, "pictureBox06");
-            this.pictureBox06.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox06.Name = "pictureBox06";
-            this.pictureBox06.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            resources.ApplyResources(this.pictureBox6, "pictureBox6");
-            this.pictureBox6.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            resources.ApplyResources(this.pictureBox17, "pictureBox17");
-            this.pictureBox17.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            resources.ApplyResources(this.pictureBox14, "pictureBox14");
-            this.pictureBox14.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            resources.ApplyResources(this.pictureBox13, "pictureBox13");
-            this.pictureBox13.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            resources.ApplyResources(this.pictureBox12, "pictureBox12");
-            this.pictureBox12.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            resources.ApplyResources(this.pictureBox15, "pictureBox15");
-            this.pictureBox15.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            resources.ApplyResources(this.pictureBox11, "pictureBox11");
-            this.pictureBox11.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            resources.ApplyResources(this.pictureBox10, "pictureBox10");
-            this.pictureBox10.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            resources.ApplyResources(this.pictureBox16, "pictureBox16");
-            this.pictureBox16.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox25
-            // 
-            resources.ApplyResources(this.pictureBox25, "pictureBox25");
-            this.pictureBox25.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.TabStop = false;
             // 
             // pictureBox9
             // 
-            resources.ApplyResources(this.pictureBox9, "pictureBox9");
             this.pictureBox9.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox9, "pictureBox9");
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.TabStop = false;
             // 
             // pictureBox18
             // 
-            resources.ApplyResources(this.pictureBox18, "pictureBox18");
             this.pictureBox18.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox18, "pictureBox18");
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.TabStop = false;
             // 
             // pictureBox22
             // 
-            resources.ApplyResources(this.pictureBox22, "pictureBox22");
             this.pictureBox22.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox22, "pictureBox22");
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.TabStop = false;
             // 
             // pictureBox23
             // 
-            resources.ApplyResources(this.pictureBox23, "pictureBox23");
             this.pictureBox23.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox23, "pictureBox23");
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.TabStop = false;
             // 
             // pictureBox21
             // 
-            resources.ApplyResources(this.pictureBox21, "pictureBox21");
             this.pictureBox21.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox21, "pictureBox21");
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.TabStop = false;
             // 
             // pictureBox24
             // 
-            resources.ApplyResources(this.pictureBox24, "pictureBox24");
             this.pictureBox24.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox24, "pictureBox24");
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.TabStop = false;
             // 
             // pictureBox20
             // 
-            resources.ApplyResources(this.pictureBox20, "pictureBox20");
             this.pictureBox20.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox20, "pictureBox20");
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.TabStop = false;
             // 
             // pictureBox19
             // 
-            resources.ApplyResources(this.pictureBox19, "pictureBox19");
             this.pictureBox19.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox19, "pictureBox19");
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.TabStop = false;
             // 
             // pictureBox33
             // 
-            resources.ApplyResources(this.pictureBox33, "pictureBox33");
             this.pictureBox33.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox33, "pictureBox33");
             this.pictureBox33.Name = "pictureBox33";
             this.pictureBox33.TabStop = false;
             // 
             // pictureBox32
             // 
-            resources.ApplyResources(this.pictureBox32, "pictureBox32");
             this.pictureBox32.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox32, "pictureBox32");
             this.pictureBox32.Name = "pictureBox32";
             this.pictureBox32.TabStop = false;
             // 
             // pictureBox34
             // 
-            resources.ApplyResources(this.pictureBox34, "pictureBox34");
             this.pictureBox34.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox34, "pictureBox34");
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.TabStop = false;
             // 
             // pictureBox31
             // 
-            resources.ApplyResources(this.pictureBox31, "pictureBox31");
             this.pictureBox31.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox31, "pictureBox31");
             this.pictureBox31.Name = "pictureBox31";
             this.pictureBox31.TabStop = false;
             // 
             // pictureBox30
             // 
-            resources.ApplyResources(this.pictureBox30, "pictureBox30");
             this.pictureBox30.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox30, "pictureBox30");
             this.pictureBox30.Name = "pictureBox30";
             this.pictureBox30.TabStop = false;
             // 
             // pictureBox29
             // 
-            resources.ApplyResources(this.pictureBox29, "pictureBox29");
             this.pictureBox29.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox29, "pictureBox29");
             this.pictureBox29.Name = "pictureBox29";
             this.pictureBox29.TabStop = false;
             // 
             // pictureBox35
             // 
-            resources.ApplyResources(this.pictureBox35, "pictureBox35");
             this.pictureBox35.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox35, "pictureBox35");
             this.pictureBox35.Name = "pictureBox35";
             this.pictureBox35.TabStop = false;
             // 
             // pictureBox28
             // 
-            resources.ApplyResources(this.pictureBox28, "pictureBox28");
             this.pictureBox28.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox28, "pictureBox28");
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.TabStop = false;
             // 
             // pictureBox36
             // 
-            resources.ApplyResources(this.pictureBox36, "pictureBox36");
             this.pictureBox36.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox36, "pictureBox36");
             this.pictureBox36.Name = "pictureBox36";
             this.pictureBox36.TabStop = false;
             // 
             // pictureBox27
             // 
-            resources.ApplyResources(this.pictureBox27, "pictureBox27");
             this.pictureBox27.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox27, "pictureBox27");
             this.pictureBox27.Name = "pictureBox27";
             this.pictureBox27.TabStop = false;
             // 
             // pictureBox26
             // 
-            resources.ApplyResources(this.pictureBox26, "pictureBox26");
             this.pictureBox26.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox26, "pictureBox26");
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.TabStop = false;
             // 
             // pictureBox47
             // 
-            resources.ApplyResources(this.pictureBox47, "pictureBox47");
             this.pictureBox47.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox47, "pictureBox47");
             this.pictureBox47.Name = "pictureBox47";
             this.pictureBox47.TabStop = false;
             // 
             // pictureBox46
             // 
-            resources.ApplyResources(this.pictureBox46, "pictureBox46");
             this.pictureBox46.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox46, "pictureBox46");
             this.pictureBox46.Name = "pictureBox46";
             this.pictureBox46.TabStop = false;
             // 
             // pictureBox48
             // 
-            resources.ApplyResources(this.pictureBox48, "pictureBox48");
             this.pictureBox48.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox48, "pictureBox48");
             this.pictureBox48.Name = "pictureBox48";
             this.pictureBox48.TabStop = false;
             // 
             // pictureBox45
             // 
-            resources.ApplyResources(this.pictureBox45, "pictureBox45");
             this.pictureBox45.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox45, "pictureBox45");
             this.pictureBox45.Name = "pictureBox45";
             this.pictureBox45.TabStop = false;
             // 
             // pictureBox44
             // 
-            resources.ApplyResources(this.pictureBox44, "pictureBox44");
             this.pictureBox44.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox44, "pictureBox44");
             this.pictureBox44.Name = "pictureBox44";
             this.pictureBox44.TabStop = false;
             // 
             // pictureBox43
             // 
-            resources.ApplyResources(this.pictureBox43, "pictureBox43");
             this.pictureBox43.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox43, "pictureBox43");
             this.pictureBox43.Name = "pictureBox43";
             this.pictureBox43.TabStop = false;
             // 
             // pictureBox49
             // 
-            resources.ApplyResources(this.pictureBox49, "pictureBox49");
             this.pictureBox49.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox49, "pictureBox49");
             this.pictureBox49.Name = "pictureBox49";
             this.pictureBox49.TabStop = false;
             // 
             // pictureBox42
             // 
-            resources.ApplyResources(this.pictureBox42, "pictureBox42");
             this.pictureBox42.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox42, "pictureBox42");
             this.pictureBox42.Name = "pictureBox42";
             this.pictureBox42.TabStop = false;
             // 
             // pictureBox41
             // 
-            resources.ApplyResources(this.pictureBox41, "pictureBox41");
             this.pictureBox41.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox41, "pictureBox41");
             this.pictureBox41.Name = "pictureBox41";
             this.pictureBox41.TabStop = false;
             // 
             // pictureBox40
             // 
-            resources.ApplyResources(this.pictureBox40, "pictureBox40");
             this.pictureBox40.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox40, "pictureBox40");
             this.pictureBox40.Name = "pictureBox40";
             this.pictureBox40.TabStop = false;
             // 
             // pictureBox50
             // 
-            resources.ApplyResources(this.pictureBox50, "pictureBox50");
             this.pictureBox50.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox50, "pictureBox50");
             this.pictureBox50.Name = "pictureBox50";
             this.pictureBox50.TabStop = false;
             // 
             // pictureBox39
             // 
-            resources.ApplyResources(this.pictureBox39, "pictureBox39");
             this.pictureBox39.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox39, "pictureBox39");
             this.pictureBox39.Name = "pictureBox39";
             this.pictureBox39.TabStop = false;
             // 
             // pictureBox51
             // 
-            resources.ApplyResources(this.pictureBox51, "pictureBox51");
             this.pictureBox51.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox51, "pictureBox51");
             this.pictureBox51.Name = "pictureBox51";
             this.pictureBox51.TabStop = false;
             // 
             // pictureBox38
             // 
-            resources.ApplyResources(this.pictureBox38, "pictureBox38");
             this.pictureBox38.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox38, "pictureBox38");
             this.pictureBox38.Name = "pictureBox38";
             this.pictureBox38.TabStop = false;
             // 
             // pictureBox37
             // 
-            resources.ApplyResources(this.pictureBox37, "pictureBox37");
             this.pictureBox37.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox37, "pictureBox37");
             this.pictureBox37.Name = "pictureBox37";
             this.pictureBox37.TabStop = false;
             // 
             // pictureBox62
             // 
-            resources.ApplyResources(this.pictureBox62, "pictureBox62");
             this.pictureBox62.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox62, "pictureBox62");
             this.pictureBox62.Name = "pictureBox62";
             this.pictureBox62.TabStop = false;
             // 
             // pictureBox65
             // 
-            resources.ApplyResources(this.pictureBox65, "pictureBox65");
             this.pictureBox65.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox65, "pictureBox65");
             this.pictureBox65.Name = "pictureBox65";
             this.pictureBox65.TabStop = false;
             // 
             // pictureBox66
             // 
-            resources.ApplyResources(this.pictureBox66, "pictureBox66");
             this.pictureBox66.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox66, "pictureBox66");
             this.pictureBox66.Name = "pictureBox66";
             this.pictureBox66.TabStop = false;
             // 
             // pictureBox61
             // 
-            resources.ApplyResources(this.pictureBox61, "pictureBox61");
             this.pictureBox61.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox61, "pictureBox61");
             this.pictureBox61.Name = "pictureBox61";
             this.pictureBox61.TabStop = false;
             // 
             // pictureBox67
             // 
-            resources.ApplyResources(this.pictureBox67, "pictureBox67");
             this.pictureBox67.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox67, "pictureBox67");
             this.pictureBox67.Name = "pictureBox67";
             this.pictureBox67.TabStop = false;
             // 
             // pictureBox60
             // 
-            resources.ApplyResources(this.pictureBox60, "pictureBox60");
             this.pictureBox60.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox60, "pictureBox60");
             this.pictureBox60.Name = "pictureBox60";
             this.pictureBox60.TabStop = false;
             // 
             // pictureBox59
             // 
-            resources.ApplyResources(this.pictureBox59, "pictureBox59");
             this.pictureBox59.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox59, "pictureBox59");
             this.pictureBox59.Name = "pictureBox59";
             this.pictureBox59.TabStop = false;
             // 
             // pictureBox58
             // 
-            resources.ApplyResources(this.pictureBox58, "pictureBox58");
             this.pictureBox58.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox58, "pictureBox58");
             this.pictureBox58.Name = "pictureBox58";
             this.pictureBox58.TabStop = false;
             // 
             // pictureBox68
             // 
-            resources.ApplyResources(this.pictureBox68, "pictureBox68");
             this.pictureBox68.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox68, "pictureBox68");
             this.pictureBox68.Name = "pictureBox68";
             this.pictureBox68.TabStop = false;
             // 
             // pictureBox57
             // 
-            resources.ApplyResources(this.pictureBox57, "pictureBox57");
             this.pictureBox57.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox57, "pictureBox57");
             this.pictureBox57.Name = "pictureBox57";
             this.pictureBox57.TabStop = false;
             // 
             // pictureBox56
             // 
-            resources.ApplyResources(this.pictureBox56, "pictureBox56");
             this.pictureBox56.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox56, "pictureBox56");
             this.pictureBox56.Name = "pictureBox56";
             this.pictureBox56.TabStop = false;
             // 
             // pictureBox55
             // 
-            resources.ApplyResources(this.pictureBox55, "pictureBox55");
             this.pictureBox55.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox55, "pictureBox55");
             this.pictureBox55.Name = "pictureBox55";
             this.pictureBox55.TabStop = false;
             // 
             // pictureBox69
             // 
-            resources.ApplyResources(this.pictureBox69, "pictureBox69");
             this.pictureBox69.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox69, "pictureBox69");
             this.pictureBox69.Name = "pictureBox69";
             this.pictureBox69.TabStop = false;
             // 
             // pictureBox54
             // 
-            resources.ApplyResources(this.pictureBox54, "pictureBox54");
             this.pictureBox54.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox54, "pictureBox54");
             this.pictureBox54.Name = "pictureBox54";
             this.pictureBox54.TabStop = false;
             // 
             // pictureBox63
             // 
-            resources.ApplyResources(this.pictureBox63, "pictureBox63");
             this.pictureBox63.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox63, "pictureBox63");
             this.pictureBox63.Name = "pictureBox63";
             this.pictureBox63.TabStop = false;
             // 
             // pictureBox53
             // 
-            resources.ApplyResources(this.pictureBox53, "pictureBox53");
             this.pictureBox53.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox53, "pictureBox53");
             this.pictureBox53.Name = "pictureBox53";
             this.pictureBox53.TabStop = false;
             // 
             // pictureBox52
             // 
-            resources.ApplyResources(this.pictureBox52, "pictureBox52");
             this.pictureBox52.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox52, "pictureBox52");
             this.pictureBox52.Name = "pictureBox52";
             this.pictureBox52.TabStop = false;
             // 
             // pictureBox72
             // 
-            resources.ApplyResources(this.pictureBox72, "pictureBox72");
             this.pictureBox72.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox72, "pictureBox72");
             this.pictureBox72.Name = "pictureBox72";
             this.pictureBox72.TabStop = false;
             // 
             // pictureBox73
             // 
-            resources.ApplyResources(this.pictureBox73, "pictureBox73");
             this.pictureBox73.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox73, "pictureBox73");
             this.pictureBox73.Name = "pictureBox73";
             this.pictureBox73.TabStop = false;
             // 
             // pictureBox71
             // 
-            resources.ApplyResources(this.pictureBox71, "pictureBox71");
             this.pictureBox71.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox71, "pictureBox71");
             this.pictureBox71.Name = "pictureBox71";
             this.pictureBox71.TabStop = false;
             // 
             // pictureBox74
             // 
-            resources.ApplyResources(this.pictureBox74, "pictureBox74");
             this.pictureBox74.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox74, "pictureBox74");
             this.pictureBox74.Name = "pictureBox74";
             this.pictureBox74.TabStop = false;
             // 
             // pictureBox70
             // 
-            resources.ApplyResources(this.pictureBox70, "pictureBox70");
             this.pictureBox70.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox70, "pictureBox70");
             this.pictureBox70.Name = "pictureBox70";
             this.pictureBox70.TabStop = false;
             // 
             // pictureBox64
             // 
-            resources.ApplyResources(this.pictureBox64, "pictureBox64");
             this.pictureBox64.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox64, "pictureBox64");
             this.pictureBox64.Name = "pictureBox64";
             this.pictureBox64.TabStop = false;
             // 
             // pictureBox80
             // 
-            resources.ApplyResources(this.pictureBox80, "pictureBox80");
             this.pictureBox80.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox80, "pictureBox80");
             this.pictureBox80.Name = "pictureBox80";
             this.pictureBox80.TabStop = false;
             // 
             // pictureBox79
             // 
-            resources.ApplyResources(this.pictureBox79, "pictureBox79");
             this.pictureBox79.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox79, "pictureBox79");
             this.pictureBox79.Name = "pictureBox79";
             this.pictureBox79.TabStop = false;
             // 
             // pictureBox78
             // 
-            resources.ApplyResources(this.pictureBox78, "pictureBox78");
             this.pictureBox78.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox78, "pictureBox78");
             this.pictureBox78.Name = "pictureBox78";
             this.pictureBox78.TabStop = false;
             // 
             // pictureBox81
             // 
-            resources.ApplyResources(this.pictureBox81, "pictureBox81");
             this.pictureBox81.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox81, "pictureBox81");
             this.pictureBox81.Name = "pictureBox81";
             this.pictureBox81.TabStop = false;
             // 
             // pictureBox77
             // 
-            resources.ApplyResources(this.pictureBox77, "pictureBox77");
             this.pictureBox77.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox77, "pictureBox77");
             this.pictureBox77.Name = "pictureBox77";
             this.pictureBox77.TabStop = false;
             // 
             // pictureBox82
             // 
-            resources.ApplyResources(this.pictureBox82, "pictureBox82");
             this.pictureBox82.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox82, "pictureBox82");
             this.pictureBox82.Name = "pictureBox82";
             this.pictureBox82.TabStop = false;
             // 
             // pictureBox87
             // 
-            resources.ApplyResources(this.pictureBox87, "pictureBox87");
             this.pictureBox87.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox87, "pictureBox87");
             this.pictureBox87.Name = "pictureBox87";
             this.pictureBox87.TabStop = false;
             // 
             // pictureBox88
             // 
-            resources.ApplyResources(this.pictureBox88, "pictureBox88");
             this.pictureBox88.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox88, "pictureBox88");
             this.pictureBox88.Name = "pictureBox88";
             this.pictureBox88.TabStop = false;
             // 
             // pictureBox86
             // 
-            resources.ApplyResources(this.pictureBox86, "pictureBox86");
             this.pictureBox86.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox86, "pictureBox86");
             this.pictureBox86.Name = "pictureBox86";
             this.pictureBox86.TabStop = false;
             // 
             // pictureBox85
             // 
-            resources.ApplyResources(this.pictureBox85, "pictureBox85");
             this.pictureBox85.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox85, "pictureBox85");
             this.pictureBox85.Name = "pictureBox85";
             this.pictureBox85.TabStop = false;
             // 
             // pictureBox84
             // 
-            resources.ApplyResources(this.pictureBox84, "pictureBox84");
             this.pictureBox84.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox84, "pictureBox84");
             this.pictureBox84.Name = "pictureBox84";
             this.pictureBox84.TabStop = false;
             // 
             // pictureBox89
             // 
-            resources.ApplyResources(this.pictureBox89, "pictureBox89");
             this.pictureBox89.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox89, "pictureBox89");
             this.pictureBox89.Name = "pictureBox89";
             this.pictureBox89.TabStop = false;
             // 
             // pictureBox83
             // 
-            resources.ApplyResources(this.pictureBox83, "pictureBox83");
             this.pictureBox83.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox83, "pictureBox83");
             this.pictureBox83.Name = "pictureBox83";
             this.pictureBox83.TabStop = false;
             // 
             // pictureBox90
             // 
-            resources.ApplyResources(this.pictureBox90, "pictureBox90");
             this.pictureBox90.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox90, "pictureBox90");
             this.pictureBox90.Name = "pictureBox90";
             this.pictureBox90.TabStop = false;
             // 
             // pictureBox76
             // 
-            resources.ApplyResources(this.pictureBox76, "pictureBox76");
             this.pictureBox76.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox76, "pictureBox76");
             this.pictureBox76.Name = "pictureBox76";
             this.pictureBox76.TabStop = false;
             // 
             // pictureBox75
             // 
-            resources.ApplyResources(this.pictureBox75, "pictureBox75");
             this.pictureBox75.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox75, "pictureBox75");
             this.pictureBox75.Name = "pictureBox75";
             this.pictureBox75.TabStop = false;
             // 
             // pictureBox102
             // 
-            resources.ApplyResources(this.pictureBox102, "pictureBox102");
             this.pictureBox102.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox102, "pictureBox102");
             this.pictureBox102.Name = "pictureBox102";
             this.pictureBox102.TabStop = false;
             // 
             // pictureBox101
             // 
-            resources.ApplyResources(this.pictureBox101, "pictureBox101");
             this.pictureBox101.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox101, "pictureBox101");
             this.pictureBox101.Name = "pictureBox101";
             this.pictureBox101.TabStop = false;
             // 
             // pictureBox103
             // 
-            resources.ApplyResources(this.pictureBox103, "pictureBox103");
             this.pictureBox103.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox103, "pictureBox103");
             this.pictureBox103.Name = "pictureBox103";
             this.pictureBox103.TabStop = false;
             // 
             // pictureBox100
             // 
-            resources.ApplyResources(this.pictureBox100, "pictureBox100");
             this.pictureBox100.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox100, "pictureBox100");
             this.pictureBox100.Name = "pictureBox100";
             this.pictureBox100.TabStop = false;
             // 
             // pictureBox105
             // 
-            resources.ApplyResources(this.pictureBox105, "pictureBox105");
             this.pictureBox105.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox105, "pictureBox105");
             this.pictureBox105.Name = "pictureBox105";
             this.pictureBox105.TabStop = false;
             // 
             // pictureBox106
             // 
-            resources.ApplyResources(this.pictureBox106, "pictureBox106");
             this.pictureBox106.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox106, "pictureBox106");
             this.pictureBox106.Name = "pictureBox106";
             this.pictureBox106.TabStop = false;
             // 
             // pictureBox107
             // 
-            resources.ApplyResources(this.pictureBox107, "pictureBox107");
             this.pictureBox107.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox107, "pictureBox107");
             this.pictureBox107.Name = "pictureBox107";
             this.pictureBox107.TabStop = false;
             // 
             // pictureBox109
             // 
-            resources.ApplyResources(this.pictureBox109, "pictureBox109");
             this.pictureBox109.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox109, "pictureBox109");
             this.pictureBox109.Name = "pictureBox109";
             this.pictureBox109.TabStop = false;
             // 
             // pictureBox108
             // 
-            resources.ApplyResources(this.pictureBox108, "pictureBox108");
             this.pictureBox108.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox108, "pictureBox108");
             this.pictureBox108.Name = "pictureBox108";
             this.pictureBox108.TabStop = false;
             // 
             // pictureBox111
             // 
-            resources.ApplyResources(this.pictureBox111, "pictureBox111");
             this.pictureBox111.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox111, "pictureBox111");
             this.pictureBox111.Name = "pictureBox111";
             this.pictureBox111.TabStop = false;
             // 
             // pictureBox110
             // 
-            resources.ApplyResources(this.pictureBox110, "pictureBox110");
             this.pictureBox110.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox110, "pictureBox110");
             this.pictureBox110.Name = "pictureBox110";
             this.pictureBox110.TabStop = false;
             // 
             // pictureBox112
             // 
-            resources.ApplyResources(this.pictureBox112, "pictureBox112");
             this.pictureBox112.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox112, "pictureBox112");
             this.pictureBox112.Name = "pictureBox112";
             this.pictureBox112.TabStop = false;
             // 
-            // pictureBox114
-            // 
-            resources.ApplyResources(this.pictureBox114, "pictureBox114");
-            this.pictureBox114.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox114.Name = "pictureBox114";
-            this.pictureBox114.TabStop = false;
-            // 
             // pictureBox115
             // 
-            resources.ApplyResources(this.pictureBox115, "pictureBox115");
             this.pictureBox115.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox115, "pictureBox115");
             this.pictureBox115.Name = "pictureBox115";
             this.pictureBox115.TabStop = false;
             // 
+            // pictureBox114
+            // 
+            this.pictureBox114.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox114, "pictureBox114");
+            this.pictureBox114.Name = "pictureBox114";
+            this.pictureBox114.TabStop = false;
+            // 
             // pictureBox116
             // 
-            resources.ApplyResources(this.pictureBox116, "pictureBox116");
             this.pictureBox116.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox116, "pictureBox116");
             this.pictureBox116.Name = "pictureBox116";
             this.pictureBox116.TabStop = false;
             // 
             // pictureBox113
             // 
-            resources.ApplyResources(this.pictureBox113, "pictureBox113");
             this.pictureBox113.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox113, "pictureBox113");
             this.pictureBox113.Name = "pictureBox113";
             this.pictureBox113.TabStop = false;
             // 
             // pictureBox104
             // 
-            resources.ApplyResources(this.pictureBox104, "pictureBox104");
             this.pictureBox104.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox104, "pictureBox104");
             this.pictureBox104.Name = "pictureBox104";
             this.pictureBox104.TabStop = false;
             // 
             // pictureBox117
             // 
-            resources.ApplyResources(this.pictureBox117, "pictureBox117");
             this.pictureBox117.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox117, "pictureBox117");
             this.pictureBox117.Name = "pictureBox117";
             this.pictureBox117.TabStop = false;
             // 
             // pictureBox99
             // 
-            resources.ApplyResources(this.pictureBox99, "pictureBox99");
             this.pictureBox99.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox99, "pictureBox99");
             this.pictureBox99.Name = "pictureBox99";
             this.pictureBox99.TabStop = false;
             // 
             // pictureBox98
             // 
-            resources.ApplyResources(this.pictureBox98, "pictureBox98");
             this.pictureBox98.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox98, "pictureBox98");
             this.pictureBox98.Name = "pictureBox98";
             this.pictureBox98.TabStop = false;
             // 
             // pictureBox97
             // 
-            resources.ApplyResources(this.pictureBox97, "pictureBox97");
             this.pictureBox97.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox97, "pictureBox97");
             this.pictureBox97.Name = "pictureBox97";
             this.pictureBox97.TabStop = false;
             // 
             // pictureBox118
             // 
-            resources.ApplyResources(this.pictureBox118, "pictureBox118");
             this.pictureBox118.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox118, "pictureBox118");
             this.pictureBox118.Name = "pictureBox118";
             this.pictureBox118.TabStop = false;
             // 
             // pictureBox96
             // 
-            resources.ApplyResources(this.pictureBox96, "pictureBox96");
             this.pictureBox96.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox96, "pictureBox96");
             this.pictureBox96.Name = "pictureBox96";
             this.pictureBox96.TabStop = false;
             // 
             // pictureBox95
             // 
-            resources.ApplyResources(this.pictureBox95, "pictureBox95");
             this.pictureBox95.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox95, "pictureBox95");
             this.pictureBox95.Name = "pictureBox95";
             this.pictureBox95.TabStop = false;
             // 
             // pictureBox94
             // 
-            resources.ApplyResources(this.pictureBox94, "pictureBox94");
             this.pictureBox94.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox94, "pictureBox94");
             this.pictureBox94.Name = "pictureBox94";
             this.pictureBox94.TabStop = false;
             // 
             // pictureBox119
             // 
-            resources.ApplyResources(this.pictureBox119, "pictureBox119");
             this.pictureBox119.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox119, "pictureBox119");
             this.pictureBox119.Name = "pictureBox119";
             this.pictureBox119.TabStop = false;
             // 
             // pictureBox93
             // 
-            resources.ApplyResources(this.pictureBox93, "pictureBox93");
             this.pictureBox93.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox93, "pictureBox93");
             this.pictureBox93.Name = "pictureBox93";
             this.pictureBox93.TabStop = false;
             // 
             // pictureBox120
             // 
-            resources.ApplyResources(this.pictureBox120, "pictureBox120");
             this.pictureBox120.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox120, "pictureBox120");
             this.pictureBox120.Name = "pictureBox120";
             this.pictureBox120.TabStop = false;
             // 
             // pictureBox92
             // 
-            resources.ApplyResources(this.pictureBox92, "pictureBox92");
             this.pictureBox92.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox92, "pictureBox92");
             this.pictureBox92.Name = "pictureBox92";
             this.pictureBox92.TabStop = false;
             // 
             // pictureBox91
             // 
-            resources.ApplyResources(this.pictureBox91, "pictureBox91");
             this.pictureBox91.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox91, "pictureBox91");
             this.pictureBox91.Name = "pictureBox91";
             this.pictureBox91.TabStop = false;
             // 
             // pictureBox122
             // 
-            resources.ApplyResources(this.pictureBox122, "pictureBox122");
             this.pictureBox122.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox122, "pictureBox122");
             this.pictureBox122.Name = "pictureBox122";
             this.pictureBox122.TabStop = false;
             // 
             // pictureBox121
             // 
-            resources.ApplyResources(this.pictureBox121, "pictureBox121");
             this.pictureBox121.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox121, "pictureBox121");
             this.pictureBox121.Name = "pictureBox121";
             this.pictureBox121.TabStop = false;
             // 
             // pictureBox123
             // 
-            resources.ApplyResources(this.pictureBox123, "pictureBox123");
             this.pictureBox123.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox123, "pictureBox123");
             this.pictureBox123.Name = "pictureBox123";
             this.pictureBox123.TabStop = false;
             // 
             // pictureBox124
             // 
-            resources.ApplyResources(this.pictureBox124, "pictureBox124");
             this.pictureBox124.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox124, "pictureBox124");
             this.pictureBox124.Name = "pictureBox124";
             this.pictureBox124.TabStop = false;
             // 
             // pictureBox125
             // 
-            resources.ApplyResources(this.pictureBox125, "pictureBox125");
             this.pictureBox125.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox125, "pictureBox125");
             this.pictureBox125.Name = "pictureBox125";
             this.pictureBox125.TabStop = false;
             // 
             // pictureBox126
             // 
-            resources.ApplyResources(this.pictureBox126, "pictureBox126");
             this.pictureBox126.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox126, "pictureBox126");
             this.pictureBox126.Name = "pictureBox126";
             this.pictureBox126.TabStop = false;
             // 
             // pictureBox128
             // 
-            resources.ApplyResources(this.pictureBox128, "pictureBox128");
             this.pictureBox128.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox128, "pictureBox128");
             this.pictureBox128.Name = "pictureBox128";
             this.pictureBox128.TabStop = false;
             // 
             // pictureBox127
             // 
-            resources.ApplyResources(this.pictureBox127, "pictureBox127");
             this.pictureBox127.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox127, "pictureBox127");
             this.pictureBox127.Name = "pictureBox127";
             this.pictureBox127.TabStop = false;
             // 
             // pictureBox131
             // 
-            resources.ApplyResources(this.pictureBox131, "pictureBox131");
             this.pictureBox131.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox131, "pictureBox131");
             this.pictureBox131.Name = "pictureBox131";
             this.pictureBox131.TabStop = false;
             // 
             // pictureBox130
             // 
-            resources.ApplyResources(this.pictureBox130, "pictureBox130");
             this.pictureBox130.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox130, "pictureBox130");
             this.pictureBox130.Name = "pictureBox130";
             this.pictureBox130.TabStop = false;
             // 
             // pictureBox129
             // 
-            resources.ApplyResources(this.pictureBox129, "pictureBox129");
             this.pictureBox129.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox129, "pictureBox129");
             this.pictureBox129.Name = "pictureBox129";
             this.pictureBox129.TabStop = false;
             // 
             // pictureBox134
             // 
-            resources.ApplyResources(this.pictureBox134, "pictureBox134");
             this.pictureBox134.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox134, "pictureBox134");
             this.pictureBox134.Name = "pictureBox134";
             this.pictureBox134.TabStop = false;
             // 
             // pictureBox133
             // 
-            resources.ApplyResources(this.pictureBox133, "pictureBox133");
             this.pictureBox133.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox133, "pictureBox133");
             this.pictureBox133.Name = "pictureBox133";
             this.pictureBox133.TabStop = false;
             // 
             // pictureBox132
             // 
-            resources.ApplyResources(this.pictureBox132, "pictureBox132");
             this.pictureBox132.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox132, "pictureBox132");
             this.pictureBox132.Name = "pictureBox132";
             this.pictureBox132.TabStop = false;
             // 
             // pictureBox136
             // 
-            resources.ApplyResources(this.pictureBox136, "pictureBox136");
             this.pictureBox136.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox136, "pictureBox136");
             this.pictureBox136.Name = "pictureBox136";
             this.pictureBox136.TabStop = false;
             // 
             // pictureBox135
             // 
-            resources.ApplyResources(this.pictureBox135, "pictureBox135");
             this.pictureBox135.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox135, "pictureBox135");
             this.pictureBox135.Name = "pictureBox135";
             this.pictureBox135.TabStop = false;
             // 
             // pictureBox138
             // 
-            resources.ApplyResources(this.pictureBox138, "pictureBox138");
             this.pictureBox138.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox138, "pictureBox138");
             this.pictureBox138.Name = "pictureBox138";
             this.pictureBox138.TabStop = false;
             // 
             // pictureBox137
             // 
-            resources.ApplyResources(this.pictureBox137, "pictureBox137");
             this.pictureBox137.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox137, "pictureBox137");
             this.pictureBox137.Name = "pictureBox137";
             this.pictureBox137.TabStop = false;
             // 
             // pictureBox139
             // 
-            resources.ApplyResources(this.pictureBox139, "pictureBox139");
             this.pictureBox139.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox139, "pictureBox139");
             this.pictureBox139.Name = "pictureBox139";
             this.pictureBox139.TabStop = false;
             // 
             // pictureBox140
             // 
-            resources.ApplyResources(this.pictureBox140, "pictureBox140");
             this.pictureBox140.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox140, "pictureBox140");
             this.pictureBox140.Name = "pictureBox140";
             this.pictureBox140.TabStop = false;
             // 
             // pictureBox141
             // 
-            resources.ApplyResources(this.pictureBox141, "pictureBox141");
             this.pictureBox141.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox141, "pictureBox141");
             this.pictureBox141.Name = "pictureBox141";
             this.pictureBox141.TabStop = false;
             // 
             // pictureBox142
             // 
-            resources.ApplyResources(this.pictureBox142, "pictureBox142");
             this.pictureBox142.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox142, "pictureBox142");
             this.pictureBox142.Name = "pictureBox142";
             this.pictureBox142.TabStop = false;
             // 
             // pictureBox143
             // 
-            resources.ApplyResources(this.pictureBox143, "pictureBox143");
             this.pictureBox143.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox143, "pictureBox143");
             this.pictureBox143.Name = "pictureBox143";
             this.pictureBox143.TabStop = false;
             // 
             // pictureBox144
             // 
-            resources.ApplyResources(this.pictureBox144, "pictureBox144");
             this.pictureBox144.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox144, "pictureBox144");
             this.pictureBox144.Name = "pictureBox144";
             this.pictureBox144.TabStop = false;
             // 
             // pictureBox145
             // 
-            resources.ApplyResources(this.pictureBox145, "pictureBox145");
             this.pictureBox145.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox145, "pictureBox145");
             this.pictureBox145.Name = "pictureBox145";
             this.pictureBox145.TabStop = false;
             // 
             // pictureBox146
             // 
-            resources.ApplyResources(this.pictureBox146, "pictureBox146");
             this.pictureBox146.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox146, "pictureBox146");
             this.pictureBox146.Name = "pictureBox146";
             this.pictureBox146.TabStop = false;
             // 
             // pictureBox147
             // 
-            resources.ApplyResources(this.pictureBox147, "pictureBox147");
             this.pictureBox147.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox147, "pictureBox147");
             this.pictureBox147.Name = "pictureBox147";
             this.pictureBox147.TabStop = false;
             // 
             // pictureBox148
             // 
-            resources.ApplyResources(this.pictureBox148, "pictureBox148");
             this.pictureBox148.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox148, "pictureBox148");
             this.pictureBox148.Name = "pictureBox148";
             this.pictureBox148.TabStop = false;
             // 
             // pictureBox149
             // 
-            resources.ApplyResources(this.pictureBox149, "pictureBox149");
             this.pictureBox149.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox149, "pictureBox149");
             this.pictureBox149.Name = "pictureBox149";
             this.pictureBox149.TabStop = false;
             // 
             // pictureBox150
             // 
-            resources.ApplyResources(this.pictureBox150, "pictureBox150");
             this.pictureBox150.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox150, "pictureBox150");
             this.pictureBox150.Name = "pictureBox150";
             this.pictureBox150.TabStop = false;
             // 
             // pictureBox151
             // 
-            resources.ApplyResources(this.pictureBox151, "pictureBox151");
             this.pictureBox151.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox151, "pictureBox151");
             this.pictureBox151.Name = "pictureBox151";
             this.pictureBox151.TabStop = false;
             // 
             // pictureBox152
             // 
-            resources.ApplyResources(this.pictureBox152, "pictureBox152");
             this.pictureBox152.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox152, "pictureBox152");
             this.pictureBox152.Name = "pictureBox152";
             this.pictureBox152.TabStop = false;
             // 
             // pictureBox153
             // 
-            resources.ApplyResources(this.pictureBox153, "pictureBox153");
             this.pictureBox153.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox153, "pictureBox153");
             this.pictureBox153.Name = "pictureBox153";
             this.pictureBox153.TabStop = false;
             // 
             // pictureBox154
             // 
-            resources.ApplyResources(this.pictureBox154, "pictureBox154");
             this.pictureBox154.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox154, "pictureBox154");
             this.pictureBox154.Name = "pictureBox154";
             this.pictureBox154.TabStop = false;
             // 
             // pictureBox156
             // 
-            resources.ApplyResources(this.pictureBox156, "pictureBox156");
             this.pictureBox156.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox156, "pictureBox156");
             this.pictureBox156.Name = "pictureBox156";
             this.pictureBox156.TabStop = false;
             // 
             // pictureBox158
             // 
-            resources.ApplyResources(this.pictureBox158, "pictureBox158");
             this.pictureBox158.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox158, "pictureBox158");
             this.pictureBox158.Name = "pictureBox158";
             this.pictureBox158.TabStop = false;
             // 
             // pictureBox159
             // 
-            resources.ApplyResources(this.pictureBox159, "pictureBox159");
             this.pictureBox159.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox159, "pictureBox159");
             this.pictureBox159.Name = "pictureBox159";
             this.pictureBox159.TabStop = false;
             // 
             // pictureBox160
             // 
-            resources.ApplyResources(this.pictureBox160, "pictureBox160");
             this.pictureBox160.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox160, "pictureBox160");
             this.pictureBox160.Name = "pictureBox160";
             this.pictureBox160.TabStop = false;
             // 
             // pictureBox161
             // 
-            resources.ApplyResources(this.pictureBox161, "pictureBox161");
             this.pictureBox161.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox161, "pictureBox161");
             this.pictureBox161.Name = "pictureBox161";
             this.pictureBox161.TabStop = false;
             // 
             // pictureBox162
             // 
-            resources.ApplyResources(this.pictureBox162, "pictureBox162");
             this.pictureBox162.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox162, "pictureBox162");
             this.pictureBox162.Name = "pictureBox162";
             this.pictureBox162.TabStop = false;
             // 
             // pictureBox155
             // 
-            resources.ApplyResources(this.pictureBox155, "pictureBox155");
             this.pictureBox155.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox155, "pictureBox155");
             this.pictureBox155.Name = "pictureBox155";
             this.pictureBox155.TabStop = false;
             // 
             // pictureBox157
             // 
-            resources.ApplyResources(this.pictureBox157, "pictureBox157");
             this.pictureBox157.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox157, "pictureBox157");
             this.pictureBox157.Name = "pictureBox157";
             this.pictureBox157.TabStop = false;
             // 
             // pictureBox165
             // 
-            resources.ApplyResources(this.pictureBox165, "pictureBox165");
             this.pictureBox165.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox165, "pictureBox165");
             this.pictureBox165.Name = "pictureBox165";
             this.pictureBox165.TabStop = false;
             // 
             // pictureBox166
             // 
-            resources.ApplyResources(this.pictureBox166, "pictureBox166");
             this.pictureBox166.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox166, "pictureBox166");
             this.pictureBox166.Name = "pictureBox166";
             this.pictureBox166.TabStop = false;
             // 
-            // pictureBox167
-            // 
-            resources.ApplyResources(this.pictureBox167, "pictureBox167");
-            this.pictureBox167.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox167.Name = "pictureBox167";
-            this.pictureBox167.TabStop = false;
-            // 
-            // pictureBox164
-            // 
-            resources.ApplyResources(this.pictureBox164, "pictureBox164");
-            this.pictureBox164.Image = global::Practica1_UI.Properties.Resources.hierba;
-            this.pictureBox164.Name = "pictureBox164";
-            this.pictureBox164.TabStop = false;
-            // 
             // pictureBox169
             // 
-            resources.ApplyResources(this.pictureBox169, "pictureBox169");
             this.pictureBox169.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox169, "pictureBox169");
             this.pictureBox169.Name = "pictureBox169";
             this.pictureBox169.TabStop = false;
             // 
             // pictureBox170
             // 
-            resources.ApplyResources(this.pictureBox170, "pictureBox170");
             this.pictureBox170.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox170, "pictureBox170");
             this.pictureBox170.Name = "pictureBox170";
             this.pictureBox170.TabStop = false;
             // 
             // pictureBox171
             // 
-            resources.ApplyResources(this.pictureBox171, "pictureBox171");
             this.pictureBox171.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox171, "pictureBox171");
             this.pictureBox171.Name = "pictureBox171";
             this.pictureBox171.TabStop = false;
             // 
             // pictureBox163
             // 
-            resources.ApplyResources(this.pictureBox163, "pictureBox163");
             this.pictureBox163.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox163, "pictureBox163");
             this.pictureBox163.Name = "pictureBox163";
             this.pictureBox163.TabStop = false;
             // 
             // pictureBox173
             // 
-            resources.ApplyResources(this.pictureBox173, "pictureBox173");
             this.pictureBox173.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox173, "pictureBox173");
             this.pictureBox173.Name = "pictureBox173";
             this.pictureBox173.TabStop = false;
             // 
+            // pictureBox164
+            // 
+            this.pictureBox164.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox164, "pictureBox164");
+            this.pictureBox164.Name = "pictureBox164";
+            this.pictureBox164.TabStop = false;
+            // 
             // pictureBox182
             // 
-            resources.ApplyResources(this.pictureBox182, "pictureBox182");
             this.pictureBox182.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox182, "pictureBox182");
             this.pictureBox182.Name = "pictureBox182";
             this.pictureBox182.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox13, "pictureBox13");
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox14, "pictureBox14");
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox25, "pictureBox25");
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox17, "pictureBox17");
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox16, "pictureBox16");
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox4, "pictureBox4");
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox15, "pictureBox15");
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox12, "pictureBox12");
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox11, "pictureBox11");
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox10, "pictureBox10");
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox8, "pictureBox8");
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox7, "pictureBox7");
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox5, "pictureBox5");
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox6, "pictureBox6");
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox167
+            // 
+            this.pictureBox167.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox167, "pictureBox167");
+            this.pictureBox167.Name = "pictureBox167";
+            this.pictureBox167.TabStop = false;
+            // 
+            // pictureBox168
+            // 
+            this.pictureBox168.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox168, "pictureBox168");
+            this.pictureBox168.Name = "pictureBox168";
+            this.pictureBox168.TabStop = false;
+            // 
+            // pictureBox172
+            // 
+            this.pictureBox172.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox172, "pictureBox172");
+            this.pictureBox172.Name = "pictureBox172";
+            this.pictureBox172.TabStop = false;
+            // 
+            // pictureBox174
+            // 
+            this.pictureBox174.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox174, "pictureBox174");
+            this.pictureBox174.Name = "pictureBox174";
+            this.pictureBox174.TabStop = false;
+            // 
+            // pictureBox175
+            // 
+            this.pictureBox175.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox175, "pictureBox175");
+            this.pictureBox175.Name = "pictureBox175";
+            this.pictureBox175.TabStop = false;
+            // 
+            // pictureBox176
+            // 
+            this.pictureBox176.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox176, "pictureBox176");
+            this.pictureBox176.Name = "pictureBox176";
+            this.pictureBox176.TabStop = false;
+            // 
+            // pictureBox177
+            // 
+            this.pictureBox177.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox177, "pictureBox177");
+            this.pictureBox177.Name = "pictureBox177";
+            this.pictureBox177.TabStop = false;
+            // 
+            // pictureBox178
+            // 
+            this.pictureBox178.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox178, "pictureBox178");
+            this.pictureBox178.Name = "pictureBox178";
+            this.pictureBox178.TabStop = false;
+            // 
+            // pictureBox179
+            // 
+            this.pictureBox179.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox179, "pictureBox179");
+            this.pictureBox179.Name = "pictureBox179";
+            this.pictureBox179.TabStop = false;
+            // 
+            // pictureBox180
+            // 
+            this.pictureBox180.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox180, "pictureBox180");
+            this.pictureBox180.Name = "pictureBox180";
+            this.pictureBox180.TabStop = false;
+            // 
+            // pictureBox181
+            // 
+            this.pictureBox181.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox181, "pictureBox181");
+            this.pictureBox181.Name = "pictureBox181";
+            this.pictureBox181.TabStop = false;
+            // 
+            // pictureBox183
+            // 
+            this.pictureBox183.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox183, "pictureBox183");
+            this.pictureBox183.Name = "pictureBox183";
+            this.pictureBox183.TabStop = false;
+            // 
+            // pictureBox184
+            // 
+            this.pictureBox184.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox184, "pictureBox184");
+            this.pictureBox184.Name = "pictureBox184";
+            this.pictureBox184.TabStop = false;
+            // 
+            // pictureBox185
+            // 
+            this.pictureBox185.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox185, "pictureBox185");
+            this.pictureBox185.Name = "pictureBox185";
+            this.pictureBox185.TabStop = false;
+            // 
+            // pictureBox186
+            // 
+            this.pictureBox186.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox186, "pictureBox186");
+            this.pictureBox186.Name = "pictureBox186";
+            this.pictureBox186.TabStop = false;
+            // 
+            // pictureBox187
+            // 
+            this.pictureBox187.Image = global::Practica1_UI.Properties.Resources.hierba;
+            resources.ApplyResources(this.pictureBox187, "pictureBox187");
+            this.pictureBox187.Name = "pictureBox187";
+            this.pictureBox187.TabStop = false;
             // 
             // Form1
             // 
@@ -2031,47 +2025,14 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.btnReset);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox187)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox186)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox185)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox184)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox183)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox181)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox180)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox179)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox178)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox177)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox176)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox175)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox174)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox172)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox168)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox00)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox01)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox03)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox04)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox05)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox06)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
@@ -2157,8 +2118,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox111)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox110)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox112)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox114)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox115)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox114)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox116)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox113)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox104)).EndInit();
@@ -2219,14 +2180,46 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox157)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox165)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox166)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox167)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox164)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox169)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox170)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox171)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox163)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox173)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox164)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox182)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox167)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox168)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox172)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox174)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox175)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox176)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox177)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox178)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox179)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox180)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox181)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox183)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox184)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox185)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox186)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox187)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2236,47 +2229,13 @@
         private System.Windows.Forms.ImageList rovers;
         private System.Windows.Forms.ImageList terrenos;
         private System.Windows.Forms.ImageList terrenos2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.CheckedListBox movimientosRover;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.PictureBox pictureBox00;
-        private System.Windows.Forms.PictureBox pictureBox01;
-        private System.Windows.Forms.PictureBox pictureBox02;
-        private System.Windows.Forms.PictureBox pictureBox03;
-        private System.Windows.Forms.PictureBox pictureBox04;
-        private System.Windows.Forms.PictureBox pictureBox05;
-        private System.Windows.Forms.PictureBox pictureBox06;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.PictureBox pictureBox25;
-        private System.Windows.Forms.PictureBox pictureBox187;
-        private System.Windows.Forms.PictureBox pictureBox186;
-        private System.Windows.Forms.PictureBox pictureBox185;
-        private System.Windows.Forms.PictureBox pictureBox184;
-        private System.Windows.Forms.PictureBox pictureBox183;
-        private System.Windows.Forms.PictureBox pictureBox181;
-        private System.Windows.Forms.PictureBox pictureBox180;
-        private System.Windows.Forms.PictureBox pictureBox179;
-        private System.Windows.Forms.PictureBox pictureBox178;
-        private System.Windows.Forms.PictureBox pictureBox177;
-        private System.Windows.Forms.PictureBox pictureBox176;
-        private System.Windows.Forms.PictureBox pictureBox175;
-        private System.Windows.Forms.PictureBox pictureBox174;
-        private System.Windows.Forms.PictureBox pictureBox172;
-        private System.Windows.Forms.PictureBox pictureBox168;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.PictureBox pictureBox22;
@@ -2424,14 +2383,47 @@
         private System.Windows.Forms.PictureBox pictureBox157;
         private System.Windows.Forms.PictureBox pictureBox165;
         private System.Windows.Forms.PictureBox pictureBox166;
-        private System.Windows.Forms.PictureBox pictureBox167;
         private System.Windows.Forms.PictureBox pictureBox164;
         private System.Windows.Forms.PictureBox pictureBox169;
         private System.Windows.Forms.PictureBox pictureBox170;
         private System.Windows.Forms.PictureBox pictureBox171;
         private System.Windows.Forms.PictureBox pictureBox163;
         private System.Windows.Forms.PictureBox pictureBox173;
+        private System.Windows.Forms.PictureBox pictureBox25;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.PictureBox pictureBox182;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox167;
+        private System.Windows.Forms.PictureBox pictureBox168;
+        private System.Windows.Forms.PictureBox pictureBox172;
+        private System.Windows.Forms.PictureBox pictureBox174;
+        private System.Windows.Forms.PictureBox pictureBox175;
+        private System.Windows.Forms.PictureBox pictureBox176;
+        private System.Windows.Forms.PictureBox pictureBox177;
+        private System.Windows.Forms.PictureBox pictureBox178;
+        private System.Windows.Forms.PictureBox pictureBox179;
+        private System.Windows.Forms.PictureBox pictureBox180;
+        private System.Windows.Forms.PictureBox pictureBox181;
+        private System.Windows.Forms.PictureBox pictureBox183;
+        private System.Windows.Forms.PictureBox pictureBox184;
+        private System.Windows.Forms.PictureBox pictureBox185;
+        private System.Windows.Forms.PictureBox pictureBox186;
+        private System.Windows.Forms.PictureBox pictureBox187;
     }
 }
 

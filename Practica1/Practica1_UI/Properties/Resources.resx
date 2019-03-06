@@ -130,9 +130,6 @@
   <data name="roca" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\roca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rover1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rover1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="rover2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rover2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,11 +145,8 @@
   <data name="rover2_roca" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rover2_roca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rover3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rover3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rover4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rover4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rover2_waypoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rover2_waypoint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="waypoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\waypoint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
