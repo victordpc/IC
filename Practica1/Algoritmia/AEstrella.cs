@@ -55,32 +55,41 @@ namespace Algoritmia
         /// <returns>Punto del mapa al que se llega</returns>
         private Punto CalculoAlgoritmo()
         {
-            Punto resultado;
+            Punto resultado = null;
+            bool salir = false;
 
-            if (Abierta.Count == 0)
-                return null;
-
-            Punto actual = Abierta.Dequeue();
-
-            //Cerramos el nodo
-            actual.Abierto = false;
-
-            if (actual.GetCoordenada().Equals(Meta))
-                resultado = Mapa[Meta.X, Meta.Y];
-            else
+            while (!salir)
             {
-                // Expansion del punto actual
-                if (MovimientoDiagonal && MovimientoOrtogonal)
-                    ExpansionConDiagonales(actual);
+                if (Abierta.Count == 0)
+                    salir = true;
                 else
                 {
-                    if (MovimientoOrtogonal)
-                        ExpansionOrtogonal(actual);
-                    if (MovimientoDiagonal)
-                        ExpansionDiagonal(actual);
+                    Punto actual = Abierta.Dequeue();
+
+                    //Cerramos el nodo
+                    actual.Abierto = false;
+
+                    if (actual.GetCoordenada().Equals(Meta))
+                    {
+                        resultado = Mapa[Meta.X, Meta.Y];
+                        salir = true;
+                    }
+                    else
+                    {
+                        // Expansion del punto actual
+                        if (MovimientoDiagonal && MovimientoOrtogonal)
+                            ExpansionConDiagonales(actual);
+                        else
+                        {
+                            if (MovimientoOrtogonal)
+                                ExpansionOrtogonal(actual);
+                            if (MovimientoDiagonal)
+                                ExpansionDiagonal(actual);
+                        }
+                    }
                 }
-                resultado = CalculoAlgoritmo();
             }
+
             return resultado;
         }
 
