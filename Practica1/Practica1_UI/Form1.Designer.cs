@@ -2027,8 +2027,6 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.btnReset);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
             this.Name = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

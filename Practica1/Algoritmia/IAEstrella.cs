@@ -47,6 +47,16 @@ namespace Algoritmia
         protected bool MovimientoOrtogonal { get; set; }
 
         /// <summary>
+        /// Indica si se puede nadar
+        /// </summary>
+        public bool Nadar { get; set; }
+
+        /// <summary>
+        /// Indica si se puede escalar
+        /// </summary>
+        public bool Escalar { get; set; }
+
+        /// <summary>
         /// Trata y genera la solución del algoritmo
         /// </summary>
         /// <param name="resultadoAlgoritmo">Punto del mapa al que se llega</param>
@@ -86,16 +96,18 @@ namespace Algoritmia
         /// <summary>
         /// Operaciones de limpieza del algoritmo
         /// </summary>
-        protected internal void LimpiarListas()
+        protected internal void LimpiarListas(List<Coordenada> camino)
         {
             Abierta.Clear();
             foreach (Punto item in Mapa)
             {
                 Abierta.ResetNode(item);
-                if (item.Abierto == true)
+                if (!camino.Contains(item.GetCoordenada()))
+                //if (item.Abierto == true)
                 {
                     item.Abierto = null;
                 }
+
             }
         }
 

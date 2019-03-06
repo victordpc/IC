@@ -17,7 +17,7 @@ namespace Algoritmia
         /// <returns>Objeto Resultado con el camino y el coste.</returns>
         public static AEstrellaResultado CalculoAEstrella(Coordenada inicio, Coordenada meta, Punto[,] mapa)
         {
-            AEstrella aEstrella = new AEstrella(inicio, meta, true,true, mapa);
+            AEstrella aEstrella = new AEstrella(inicio, meta, true,true,false,false, mapa);
             return aEstrella.Algoritmo();
         }
 
@@ -31,7 +31,7 @@ namespace Algoritmia
         /// <returns>Objeto Resultado con el camino y el coste.</returns>
         public static AEstrellaResultado CalculoAEstrella(Coordenada inicio, Coordenada meta, bool MovimientoDiagonal, Punto[,] mapa)
         {
-            AEstrella aEstrella = new AEstrella(inicio, meta, MovimientoDiagonal, true, mapa);
+            AEstrella aEstrella = new AEstrella(inicio, meta, MovimientoDiagonal, true, false, false, mapa);
             return aEstrella.Algoritmo();
         }
     
@@ -45,7 +45,7 @@ namespace Algoritmia
         /// <returns>Objeto Resultado con el camino y el coste.</returns>
         public static AEstrellaResultado CalculoAEstrella(Coordenada inicio, Coordenada meta, bool MovimientoDiagonal,bool MovimientoOrtogonal, Punto[,] mapa)
         {
-            AEstrella aEstrella = new AEstrella(inicio, meta, MovimientoDiagonal, MovimientoOrtogonal, mapa);
+            AEstrella aEstrella = new AEstrella(inicio, meta, MovimientoDiagonal, MovimientoOrtogonal, false, false, mapa);
             return aEstrella.Algoritmo();
         }
         
@@ -74,7 +74,7 @@ namespace Algoritmia
             i = 1;
             for (; i < puntos.Length; i++)
             {
-                AEstrella aEstrella = new AEstrella(puntos[i - 1], puntos[i], MovimientoDiagonal,true, mapa);
+                AEstrella aEstrella = new AEstrella(puntos[i - 1], puntos[i], MovimientoDiagonal,true, false, false, mapa);
                 AEstrellaResultado parcial = aEstrella.Algoritmo();
                 if (parcial.Camino == null)
                 {
@@ -82,7 +82,7 @@ namespace Algoritmia
                 }
                 resultado.Coste += parcial.Coste;
                 resultado.Camino.AddRange(parcial.Camino);
-                aEstrella.LimpiarListas();
+                aEstrella.LimpiarListas(resultado.Camino);
             }
             return resultado;
         }
@@ -112,7 +112,7 @@ namespace Algoritmia
             i = 1;
             for (; i < puntos.Length; i++)
             {
-                AEstrella aEstrella = new AEstrella(puntos[i - 1], puntos[i], MovimientoDiagonal, MovimientoOrtogonal, mapa);
+                AEstrella aEstrella = new AEstrella(puntos[i - 1], puntos[i], MovimientoDiagonal, MovimientoOrtogonal, false, false, mapa);
                 AEstrellaResultado parcial = aEstrella.Algoritmo();
                 if (parcial.Camino == null)
                 {
@@ -120,12 +120,11 @@ namespace Algoritmia
                 }
                 resultado.Coste += parcial.Coste;
                 resultado.Camino.AddRange(parcial.Camino);
-                aEstrella.LimpiarListas();
+                aEstrella.LimpiarListas(resultado.Camino);
             }
             return resultado;
         }
-
-
+        
         /// <summary>
         /// Calcula con el algoritmo A* el camino entre el inicio y la meta en el mapa proporcionado
         /// </summary>
@@ -151,15 +150,16 @@ namespace Algoritmia
             i = 1;
             for (; i < puntos.Length; i++)
             {
-                AEstrella aEstrella = new AEstrella(puntos[i - 1], puntos[i], MovimientoDiagonal, MovimientoOrtogonal, mapa);
+                AEstrella aEstrella = new AEstrella(puntos[i - 1], puntos[i], MovimientoDiagonal, MovimientoOrtogonal,Nadar,Escalar, mapa);
                 AEstrellaResultado parcial = aEstrella.Algoritmo();
                 if (parcial.Camino == null)
                 {
                     return new AEstrellaResultado(mapa, null, 0.0);
                 }
                 resultado.Coste += parcial.Coste;
+                resultado.Camino.Clear();
                 resultado.Camino.AddRange(parcial.Camino);
-                aEstrella.LimpiarListas();
+                aEstrella.LimpiarListas(resultado.Camino);
             }
             return resultado;
         }
@@ -188,7 +188,7 @@ namespace Algoritmia
             i = 1;
             for (; i < puntos.Length; i++)
             {
-                AEstrella aEstrella = new AEstrella(puntos[i - 1], puntos[i], true,true, mapa);
+                AEstrella aEstrella = new AEstrella(puntos[i - 1], puntos[i], true,true, false, false, mapa);
                 AEstrellaResultado parcial = aEstrella.Algoritmo();
                 if (parcial.Camino == null)
                 {
@@ -196,7 +196,7 @@ namespace Algoritmia
                 }
                 resultado.Coste += parcial.Coste;
                 resultado.Camino.AddRange(parcial.Camino);
-                aEstrella.LimpiarListas();
+                aEstrella.LimpiarListas(resultado.Camino);
             }
             return resultado;
         }

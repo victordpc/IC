@@ -209,6 +209,39 @@ namespace Algoritmia.Tests
         }
 
         [TestMethod()]
+        public void AlgoritmoTest_Waypoint_Correcto()
+        {
+            Punto[,] mapa = new Punto[17, 11] {
+{new Punto(0,0){ Valor = 4 },new Punto(0,1),new Punto(0,2),new Punto(0,3){ Valor = 5 },new Punto(0,4),new Punto(0,5),new Punto(0,6),new Punto(0,7),new Punto(0,8),new Punto(0,9),new Punto(0,10) },
+{new Punto(1,0),new Punto(1,1),new Punto(1,2),new Punto(1,3),new Punto(1,4),new Punto(1,5),new Punto(1,6),new Punto(1,7),new Punto(1,8),new Punto(1,9),new Punto(1,10) },
+{new Punto(2,0),new Punto(2,1),new Punto(2,2){ Valor=6 },new Punto(2,3),new Punto(2,4),new Punto(2,5),new Punto(2,6),new Punto(2,7),new Punto(2,8),new Punto(2,9),new Punto(2,10) },
+{new Punto(3,0),new Punto(3,1),new Punto(3,2),new Punto(3,3),new Punto(3,4),new Punto(3,5),new Punto(3,6),new Punto(3,7),new Punto(3,8),new Punto(3,9),new Punto(3,10) },
+{new Punto(4,0),new Punto(4,1),new Punto(4,2),new Punto(4,3),new Punto(4,4),new Punto(4,5),new Punto(4,6),new Punto(4,7),new Punto(4,8),new Punto(4,9),new Punto(4,10) },
+{new Punto(5,0),new Punto(5,1),new Punto(5,2),new Punto(5,3),new Punto(5,4),new Punto(5,5),new Punto(5,6),new Punto(5,7),new Punto(5,8),new Punto(5,9),new Punto(5,10) },
+{new Punto(6,0),new Punto(6,1),new Punto(6,2),new Punto(6,3),new Punto(6,4),new Punto(6,5),new Punto(6,6),new Punto(6,7),new Punto(6,8),new Punto(6,9),new Punto(6,10) },
+{new Punto(7,0),new Punto(7,1),new Punto(7,2),new Punto(7,3),new Punto(7,4),new Punto(7,5),new Punto(7,6),new Punto(7,7),new Punto(7,8),new Punto(7,9),new Punto(7,10) },
+{new Punto(8,0),new Punto(8,1),new Punto(8,2),new Punto(8,3),new Punto(8,4),new Punto(8,5),new Punto(8,6),new Punto(8,7),new Punto(8,8),new Punto(8,9),new Punto(8,10) },
+{new Punto(9,0),new Punto(9,1),new Punto(9,2),new Punto(9,3),new Punto(9,4),new Punto(9,5),new Punto(9,6),new Punto(9,7),new Punto(9,8),new Punto(9,9),new Punto(9,10) },
+{new Punto(10,0),new Punto(10,1),new Punto(10,2),new Punto(10,3),new Punto(10,4),new Punto(10,5),new Punto(10,6),new Punto(10,7),new Punto(10,8),new Punto(10,9),new Punto(10,10) },
+{new Punto(11,0),new Punto(11,1),new Punto(11,2),new Punto(11,3),new Punto(11,4),new Punto(11,5),new Punto(11,6),new Punto(11,7),new Punto(11,8),new Punto(11,9),new Punto(11,10) },
+{new Punto(12,0),new Punto(12,1),new Punto(12,2),new Punto(12,3),new Punto(12,4),new Punto(12,5),new Punto(12,6),new Punto(12,7),new Punto(12,8),new Punto(12,9),new Punto(12,10) },
+{new Punto(13,0),new Punto(13,1),new Punto(13,2),new Punto(13,3),new Punto(13,4),new Punto(13,5),new Punto(13,6),new Punto(13,7),new Punto(13,8),new Punto(13,9),new Punto(13,10) },
+{new Punto(14,0),new Punto(14,1),new Punto(14,2),new Punto(14,3),new Punto(14,4),new Punto(14,5),new Punto(14,6),new Punto(14,7),new Punto(14,8),new Punto(14,9),new Punto(14,10) },
+{new Punto(15,0),new Punto(15,1),new Punto(15,2),new Punto(15,3),new Punto(15,4),new Punto(15,5),new Punto(15,6),new Punto(15,7),new Punto(15,8),new Punto(15,9),new Punto(15,10) },
+{new Punto(16,0),new Punto(16,1),new Punto(16,2),new Punto(16,3),new Punto(16,4),new Punto(16,5),new Punto(16,6),new Punto(16,7),new Punto(16,8),new Punto(16,9),new Punto(16,10) },
+            };
+            Coordenada inicio = new Coordenada() { X = 0, Y = 0 };
+            Coordenada fin = new Coordenada() { X = 0, Y = 3 };
+
+            AEstrellaResultado resultado = Algoritmia.CalculoAEstrella(inicio, fin, true, true, true, true, mapa,
+                new Coordenada[] { new Coordenada() { X = 2, Y = 2 } });
+
+            Assert.AreEqual(inicio, resultado.Camino[0]);
+            Assert.AreEqual(fin, resultado.Camino[resultado.Camino.Count - 1]);
+        }
+
+
+        [TestMethod()]
         public void AlgoritmoTest_Nadar_Escalar_Fallo()
         {
             Punto[,] mapa = new Punto[17, 11] {

@@ -31,12 +31,12 @@ namespace Practica1_UI
             _pasos = 0;
             _actual = 0;
             _waypoints = new List<Algoritmia.Coordenada>();
-            _mapa = new Algoritmia.Punto[tableLayoutPanel1.ColumnCount-1, tableLayoutPanel1.RowCount-1];
-            for (int i = 0; i < tableLayoutPanel1.ColumnCount-1; i++)
-                for (int j = 0; j < tableLayoutPanel1.RowCount-1; j++)
+            _mapa = new Algoritmia.Punto[tableLayoutPanel1.ColumnCount - 1, tableLayoutPanel1.RowCount - 1];
+            for (int i = 0; i < tableLayoutPanel1.ColumnCount - 1; i++)
+                for (int j = 0; j < tableLayoutPanel1.RowCount - 1; j++)
                 {
                     _mapa[i, j] = new Algoritmia.Punto(i, j);
-                    ((PictureBox)tableLayoutPanel1.GetControlFromPosition(i, j)).Tag = 0;
+                    ((PictureBox)tableLayoutPanel1.GetControlFromPosition(i, j)).Tag = (int)Algoritmia.Terreno.Hierba;
                 }
             ResumeLayout();
         }
@@ -70,12 +70,12 @@ namespace Practica1_UI
                 seleccionado.Permitido = true;
 
                 // Si la celda que borramos era un way point la quitamos de la lista
-                if (seleccionado.Valor == 6) // Way Point
+                if (seleccionado.Valor == (int)Algoritmia.Terreno.WayPoint) // Way Point
                 { _waypoints.Remove(new Algoritmia.Coordenada() { X = i, Y = j }); }
 
-                if (indiceImagen == 3) // Nucelar
+                if (indiceImagen == (int)Algoritmia.Terreno.Nucelar) // Nucelar
                 { seleccionado.Permitido = false; }
-                else if (indiceImagen == 6) // // Way Point
+                else if (indiceImagen == (int)Algoritmia.Terreno.WayPoint) // // Way Point
                 { _waypoints.Add(new Algoritmia.Coordenada() { X = i, Y = j }); }
 
                 seleccionado.Valor = indiceImagen;
@@ -84,16 +84,17 @@ namespace Practica1_UI
 
         private void reset_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < tableLayoutPanel1.ColumnCount-1; i++)
+            for (int i = 0; i < tableLayoutPanel1.ColumnCount - 1; i++)
             {
-                for (int j = 0; j < tableLayoutPanel1.RowCount-1; j++)
+                for (int j = 0; j < tableLayoutPanel1.RowCount - 1; j++)
                 {
-                    ((PictureBox)tableLayoutPanel1.GetControlFromPosition(i, j)).Tag = 0;
+                    ((PictureBox)tableLayoutPanel1.GetControlFromPosition(i, j)).Tag = (int)Algoritmia.Terreno.Hierba;
                     ((PictureBox)tableLayoutPanel1.GetControlFromPosition(i, j)).Image
                         = global::Practica1_UI.Properties.Resources.hierba;
                     _mapa[i, j] = new Algoritmia.Punto(i, j);
                 }
             }
+            _waypoints = new List<Algoritmia.Coordenada>();
             LimpiarLocales();
             btnStart.Enabled = true;
         }
@@ -104,12 +105,10 @@ namespace Practica1_UI
             _meta = 0;
             _pasos = 0;
             _actual = 0;
-            _waypoints = new List<Algoritmia.Coordenada>();
         }
 
         private void start_Click(object sender, EventArgs e)
         {
-            btnStart.Enabled = false;
 
             LimpiarLocales();
 
@@ -126,14 +125,14 @@ namespace Practica1_UI
             nadar = movimientosRover.GetItemChecked(2);
             escalar = movimientosRover.GetItemChecked(3);
 
-            for (int i = 0; i < tableLayoutPanel1.ColumnCount-1; i++)
-                for (int j = 0; j < tableLayoutPanel1.RowCount-1; j++)
-                    if (_mapa[i, j].Valor == 4)
+            for (int i = 0; i < tableLayoutPanel1.ColumnCount - 1; i++)
+                for (int j = 0; j < tableLayoutPanel1.RowCount - 1; j++)
+                    if (_mapa[i, j].Valor == (int)Algoritmia.Terreno.Inicio)
                     {
                         _inicio++;
                         inicio = new Algoritmia.Coordenada() { X = i, Y = j };
                     }
-                    else if (_mapa[i, j].Valor == 5)
+                    else if (_mapa[i, j].Valor == (int)Algoritmia.Terreno.Fin)
                     {
                         _meta++;
                         meta = new Algoritmia.Coordenada() { X = i, Y = j };
@@ -148,11 +147,13 @@ namespace Practica1_UI
 
                     if (_resultado.Coste > 0)
                     {
+                        btnStart.Enabled = false;
                         _pasos = _resultado.Camino.Count();
                         _actual = 0;
                         _coste = _resultado.Coste;
                         timer1.Start();
-                    }else
+                    }
+                    else
                         MessageBox.Show("No se ha encontrado una ruta.");
 
                 }
@@ -177,16 +178,16 @@ namespace Practica1_UI
             //Ponemos la imagen que corresponda
             switch (indice)
             {
-                case (int)Siguiente.Agua:
+                case (int)Algoritmia.Terreno.Agua:
                     celda.Image = global::Practica1_UI.Properties.Resources.rover2_agua;
                     break;
-                case (int)Siguiente.Roca:
+                case (int)Algoritmia.Terreno.Roca:
                     celda.Image = global::Practica1_UI.Properties.Resources.rover2_roca;
                     break;
-                case (int)Siguiente.Fin:
+                case (int)Algoritmia.Terreno.Fin:
                     celda.Image = global::Practica1_UI.Properties.Resources.rover2_llegada;
                     break;
-                case (int)Siguiente.WayPoint:
+                case (int)Algoritmia.Terreno.WayPoint:
                     celda.Image = global::Practica1_UI.Properties.Resources.rover2_waypoint;
                     break;
                 default:
@@ -200,17 +201,8 @@ namespace Practica1_UI
             if (_actual >= _pasos)
             {
                 timer1.Stop();
-                MessageBox.Show(String.Format("Camino encontrado con {0} pasos y coste {1}.", _pasos,_coste),"Camino encontrado",MessageBoxButtons.OK,MessageBoxIcon.None);
+                MessageBox.Show(String.Format("Camino encontrado con {0} pasos y coste {1}.", _pasos, _coste), "Camino encontrado", MessageBoxButtons.OK, MessageBoxIcon.None);
             }
         }
-    }
-
-    enum Siguiente
-    {
-        Hierba = 0,
-        Agua = 1,
-        Roca = 2,
-        Fin = 5,
-        WayPoint = 6,
     }
 }

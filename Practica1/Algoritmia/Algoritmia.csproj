@@ -45,6 +45,7 @@
     <Compile Include="AEstrellaResultado.cs" />
     <Compile Include="Algoritmia.cs" />
     <Compile Include="Calculo.cs" />
+    <Compile Include="Terreno.cs" />
     <Compile Include="Coordenada.cs" />
     <Compile Include="IAEstrella.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

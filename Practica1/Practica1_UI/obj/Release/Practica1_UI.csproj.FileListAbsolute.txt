@@ -1,0 +1,15 @@
+C:\hlocal\IC\Practica1\Practica1_UI\bin\Release\TARS.exe.config
+C:\hlocal\IC\Practica1\Practica1_UI\bin\Release\TARS.exe
+C:\hlocal\IC\Practica1\Practica1_UI\bin\Release\TARS.pdb
+C:\hlocal\IC\Practica1\Practica1_UI\bin\Release\Algoritmia.dll
+C:\hlocal\IC\Practica1\Practica1_UI\bin\Release\Priority Queue.dll
+C:\hlocal\IC\Practica1\Practica1_UI\bin\Release\Algoritmia.pdb
+C:\hlocal\IC\Practica1\Practica1_UI\bin\Release\Priority Queue.pdb
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Release\Practica1_UI.csprojAssemblyReference.cache
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Release\Practica1_UI.Form1.resources
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Release\Practica1_UI.Properties.Resources.resources
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Release\Practica1_UI.csproj.GenerateResource.cache
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Release\Practica1_UI.csproj.CoreCompileInputs.cache
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Release\Practica1_UI.csproj.CopyComplete
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Release\TARS.exe
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Release\TARS.pdb

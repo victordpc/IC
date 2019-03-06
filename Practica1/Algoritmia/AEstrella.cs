@@ -13,13 +13,15 @@ namespace Algoritmia
         /// <param name="inicio">Punto de inicio</param>
         /// <param name="meta">Punto de fin</param>
         /// <param name="mapa">Mapa donde se ejecuta el algoritmo</param>
-        internal AEstrella(Coordenada inicio, Coordenada meta, bool movimientoDiagonal, bool movimientoOrtogonal, Punto[,] mapa)
+        internal AEstrella(Coordenada inicio, Coordenada meta, bool movimientoDiagonal, bool movimientoOrtogonal, bool nadar, bool escalar, Punto[,] mapa)
         {
             Inicio = inicio;
             Meta = meta;
             Mapa = mapa;
             Abierta = new FastPriorityQueue<Punto>(mapa.Length);
             Waypoints = null;
+            Nadar = nadar;
+            Escalar = escalar;
             MovimientoDiagonal = movimientoDiagonal;
             MovimientoOrtogonal = movimientoOrtogonal;
         }
@@ -92,9 +94,11 @@ namespace Algoritmia
                     {
                         if (actual.Y + j >= 0 && actual.Y + j < Mapa.GetLength(1))
                         {
-                            if (Mapa[actual.X + i, actual.Y + j].Permitido)
+                            if (Mapa[actual.X + i, actual.Y + j].Permitido )
                             {
-                                CostesYTratarNodos(actual, i, j);
+                                if (!(Mapa[actual.X + i, actual.Y + j].Valor == (float)Terreno.Agua && !Nadar))
+                                    if (!(Mapa[actual.X + i, actual.Y + j].Valor == (float)Terreno.Roca && !Escalar))
+                                    CostesYTratarNodos(actual, i, j);
                             }
                         }
                     }
