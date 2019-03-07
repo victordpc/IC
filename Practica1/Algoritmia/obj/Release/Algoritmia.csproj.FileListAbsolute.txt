@@ -1,0 +1,6 @@
+C:\hlocal\IC\Practica1\Algoritmia\bin\Release\Algoritmia.dll
+C:\hlocal\IC\Practica1\Algoritmia\bin\Release\Algoritmia.pdb
+C:\hlocal\IC\Practica1\Algoritmia\obj\Release\Algoritmia.csprojAssemblyReference.cache
+C:\hlocal\IC\Practica1\Algoritmia\obj\Release\Algoritmia.csproj.CoreCompileInputs.cache
+C:\hlocal\IC\Practica1\Algoritmia\obj\Release\Algoritmia.dll
+C:\hlocal\IC\Practica1\Algoritmia\obj\Release\Algoritmia.pdb

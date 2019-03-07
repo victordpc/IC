@@ -1,0 +1,5 @@
+C:\hlocal\IC\Practica1\Priority Queue\bin\Release\Priority Queue.dll
+C:\hlocal\IC\Practica1\Priority Queue\bin\Release\Priority Queue.pdb
+C:\hlocal\IC\Practica1\Priority Queue\obj\Release\Priority Queue.csproj.CoreCompileInputs.cache
+C:\hlocal\IC\Practica1\Priority Queue\obj\Release\Priority Queue.dll
+C:\hlocal\IC\Practica1\Priority Queue\obj\Release\Priority Queue.pdb
