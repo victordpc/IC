@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica2_UI", "Practica2_UI\Practica2_UI.csproj", "{A1D59228-4395-49FC-823A-17C87EB6973C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algoritmia", "Algoritmia\Algoritmia.csproj", "{79B51D7A-38B2-4C71-9946-55C495FC0EFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1D59228-4395-49FC-823A-17C87EB6973C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D59228-4395-49FC-823A-17C87EB6973C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D59228-4395-49FC-823A-17C87EB6973C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D59228-4395-49FC-823A-17C87EB6973C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79B51D7A-38B2-4C71-9946-55C495FC0EFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79B51D7A-38B2-4C71-9946-55C495FC0EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79B51D7A-38B2-4C71-9946-55C495FC0EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79B51D7A-38B2-4C71-9946-55C495FC0EFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {870C132F-31C9-442E-BE73-AFAED246F084}
+	EndGlobalSection
+EndGlobal

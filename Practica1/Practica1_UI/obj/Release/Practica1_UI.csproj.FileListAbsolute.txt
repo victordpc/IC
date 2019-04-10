@@ -16,3 +16,4 @@ C:\hlocal\IC\Practica1\Practica1_UI\bin\Release\TARS.application
 C:\hlocal\IC\Practica1\Practica1_UI\obj\Release\Practica1_UI.Juego.resources
 C:\hlocal\IC\Practica1\Practica1_UI\obj\Release\TARS.exe.manifest
 C:\hlocal\IC\Practica1\Practica1_UI\obj\Release\TARS.application
+C:\hlocal\IC\Practica1\Practica1_UI\obj\Release\Practica1_UI.csprojAssemblyReference.cache

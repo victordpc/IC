@@ -1,0 +1,17 @@
+C:\hlocal\IC\Practica2\Practica2_UI\bin\Debug\Practica2_UI.exe.config
+C:\hlocal\IC\Practica2\Practica2_UI\bin\Debug\Practica2_UI.exe
+C:\hlocal\IC\Practica2\Practica2_UI\bin\Debug\Practica2_UI.pdb
+C:\hlocal\IC\Practica2\Practica2_UI\obj\Debug\Practica2_UI.csprojAssemblyReference.cache
+C:\hlocal\IC\Practica2\Practica2_UI\obj\Debug\Practica2_UI.Form1.resources
+C:\hlocal\IC\Practica2\Practica2_UI\obj\Debug\Practica2_UI.Properties.Resources.resources
+C:\hlocal\IC\Practica2\Practica2_UI\obj\Debug\Practica2_UI.csproj.GenerateResource.cache
+C:\hlocal\IC\Practica2\Practica2_UI\obj\Debug\Practica2_UI.csproj.CoreCompileInputs.cache
+C:\hlocal\IC\Practica2\Practica2_UI\obj\Debug\Practica2_UI.exe
+C:\hlocal\IC\Practica2\Practica2_UI\obj\Debug\Practica2_UI.pdb
+C:\hlocal\IC\Practica2\Practica2_UI\bin\Debug\Algoritmia.dll
+C:\hlocal\IC\Practica2\Practica2_UI\bin\Debug\Algoritmia.pdb
+C:\hlocal\IC\Practica2\Practica2_UI\obj\Debug\Practica2_UI.csproj.CopyComplete
+C:\hlocal\IC\Practica2\Practica2_UI\bin\Debug\Practica2_UI.exe.manifest
+C:\hlocal\IC\Practica2\Practica2_UI\bin\Debug\Practica2_UI.application
+C:\hlocal\IC\Practica2\Practica2_UI\obj\Debug\Practica2_UI.exe.manifest
+C:\hlocal\IC\Practica2\Practica2_UI\obj\Debug\Practica2_UI.application
