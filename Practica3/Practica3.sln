@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica3_UI", "Practica3_UI\Practica3_UI.csproj", "{0CD0AEEB-4A53-47A3-89E1-6EA39934FE84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algoritmia", "Algoritmia\Algoritmia.csproj", "{4B92D144-00D7-4C06-9F5F-496735D23D1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datos", "Datos", "{118DB9EE-9A80-4557-BF8E-0660AAC32859}"
+	ProjectSection(SolutionItems) = preProject
+		Datos\Iris2Clases.txt = Datos\Iris2Clases.txt
+		Datos\TestIris01.txt = Datos\TestIris01.txt
+		Datos\TestIris02.txt = Datos\TestIris02.txt
+		Datos\TestIris03.txt = Datos\TestIris03.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CD0AEEB-4A53-47A3-89E1-6EA39934FE84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CD0AEEB-4A53-47A3-89E1-6EA39934FE84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CD0AEEB-4A53-47A3-89E1-6EA39934FE84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CD0AEEB-4A53-47A3-89E1-6EA39934FE84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B92D144-00D7-4C06-9F5F-496735D23D1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B92D144-00D7-4C06-9F5F-496735D23D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B92D144-00D7-4C06-9F5F-496735D23D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B92D144-00D7-4C06-9F5F-496735D23D1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7E099E3-151E-4D0C-B23C-CDFEDEA00419}
+	EndGlobalSection
+EndGlobal

@@ -6,3 +6,9 @@
 *.lock
 *.recover
 *.coverage
+/Practica3/.vs/Practica3/v15
+/Practica3/Algoritmia/bin/Debug
+/Practica3/Practica3_UI/.vs/Practica3/v15
+/Practica3/Practica3_UI/bin/Debug
+/Practica3/Practica3_UI/obj/Debug
+/Practica3/Algoritmia/obj/Debug
