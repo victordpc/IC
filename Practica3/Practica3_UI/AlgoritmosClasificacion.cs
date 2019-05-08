@@ -27,39 +27,48 @@ namespace Practica3_UI
 
         private void btnCargarFichero_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog1 = new OpenFileDialog
+            try
             {
-                Title = "Fichero de entrada",
+                OpenFileDialog openFileDialog1 = new OpenFileDialog
+                {
+                    Title = "Fichero de entrada",
 
-                RestoreDirectory = true,
-                CheckFileExists = true,
-                CheckPathExists = true,
+                    RestoreDirectory = true,
+                    CheckFileExists = true,
+                    CheckPathExists = true,
 
-                DefaultExt = "txt",
-                Filter = "txt files (*.txt)|*.txt|csv files (*.csv)|*.csv",
-            };
+                    DefaultExt = "txt",
+                    Filter = "txt files (*.txt)|*.txt|csv files (*.csv)|*.csv",
+                };
 
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-                CargaFichero(openFileDialog1.FileName);
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                    CargaFichero(openFileDialog1.FileName);
 
-            openFileDialog1.Dispose();
+                openFileDialog1.Dispose();
+            }
+            catch (Exception ex)
+            {
+                Helper.TreatErrorException(ex);
+            }
         }
 
         private void CargaFichero(string fileName)
         {
-            if (!System.IO.File.Exists(fileName))
-                Helper.ShowMessage("Debe seleccionar un fichero existente.");
-            else
-                try
+            try
+            {
+                if (!System.IO.File.Exists(fileName))
+                    Helper.ShowMessage("Debe seleccionar un fichero existente.");
+                else
                 {
                     this.RutaFichero = fileName;
                     this.Cursor = Cursors.WaitCursor;
                     bwCargarFichero.RunWorkerAsync();
                 }
-                catch (Exception ex)
-                {
-                    Helper.TreatErrorException(ex);
-                }
+            }
+            catch (Exception ex)
+            {
+                Helper.TreatErrorException(ex);
+            }
         }
 
         private void bwCargarFichero_DoWork(object sender, DoWorkEventArgs e)
@@ -67,7 +76,7 @@ namespace Practica3_UI
             try
             {
                 if (System.IO.File.Exists(RutaFichero))
-                    Data = ManejadorCSV.ImportFromCsvFile(RutaFichero,out Muestras);
+                    Data = ManejadorCSV.ImportFromCsvFile(RutaFichero, out Muestras);
 
                 if (Data == null)
                     Helper.TreatErrorMessage("Error importando el fichero.");
@@ -89,128 +98,162 @@ namespace Practica3_UI
 
         private void btnKmediasFichero_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog1 = new OpenFileDialog
+            try
             {
-                Title = "Fichero de entrada",
+                OpenFileDialog openFileDialog1 = new OpenFileDialog
+                {
+                    Title = "Fichero de entrada",
 
-                RestoreDirectory = true,
-                CheckFileExists = true,
-                CheckPathExists = true,
+                    RestoreDirectory = true,
+                    CheckFileExists = true,
+                    CheckPathExists = true,
 
-                DefaultExt = "txt",
-                Filter = "txt files (*.txt)|*.txt|csv files (*.csv)|*.csv",
-            };
+                    DefaultExt = "txt",
+                    Filter = "txt files (*.txt)|*.txt|csv files (*.csv)|*.csv",
+                };
 
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-                  ManejadorCSV.LeerMuestra(openFileDialog1.FileName, txtKmediasFichero,txtKmediasMuestra1, txtKmediasMuestra2,txtKmediasMuestra3,txtKmediasMuestra4);
- 
-            openFileDialog1.Dispose();
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                    ManejadorCSV.LeerMuestra(openFileDialog1.FileName, txtKmediasFichero, txtKmediasMuestra1, txtKmediasMuestra2, txtKmediasMuestra3, txtKmediasMuestra4);
+
+                openFileDialog1.Dispose();
+            }
+            catch (Exception ex)
+            {
+                Helper.TreatErrorException(ex);
+            }
         }
 
         private void btnBayesFichero_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog1 = new OpenFileDialog
+            try
             {
-                Title = "Fichero de entrada",
+                OpenFileDialog openFileDialog1 = new OpenFileDialog
+                {
+                    Title = "Fichero de entrada",
 
-                RestoreDirectory = true,
-                CheckFileExists = true,
-                CheckPathExists = true,
+                    RestoreDirectory = true,
+                    CheckFileExists = true,
+                    CheckPathExists = true,
 
-                DefaultExt = "txt",
-                Filter = "txt files (*.txt)|*.txt|csv files (*.csv)|*.csv",
-            };
+                    DefaultExt = "txt",
+                    Filter = "txt files (*.txt)|*.txt|csv files (*.csv)|*.csv",
+                };
 
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-                  ManejadorCSV.LeerMuestra(openFileDialog1.FileName, txtBayesFichero, txtBayesMuestra1, txtBayesMuestra2, txtBayesMuestra3, txtBayesMuestra4);
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                    ManejadorCSV.LeerMuestra(openFileDialog1.FileName, txtBayesFichero, txtBayesMuestra1, txtBayesMuestra2, txtBayesMuestra3, txtBayesMuestra4);
 
-            openFileDialog1.Dispose();
+                openFileDialog1.Dispose();
+            }
+            catch (Exception ex)
+            {
+                Helper.TreatErrorException(ex);
+            }
         }
 
         private void btnLloydFichero_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog1 = new OpenFileDialog
+            try
             {
-                Title = "Fichero de entrada",
+                OpenFileDialog openFileDialog1 = new OpenFileDialog
+                {
+                    Title = "Fichero de entrada",
 
-                RestoreDirectory = true,
-                CheckFileExists = true,
-                CheckPathExists = true,
+                    RestoreDirectory = true,
+                    CheckFileExists = true,
+                    CheckPathExists = true,
 
-                DefaultExt = "txt",
-                Filter = "txt files (*.txt)|*.txt|csv files (*.csv)|*.csv",
-            };
+                    DefaultExt = "txt",
+                    Filter = "txt files (*.txt)|*.txt|csv files (*.csv)|*.csv",
+                };
 
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-                ManejadorCSV.LeerMuestra(openFileDialog1.FileName, txtLloyFichero, txtLloydMuestra1, txtLloydMuestra2, txtLloydMuestra3, txtLloydMuestra4);
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                    ManejadorCSV.LeerMuestra(openFileDialog1.FileName, txtLloyFichero, txtLloydMuestra1, txtLloydMuestra2, txtLloydMuestra3, txtLloydMuestra4);
 
-            openFileDialog1.Dispose();
+                openFileDialog1.Dispose();
+            }
+            catch (Exception ex)
+            {
+                Helper.TreatErrorException(ex);
+            }
         }
 
         private void btnKmediasEntrenar_Click(object sender, EventArgs e)
         {
-            if (Data==null||Data.Count==0)
-                Helper.ShowMessage("Debe cargar un fichero para realizar el entrenamiento.");
-            else
-                try
-                {
-                    this.Cursor = Cursors.WaitCursor;
-                    bwKmedias.RunWorkerAsync();
-                }
-                catch (Exception ex)
-                {
-                    Helper.TreatErrorException(ex);
-                }
-         }
+            try
+            {
+                if (Data == null || Data.Count == 0)
+                    Helper.ShowMessage("Debe cargar un fichero para realizar el entrenamiento.");
+                else
+                    try
+                    {
+                        this.Cursor = Cursors.WaitCursor;
+                        bwKmedias.RunWorkerAsync();
+                    }
+                    catch (Exception ex)
+                    {
+                        Helper.TreatErrorException(ex);
+                    }
+            }
+            catch (Exception ex)
+            {
+                Helper.TreatErrorException(ex);
+            }
+        }
 
         private void btnBayesEntrenar_Click(object sender, EventArgs e)
         {
-            if (Data == null || Data.Count == 0)
-                Helper.ShowMessage("Debe cargar un fichero para realizar el entrenamiento.");
-            else
-                try
+            try
+            {
+                if (Data == null || Data.Count == 0)
+                    Helper.ShowMessage("Debe cargar un fichero para realizar el entrenamiento.");
+                else
                 {
                     this.Cursor = Cursors.WaitCursor;
                     bwBayes.RunWorkerAsync();
                 }
-                catch (Exception ex)
-                {
-                    Helper.TreatErrorException(ex);
-                }
+            }
+            catch (Exception ex)
+            {
+                Helper.TreatErrorException(ex);
+            }
         }
 
         private void btnLloydEntrenar_Click(object sender, EventArgs e)
         {
-            if (Data == null || Data.Count == 0)
-                Helper.ShowMessage("Debe cargar un fichero para realizar el entrenamiento.");
-            else
-                try
+            try
+            {
+                if (Data == null || Data.Count == 0)
+                    Helper.ShowMessage("Debe cargar un fichero para realizar el entrenamiento.");
+                else
                 {
                     this.Cursor = Cursors.WaitCursor;
                     bwLloyd.RunWorkerAsync();
                 }
-                catch (Exception ex)
-                {
-                    Helper.TreatErrorException(ex);
-                }
+            }
+            catch (Exception ex)
+            {
+                Helper.TreatErrorException(ex);
+            }
         }
 
         private void btnEntrenarTodos_Click(object sender, EventArgs e)
         {
-            if (Data == null || Data.Count == 0)
-                Helper.ShowMessage("Debe cargar un fichero para realizar el entrenamiento.");
-            else
-                try
+            try
+            {
+                if (Data == null || Data.Count == 0)
+                    Helper.ShowMessage("Debe cargar un fichero para realizar el entrenamiento.");
+                else
                 {
                     this.Cursor = Cursors.WaitCursor;
                     bwKmedias.RunWorkerAsync();
                     bwBayes.RunWorkerAsync();
                     bwLloyd.RunWorkerAsync();
                 }
-                catch (Exception ex)
-                {
-                    Helper.TreatErrorException(ex);
-                }
+            }
+            catch (Exception ex)
+            {
+                Helper.TreatErrorException(ex);
+            }
         }
 
         private List<Clase> CopiarDatos(List<Clase> data)
@@ -232,17 +275,15 @@ namespace Practica3_UI
             return resultado;
         }
 
-
         private void bwKmedias_DoWork(object sender, DoWorkEventArgs e)
         {
-            //if (Kmedias != null)
-            //    Kmedias.Dispose();
-                       
-            Kmedias = new Algoritmia.Kmedias()
+            try
             {
-                tolerancia = float.Parse(txtKmediasTolerancia.Text.Replace('.', ',')),
-                pesoExponencialB = float.Parse(txtKmediasb.Text.Replace('.', ',')),
-                Centros = new List<Algoritmia.Muestra>() {
+                Kmedias = new Algoritmia.Kmedias()
+                {
+                    Tolerancia = float.Parse(txtKmediasTolerancia.Text.Replace('.', ',')),
+                    PesoExponencialB = float.Parse(txtKmediasb.Text.Replace('.', ',')),
+                    Centros = new List<Algoritmia.Muestra>() {
                     new Algoritmia.Muestra() {
                         Medidas = new List<double>() {
                             double.Parse(txtClase1Centro1.Text.Replace('.', ',')),
@@ -260,10 +301,15 @@ namespace Practica3_UI
                         }
                     }
                 },
-                Datos = CopiarDatos(Data),
-                Muestras = this.Muestras
-            };
-            Kmedias.Entrenar();
+                    Datos = CopiarDatos(Data),
+                    Muestras = this.Muestras
+                };
+                Kmedias.Entrenar();
+            }
+            catch (Exception ex)
+            {
+                Helper.TreatErrorException(ex);
+            }
         }
 
         private void bwKmedias_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -274,12 +320,11 @@ namespace Practica3_UI
 
         private void bwBayes_DoWork(object sender, DoWorkEventArgs e)
         {
-            //if (Kmedias != null)
-            //    Bayes.Dispose();
-
-            Bayes = new Algoritmia.Bayes()
+            try
             {
-                Centros = new List<Algoritmia.Muestra>() {
+                Bayes = new Algoritmia.Bayes()
+                {
+                    Centros = new List<Algoritmia.Muestra>() {
                     new Algoritmia.Muestra() {
                         Medidas = new List<double>() {
                             double.Parse(txtClase1Centro1.Text.Replace('.', ',')),
@@ -297,12 +342,16 @@ namespace Practica3_UI
                         }
                     }
                 },
-                Datos = CopiarDatos(Data),
-                Muestras = this.Muestras
-            };
-            Bayes.Entrenar();
+                    Datos = CopiarDatos(Data),
+                    Muestras = this.Muestras
+                };
+                Bayes.Entrenar();
+            }
+            catch (Exception ex)
+            {
+                Helper.TreatErrorException(ex);
+            }
         }
-
 
         private void bwBayes_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
@@ -312,15 +361,14 @@ namespace Practica3_UI
 
         private void bwLloyd_DoWork(object sender, DoWorkEventArgs e)
         {
-            //if (Kmedias != null)
-            //    Kmedias.Dispose();
-
-            Lloyd = new Algoritmia.Lloyd()
+            try
             {
-                tolerancia = float.Parse(txtLloydTolerancia.Text.Replace('.', ',')),
-                iteraciones=int.Parse(txtLloydIteraciones.Text),
-                aprendizaje = float.Parse(txtLloydAprendizaje.Text.Replace('.', ',')),
-                Centros = new List<Algoritmia.Muestra>() {
+                Lloyd = new Algoritmia.Lloyd()
+                {
+                    Tolerancia = float.Parse(txtLloydTolerancia.Text.Replace('.', ',')),
+                    Iteraciones = int.Parse(txtLloydIteraciones.Text),
+                    Aprendizaje = float.Parse(txtLloydAprendizaje.Text.Replace('.', ',')),
+                    Centros = new List<Algoritmia.Muestra>() {
                     new Algoritmia.Muestra() {
                         Medidas = new List<double>() {
                             double.Parse(txtClase1Centro1.Text.Replace('.', ',')),
@@ -338,10 +386,15 @@ namespace Practica3_UI
                         }
                     }
                 },
-                Datos = CopiarDatos(Data),
-                Muestras = this.Muestras
-            };
-            Lloyd.Entrenar();
+                    Datos = CopiarDatos(Data),
+                    Muestras = this.Muestras
+                };
+                Lloyd.Entrenar();
+            }
+            catch (Exception ex)
+            {
+                Helper.TreatErrorException(ex);
+            }
         }
 
         private void bwLloyd_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -367,47 +420,68 @@ namespace Practica3_UI
 
         private void btnKmediasComprobar_Click(object sender, EventArgs e)
         {
-            Algoritmia.Muestra MuestraComprobar = new Algoritmia.Muestra()
+            try
             {
-                Medidas = new List<double>() {
+                Algoritmia.Muestra MuestraComprobar = new Algoritmia.Muestra()
+                {
+                    Medidas = new List<double>() {
                             double.Parse(txtKmediasMuestra1.Text.Replace('.', ',')),
                             double.Parse(txtKmediasMuestra2.Text.Replace('.', ',')),
                             double.Parse(txtKmediasMuestra3.Text.Replace('.', ',')),
                             double.Parse(txtKmediasMuestra4.Text.Replace('.', ','))
                         }
-            };
+                };
 
-            lblKmediasResultado.Text = Kmedias.Clasificar(MuestraComprobar);
-}
+                lblKmediasResultado.Text = Kmedias.Clasificar(MuestraComprobar);
+            }
+            catch (Exception ex)
+            {
+                Helper.TreatErrorException(ex);
+            }
+        }
 
         private void btnBayesComprobar_Click(object sender, EventArgs e)
         {
-            Algoritmia.Muestra MuestraComprobar = new Algoritmia.Muestra()
+            try
             {
-                Medidas = new List<double>() {
+                Algoritmia.Muestra MuestraComprobar = new Algoritmia.Muestra()
+                {
+                    Medidas = new List<double>() {
                             double.Parse(txtBayesMuestra1.Text.Replace('.', ',')),
                             double.Parse(txtBayesMuestra2.Text.Replace('.', ',')),
                             double.Parse(txtBayesMuestra3.Text.Replace('.', ',')),
                             double.Parse(txtBayesMuestra4.Text.Replace('.', ','))
                         }
-            };
+                };
 
-            lblBayesResultado.Text = Bayes.Clasificar(MuestraComprobar);
+                lblBayesResultado.Text = Bayes.Clasificar(MuestraComprobar);
+            }
+            catch (Exception ex)
+            {
+                Helper.TreatErrorException(ex);
+            }
         }
 
         private void btnLloydComprobar_Click(object sender, EventArgs e)
         {
-            Algoritmia.Muestra MuestraComprobar = new Algoritmia.Muestra()
+            try
             {
-                Medidas = new List<double>() {
+                Algoritmia.Muestra MuestraComprobar = new Algoritmia.Muestra()
+                {
+                    Medidas = new List<double>() {
                             double.Parse(txtLloydMuestra1.Text.Replace('.', ',')),
                             double.Parse(txtLloydMuestra2.Text.Replace('.', ',')),
                             double.Parse(txtLloydMuestra3.Text.Replace('.', ',')),
                             double.Parse(txtLloydMuestra4.Text.Replace('.', ','))
                         }
-            };
+                };
 
-            lblLloydResultado.Text = Lloyd.Clasificar(MuestraComprobar);
+                lblLloydResultado.Text = Lloyd.Clasificar(MuestraComprobar);
+            }
+            catch (Exception ex)
+            {
+                Helper.TreatErrorException(ex);
+            }
         }
     }
 }

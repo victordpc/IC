@@ -46,6 +46,7 @@
     <Compile Include="Clase.cs" />
     <Compile Include="Kmedias.cs" />
     <Compile Include="Lloyd.cs" />
+    <Compile Include="Matrix.cs" />
     <Compile Include="Muestra.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -46,12 +46,8 @@ namespace Algoritmia
         protected void CentrosIniciales()
         {
             for (int i = 0; i < Centros.Count; i++)
-            {
                 foreach (var item in Centros[i].Medidas)
-                {
                     Datos[i].Centro.Medidas.Add(item);
-                }
-            }
         }
 
         protected double DistanciaCuadrado(Muestra origen, Muestra destino)
@@ -69,6 +65,7 @@ namespace Algoritmia
 
             return resultado;
         }
+
         protected double Distancia(Muestra origen, Muestra destino)
         {
             double resultado = 0;

@@ -63,6 +63,7 @@
             this.txtClase1Centro2 = new System.Windows.Forms.TextBox();
             this.txtClase1Centro1 = new System.Windows.Forms.TextBox();
             this.gbKmedias = new System.Windows.Forms.GroupBox();
+            this.lblKmediasResultado = new System.Windows.Forms.Label();
             this.btnKmediasComprobar = new System.Windows.Forms.Button();
             this.txtKmediasMuestra4 = new System.Windows.Forms.TextBox();
             this.txtKmediasMuestra3 = new System.Windows.Forms.TextBox();
@@ -73,6 +74,7 @@
             this.txtKmediasFichero = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.gbBayes = new System.Windows.Forms.GroupBox();
+            this.lblBayesResultado = new System.Windows.Forms.Label();
             this.btnBayesComprobar = new System.Windows.Forms.Button();
             this.txtBayesMuestra4 = new System.Windows.Forms.TextBox();
             this.txtBayesMuestra3 = new System.Windows.Forms.TextBox();
@@ -83,6 +85,7 @@
             this.txtBayesFichero = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.gbLloyd = new System.Windows.Forms.GroupBox();
+            this.lblLloydResultado = new System.Windows.Forms.Label();
             this.btnLloydComprobar = new System.Windows.Forms.Button();
             this.txtLloydMuestra4 = new System.Windows.Forms.TextBox();
             this.txtLloydMuestra3 = new System.Windows.Forms.TextBox();
@@ -101,9 +104,6 @@
             this.btnLloydEntrenar = new System.Windows.Forms.Button();
             this.btnBayesEntrenar = new System.Windows.Forms.Button();
             this.btnKmediasEntrenar = new System.Windows.Forms.Button();
-            this.lblKmediasResultado = new System.Windows.Forms.Label();
-            this.lblBayesResultado = new System.Windows.Forms.Label();
-            this.lblLloydResultado = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -122,7 +122,7 @@
             this.entrenarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(856, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(978, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -411,6 +411,8 @@
             // 
             // gbKmedias
             // 
+            this.gbKmedias.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gbKmedias.Controls.Add(this.lblKmediasResultado);
             this.gbKmedias.Controls.Add(this.btnKmediasComprobar);
             this.gbKmedias.Controls.Add(this.txtKmediasMuestra4);
@@ -422,18 +424,30 @@
             this.gbKmedias.Controls.Add(this.txtKmediasFichero);
             this.gbKmedias.Controls.Add(this.label6);
             this.gbKmedias.Enabled = false;
-            this.gbKmedias.Location = new System.Drawing.Point(452, 39);
+            this.gbKmedias.Location = new System.Drawing.Point(471, 39);
             this.gbKmedias.Name = "gbKmedias";
-            this.gbKmedias.Size = new System.Drawing.Size(391, 114);
+            this.gbKmedias.Size = new System.Drawing.Size(494, 114);
             this.gbKmedias.TabIndex = 13;
             this.gbKmedias.TabStop = false;
             this.gbKmedias.Text = "Clasificación K-Medias";
             // 
+            // lblKmediasResultado
+            // 
+            this.lblKmediasResultado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblKmediasResultado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblKmediasResultado.Location = new System.Drawing.Point(9, 84);
+            this.lblKmediasResultado.Name = "lblKmediasResultado";
+            this.lblKmediasResultado.Size = new System.Drawing.Size(370, 22);
+            this.lblKmediasResultado.TabIndex = 16;
+            this.lblKmediasResultado.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // btnKmediasComprobar
             // 
+            this.btnKmediasComprobar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnKmediasComprobar.Image = global::Practica3_UI.Properties.Resources.check_ok;
             this.btnKmediasComprobar.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btnKmediasComprobar.Location = new System.Drawing.Point(282, 77);
+            this.btnKmediasComprobar.Location = new System.Drawing.Point(385, 77);
             this.btnKmediasComprobar.Name = "btnKmediasComprobar";
             this.btnKmediasComprobar.Size = new System.Drawing.Size(102, 30);
             this.btnKmediasComprobar.TabIndex = 15;
@@ -481,7 +495,8 @@
             // 
             // btnKmediasFichero
             // 
-            this.btnKmediasFichero.Location = new System.Drawing.Point(349, 22);
+            this.btnKmediasFichero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnKmediasFichero.Location = new System.Drawing.Point(452, 22);
             this.btnKmediasFichero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnKmediasFichero.Name = "btnKmediasFichero";
             this.btnKmediasFichero.Size = new System.Drawing.Size(35, 24);
@@ -492,9 +507,11 @@
             // 
             // txtKmediasFichero
             // 
+            this.txtKmediasFichero.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtKmediasFichero.Location = new System.Drawing.Point(126, 21);
             this.txtKmediasFichero.Name = "txtKmediasFichero";
-            this.txtKmediasFichero.Size = new System.Drawing.Size(222, 22);
+            this.txtKmediasFichero.Size = new System.Drawing.Size(325, 22);
             this.txtKmediasFichero.TabIndex = 1;
             this.txtKmediasFichero.Click += new System.EventHandler(this.btnKmediasFichero_Click);
             // 
@@ -509,6 +526,8 @@
             // 
             // gbBayes
             // 
+            this.gbBayes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gbBayes.Controls.Add(this.lblBayesResultado);
             this.gbBayes.Controls.Add(this.btnBayesComprobar);
             this.gbBayes.Controls.Add(this.txtBayesMuestra4);
@@ -520,18 +539,30 @@
             this.gbBayes.Controls.Add(this.txtBayesFichero);
             this.gbBayes.Controls.Add(this.label11);
             this.gbBayes.Enabled = false;
-            this.gbBayes.Location = new System.Drawing.Point(452, 159);
+            this.gbBayes.Location = new System.Drawing.Point(471, 159);
             this.gbBayes.Name = "gbBayes";
-            this.gbBayes.Size = new System.Drawing.Size(391, 114);
+            this.gbBayes.Size = new System.Drawing.Size(494, 114);
             this.gbBayes.TabIndex = 16;
             this.gbBayes.TabStop = false;
             this.gbBayes.Text = "Clasificación Bayes";
             // 
+            // lblBayesResultado
+            // 
+            this.lblBayesResultado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBayesResultado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblBayesResultado.Location = new System.Drawing.Point(9, 84);
+            this.lblBayesResultado.Name = "lblBayesResultado";
+            this.lblBayesResultado.Size = new System.Drawing.Size(370, 22);
+            this.lblBayesResultado.TabIndex = 17;
+            this.lblBayesResultado.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // btnBayesComprobar
             // 
+            this.btnBayesComprobar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBayesComprobar.Image = global::Practica3_UI.Properties.Resources.check_ok;
             this.btnBayesComprobar.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btnBayesComprobar.Location = new System.Drawing.Point(282, 77);
+            this.btnBayesComprobar.Location = new System.Drawing.Point(385, 77);
             this.btnBayesComprobar.Name = "btnBayesComprobar";
             this.btnBayesComprobar.Size = new System.Drawing.Size(102, 30);
             this.btnBayesComprobar.TabIndex = 15;
@@ -579,7 +610,8 @@
             // 
             // btnBayesFichero
             // 
-            this.btnBayesFichero.Location = new System.Drawing.Point(349, 22);
+            this.btnBayesFichero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBayesFichero.Location = new System.Drawing.Point(452, 22);
             this.btnBayesFichero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBayesFichero.Name = "btnBayesFichero";
             this.btnBayesFichero.Size = new System.Drawing.Size(35, 24);
@@ -590,9 +622,11 @@
             // 
             // txtBayesFichero
             // 
+            this.txtBayesFichero.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBayesFichero.Location = new System.Drawing.Point(126, 21);
             this.txtBayesFichero.Name = "txtBayesFichero";
-            this.txtBayesFichero.Size = new System.Drawing.Size(222, 22);
+            this.txtBayesFichero.Size = new System.Drawing.Size(325, 22);
             this.txtBayesFichero.TabIndex = 1;
             this.txtBayesFichero.Click += new System.EventHandler(this.btnBayesFichero_Click);
             // 
@@ -607,6 +641,8 @@
             // 
             // gbLloyd
             // 
+            this.gbLloyd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gbLloyd.Controls.Add(this.lblLloydResultado);
             this.gbLloyd.Controls.Add(this.btnLloydComprobar);
             this.gbLloyd.Controls.Add(this.txtLloydMuestra4);
@@ -618,18 +654,30 @@
             this.gbLloyd.Controls.Add(this.txtLloyFichero);
             this.gbLloyd.Controls.Add(this.label13);
             this.gbLloyd.Enabled = false;
-            this.gbLloyd.Location = new System.Drawing.Point(452, 279);
+            this.gbLloyd.Location = new System.Drawing.Point(471, 279);
             this.gbLloyd.Name = "gbLloyd";
-            this.gbLloyd.Size = new System.Drawing.Size(391, 114);
+            this.gbLloyd.Size = new System.Drawing.Size(494, 114);
             this.gbLloyd.TabIndex = 17;
             this.gbLloyd.TabStop = false;
             this.gbLloyd.Text = "Clasificación Lloyd";
             // 
+            // lblLloydResultado
+            // 
+            this.lblLloydResultado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblLloydResultado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblLloydResultado.Location = new System.Drawing.Point(9, 84);
+            this.lblLloydResultado.Name = "lblLloydResultado";
+            this.lblLloydResultado.Size = new System.Drawing.Size(370, 22);
+            this.lblLloydResultado.TabIndex = 18;
+            this.lblLloydResultado.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // btnLloydComprobar
             // 
+            this.btnLloydComprobar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLloydComprobar.Image = global::Practica3_UI.Properties.Resources.check_ok;
             this.btnLloydComprobar.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btnLloydComprobar.Location = new System.Drawing.Point(282, 77);
+            this.btnLloydComprobar.Location = new System.Drawing.Point(385, 77);
             this.btnLloydComprobar.Name = "btnLloydComprobar";
             this.btnLloydComprobar.Size = new System.Drawing.Size(102, 30);
             this.btnLloydComprobar.TabIndex = 15;
@@ -677,7 +725,8 @@
             // 
             // btnLloydFichero
             // 
-            this.btnLloydFichero.Location = new System.Drawing.Point(349, 22);
+            this.btnLloydFichero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLloydFichero.Location = new System.Drawing.Point(452, 22);
             this.btnLloydFichero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLloydFichero.Name = "btnLloydFichero";
             this.btnLloydFichero.Size = new System.Drawing.Size(35, 24);
@@ -688,9 +737,11 @@
             // 
             // txtLloyFichero
             // 
+            this.txtLloyFichero.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLloyFichero.Location = new System.Drawing.Point(126, 21);
             this.txtLloyFichero.Name = "txtLloyFichero";
-            this.txtLloyFichero.Size = new System.Drawing.Size(222, 22);
+            this.txtLloyFichero.Size = new System.Drawing.Size(325, 22);
             this.txtLloyFichero.TabIndex = 1;
             this.txtLloyFichero.Click += new System.EventHandler(this.btnLloydFichero_Click);
             // 
@@ -751,7 +802,7 @@
             this.btnTodosEntrenar.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.btnTodosEntrenar.Location = new System.Drawing.Point(330, 185);
             this.btnTodosEntrenar.Name = "btnTodosEntrenar";
-            this.btnTodosEntrenar.Size = new System.Drawing.Size(116, 43);
+            this.btnTodosEntrenar.Size = new System.Drawing.Size(135, 43);
             this.btnTodosEntrenar.TabIndex = 12;
             this.btnTodosEntrenar.Text = "Entrenar\r\nTodos";
             this.btnTodosEntrenar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -765,7 +816,7 @@
             this.btnLloydEntrenar.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.btnLloydEntrenar.Location = new System.Drawing.Point(330, 136);
             this.btnLloydEntrenar.Name = "btnLloydEntrenar";
-            this.btnLloydEntrenar.Size = new System.Drawing.Size(116, 43);
+            this.btnLloydEntrenar.Size = new System.Drawing.Size(135, 43);
             this.btnLloydEntrenar.TabIndex = 10;
             this.btnLloydEntrenar.Text = "Entrenar\r\nLloyd";
             this.btnLloydEntrenar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -779,7 +830,7 @@
             this.btnBayesEntrenar.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.btnBayesEntrenar.Location = new System.Drawing.Point(330, 87);
             this.btnBayesEntrenar.Name = "btnBayesEntrenar";
-            this.btnBayesEntrenar.Size = new System.Drawing.Size(116, 43);
+            this.btnBayesEntrenar.Size = new System.Drawing.Size(135, 43);
             this.btnBayesEntrenar.TabIndex = 0;
             this.btnBayesEntrenar.Text = "Entrenar\r\nBayes";
             this.btnBayesEntrenar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -793,42 +844,18 @@
             this.btnKmediasEntrenar.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.btnKmediasEntrenar.Location = new System.Drawing.Point(330, 38);
             this.btnKmediasEntrenar.Name = "btnKmediasEntrenar";
-            this.btnKmediasEntrenar.Size = new System.Drawing.Size(116, 43);
+            this.btnKmediasEntrenar.Size = new System.Drawing.Size(135, 43);
             this.btnKmediasEntrenar.TabIndex = 4;
             this.btnKmediasEntrenar.Text = "Entrenar\r\nK-Medias";
             this.btnKmediasEntrenar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKmediasEntrenar.UseVisualStyleBackColor = true;
             this.btnKmediasEntrenar.Click += new System.EventHandler(this.btnKmediasEntrenar_Click);
             // 
-            // lblResultadoKmedias
-            // 
-            this.lblKmediasResultado.Location = new System.Drawing.Point(19, 84);
-            this.lblKmediasResultado.Name = "lblResultadoKmedias";
-            this.lblKmediasResultado.Size = new System.Drawing.Size(257, 22);
-            this.lblKmediasResultado.TabIndex = 16;
-            this.lblKmediasResultado.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // lblResultadoBayes
-            // 
-            this.lblBayesResultado.Location = new System.Drawing.Point(19, 84);
-            this.lblBayesResultado.Name = "lblResultadoBayes";
-            this.lblBayesResultado.Size = new System.Drawing.Size(257, 22);
-            this.lblBayesResultado.TabIndex = 17;
-            this.lblBayesResultado.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // lblResultadoLloyd
-            // 
-            this.lblLloydResultado.Location = new System.Drawing.Point(19, 84);
-            this.lblLloydResultado.Name = "lblResultadoLloyd";
-            this.lblLloydResultado.Size = new System.Drawing.Size(257, 22);
-            this.lblLloydResultado.TabIndex = 18;
-            this.lblLloydResultado.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
             // AlgoritmosClasificacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(856, 398);
+            this.ClientSize = new System.Drawing.Size(978, 398);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.gbLloyd);
             this.Controls.Add(this.gbBayes);

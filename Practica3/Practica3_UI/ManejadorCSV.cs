@@ -26,7 +26,7 @@ namespace Practica3_UI
                     while (!reader.EndOfStream)
                     {
                         var line = reader.ReadLine();
-                        var values = line.Substring(0, line.Length - 1).Split(',');
+                        var values = line.Split(',');//.Substring(0, line.Length - 1).Split(',');
 
                         ++fila;
 
@@ -41,22 +41,21 @@ namespace Practica3_UI
                         else
                         {
                             for (int i = 0; i < numElementosLeidos; i++)
-                            {
                                 if (i != numElementosLeidos - 1)
                                     leido.Medidas.Add(float.Parse(values[i].Replace('.', ',')));
                                 else
+                                {
+                                    leido.NombreClase = values[i];
                                     nombreClase = values[i];
-                            }
+                                }
 
                             Algoritmia.Clase encontrado = data.FirstOrDefault(dato => dato.Nombre == nombreClase);
 
                             if (encontrado == null)
-                            {
                                 data.Add(new Algoritmia.Clase()
                                 {
                                     Nombre = nombreClase,
                                 });
-                            }
                             muestras.Add(leido);
                         }
                     }
@@ -84,8 +83,10 @@ namespace Practica3_UI
                         var line = reader.ReadLine();
                         var values = line.Substring(0, line.Length - 1).Split(',');
 
-                        for (int i = 0; i < values.Length-1; i++)
+                        for (int i = 0; i < values.Length - 1; i++)
                             leido.Medidas.Add(float.Parse(values[i].Replace('.', ',')));
+
+                        leido.NombreClase = values[values.Length-1];
                     }
                 }
                 if (leido.Medidas.Count != 0)
